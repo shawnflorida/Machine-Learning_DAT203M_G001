@@ -1,18 +1,18 @@
-from sklearn.neural_network import MLPRegressor
+from sklearn.neural_network import MLPClassifier
 
 from .base_model import BaseModel
+
 
 class NeuralNetworkModel(BaseModel):
     def __init__(self):
         super().__init__()
-        self.model = MLPRegressor(
+        self.model = MLPClassifier(
             hidden_layer_sizes=(128, 64, 32),
             activation="relu",
             solver="adam",
             learning_rate_init=0.001,
             max_iter=500,
-            early_stopping=True,
-            validation_fraction=0.1,
+            early_stopping=False,
             random_state=42,
         )
 

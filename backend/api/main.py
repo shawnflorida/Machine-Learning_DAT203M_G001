@@ -1,39 +1,42 @@
 from contextlib import asynccontextmanager
 
+import pandas as pd
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 import config
-from api.routes import predict_router
+from api.routes import meta_router, predict_router, profile_router
 from api.state import ModelState
+from src.architecture.data_pipeline import DataCleaner, DataLoader
 from src.architecture.ml_tasks import Predictor
 from src.architecture.ml_utils import Converters, Pipeliner, ProfileGenerator
-from src.models import GradientBoostingModel, LinearRegressionModel, NeuralNetworkModel
+from src.models import GradientBoostingModel, LogisticRegressionModel, NeuralNetworkModel
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    converters = Converters(config.STRESS_BINS)
-    models = [LinearRegressionModel(), NeuralNetworkModel(), GradientBoostingModel()]
-
+    models = [LogisticRegressionModel(), NeuralNetworkModel(), GradientBoostingModel()]
     for m in models:
-        file_name = config.MODEL_FILE_MAP[m.get_name()]
-        m.load(config.SAVED_MODELS_DIR / file_name)
+        m.load(config.SAVED_MODELS_DIR / config.MODEL_FILE_MAP[m.get_name()])
 
     pipeliner = Pipeliner.load(config.PIPERLINER_FILE)
-    predictor = Predictor(converters)
     profile_generator = ProfileGenerator(
-        config.NUMERIC_COLS,
-        config.CATEGORICAL_COLS,
-        config.ALL_NUMERIC,
-        config.ALL_CATS,
+        config.NUMERIC_COLS, config.CATEGORICAL_COLS,
+        config.ALL_NUMERIC, config.ALL_CATS,
     )
+
+    # Load source data for profile generation
+    raw = DataLoader.load()
+    raw = DataLoader.filter_consent(raw)
+    cols = config.NUMERIC_COLS + config.CATEGORICAL_COLS + [config.TARGET]
+    source_df = DataCleaner().clean(raw[cols].copy(), config.NUMERIC_COLS, config.CATEGORICAL_COLS, config.TARGET)
 
     app.state.model_state = ModelState(
         models=models,
         pipeliner=pipeliner,
-        predictor=predictor,
+        predictor=Predictor(),
         profile_generator=profile_generator,
+        source_df=source_df,
     )
     yield
 
@@ -49,3 +52,5 @@ app.add_middleware(
 )
 
 app.include_router(predict_router)
+app.include_router(profile_router)
+app.include_router(meta_router)

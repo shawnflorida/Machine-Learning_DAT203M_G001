@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.app {
+  min-height: 100vh;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+/* ── Header ── */
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 2.75rem;
+  animation: slideDown 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: 100px;
+  padding: 0.35rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 1.1rem;
+}
+
+.header-badge::before {
+  content: '✦';
+  font-size: 0.65rem;
+  opacity: 0.7;
+}
+
+.app-header h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #fff 30%, rgba(255,255,255,0.7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-header p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.6);
+  font-weight: 400;
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .app { padding: 1.5rem 0.85rem 3rem; }
+  .app-header { margin-bottom: 2rem; }
+}

@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+import pandas as pd
+
 
 @dataclass
 class ModelState:
@@ -7,3 +9,4 @@ class ModelState:
     pipeliner: object
     predictor: object
     profile_generator: object
+    source_df: pd.DataFrame

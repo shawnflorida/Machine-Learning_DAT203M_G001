@@ -1,18 +1,16 @@
-from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
 
 from .base_model import BaseModel
 
 
-class GradientBoostingModel(BaseModel):
+class LogisticRegressionModel(BaseModel):
     def __init__(self):
         super().__init__()
-        self.model = GradientBoostingClassifier(
-            n_estimators=300,
-            learning_rate=0.05,
-            max_depth=4,
-            min_samples_leaf=10,
-            subsample=0.8,
+        self.model = LogisticRegression(
+            max_iter=1000,
+            C=0.5,
             random_state=42,
+            solver="lbfgs",
         )
 
     def train(self, X_train, y_train, X_val=None, y_val=None):
@@ -22,4 +20,4 @@ class GradientBoostingModel(BaseModel):
         return self.model.predict(X)
 
     def get_name(self) -> str:
-        return "Gradient Boosting"
+        return "Logistic Regression"

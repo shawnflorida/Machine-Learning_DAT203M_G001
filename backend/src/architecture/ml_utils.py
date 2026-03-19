@@ -8,28 +8,30 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler
 
 
 class Converters:
-    def __init__(self, stress_bins):
-        self.stress_bins = stress_bins
+    @staticmethod
+    def label_encoder_independent(df: pd.DataFrame, col: str) -> pd.DataFrame:
+        """Create stress_category from the raw numeric stress column."""
+        def categorize(value):
+            if value <= 3:
+                return "Low"
+            elif value <= 6:
+                return "Average"
+            else:
+                return "High"
 
-    def bin_stress(self, score: float) -> str:
-        for threshold, label in self.stress_bins:
-            if score <= threshold:
-                return label
-        return self.stress_bins[-1][1]
-
-    def to_stress_categories(self, scores) -> list[str]:
-        arr = np.asarray(scores, dtype=float)
-        return [self.bin_stress(float(s)) for s in arr]
+        result = df.copy()
+        result["stress_category"] = result[col].apply(categorize)
+        return result
 
     @staticmethod
     def label_encode(df: pd.DataFrame, cols: list[str]):
-        df_copy = df.copy()
+        encoded_df = df.copy()
         encoders = {}
         for col in cols:
-            le = LabelEncoder()
-            df_copy[col] = le.fit_transform(df_copy[col].astype(str))
-            encoders[col] = le
-        return df_copy, encoders
+            encoder = LabelEncoder()
+            encoded_df[col] = encoder.fit_transform(encoded_df[col].astype(str))
+            encoders[col] = encoder
+        return encoded_df, encoders
 
 
 class Pipeliner:
@@ -56,14 +58,6 @@ class Pipeliner:
     def transform(self, X):
         return self.pipeline.transform(X)
 
-    def get_ohe_feature_names(self) -> list[str]:
-        return (
-            self.pipeline.named_transformers_["cat"]
-            .named_steps["onehot"]
-            .get_feature_names_out(self.categorical_cols)
-            .tolist()
-        )
-
     def save(self, path):
         joblib.dump(self, path)
 
@@ -88,16 +82,16 @@ class ProfileGenerator:
     def build(self, profile: dict) -> pd.DataFrame:
         self.validate(profile)
 
-        r = dict(profile)
-        hours_work = r["hours_work"] if r["hours_work"] != 0 else 1
-        hours_studying = r["hours_studying"] if r["hours_studying"] != 0 else 1
-        social_media = r["social_media_use"] if r["social_media_use"] != 0 else 1
+        profile_data = dict(profile)
+        hours_work     = profile_data["hours_work"]     if profile_data["hours_work"]     != 0 else 1
+        hours_studying = profile_data["hours_studying"] if profile_data["hours_studying"] != 0 else 1
+        social_media   = profile_data["social_media_use"] if profile_data["social_media_use"] != 0 else 1
 
-        r["financial_pressure"] = float(r["rent"]) / float(hours_work)
-        r["work_study_ratio"] = float(r["hours_work"]) / float(hours_studying)
-        r["social_engagement"] = float(r["friends_count"]) / float(social_media)
+        profile_data["financial_pressure"] = float(profile_data["rent"])        / float(hours_work)
+        profile_data["work_study_ratio"]   = float(profile_data["hours_work"])  / float(hours_studying)
+        profile_data["social_engagement"]  = float(profile_data["friends_count"]) / float(social_media)
 
-        row = pd.DataFrame([r])[self.all_numeric + self.all_cats]
+        row = pd.DataFrame([profile_data])[self.all_numeric + self.all_cats]
 
         for col in self.all_numeric:
             row[col] = pd.to_numeric(row[col], errors="coerce")
@@ -106,7 +100,7 @@ class ProfileGenerator:
         return row
 
     def generate_profile(self, df: pd.DataFrame, seed: int | None = None, mode: str = "random") -> dict:
-        missing_cols = [c for c in (self.numeric_cols + self.categorical_cols) if c not in df.columns]
+        missing_cols = [col for col in (self.numeric_cols + self.categorical_cols) if col not in df.columns]
         if missing_cols:
             raise ValueError(f"Missing columns in source dataframe: {missing_cols}")
 

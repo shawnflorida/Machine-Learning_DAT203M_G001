@@ -26,22 +26,15 @@ TARGET_CATEGORY = "stress_category"
 ALL_NUMERIC = NUMERIC_COLS + DERIVED_COLS
 ALL_CATS = CATEGORICAL_COLS
 
-CATEGORY_ORDER = ["Low (1-3)", "Average (4-6)", "High (7-10)"]
-STRESS_BINS = [
-    (3.0, "Low (1-3)"),
-    (6.0, "Average (4-6)"),
-    (10.0, "High (7-10)"),
-]
+CATEGORY_ORDER = ["Low", "Average", "High"]
 
 SEED = 42
 TEST_SIZE = 0.20
-VALIDATION_SHARE_OF_TOTAL = 0.10
-VAL_SIZE_FROM_REMAINING = VALIDATION_SHARE_OF_TOTAL / (1.0 - TEST_SIZE)
 
 MODEL_FILE_MAP = {
-    "Linear Regression": "linear_regression.pkl",
-    "Neural Network": "neural_network.pkl",
-    "Gradient Boosting": "gradient_boosting.pkl",
+    "Logistic Regression": "logistic_regression.pkl",
+    "Neural Network":      "neural_network.pkl",
+    "Gradient Boosting":   "gradient_boosting.pkl",
 }
 
 FRONTEND_ORIGIN = "http://localhost:5173"

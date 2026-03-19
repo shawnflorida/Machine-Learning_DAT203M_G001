@@ -29,9 +29,33 @@ class StudentProfile(BaseModel):
 
 class ModelPrediction(BaseModel):
     model_name: str
-    score: float
     category: str
 
 
 class PredictionResponse(BaseModel):
     predictions: list[ModelPrediction]
+
+
+class StudentProfileResponse(BaseModel):
+    age: float
+    hours_work: float
+    social_media_use: float
+    rent: float
+    friends_count: float
+    highest_speed: float
+    dates: float
+    standard_drinks: float
+    countries: float
+    semesters: float
+    commute: float
+    data_interest: float
+    mark_goal: float
+    hours_studying: float
+    gender: str
+    relationship_status: str
+    drug_use_ans: str
+    student_type: str
+    mainstream_advanced: str
+    lecture_mode: str
+    study_type: str
+    learner_style: str
