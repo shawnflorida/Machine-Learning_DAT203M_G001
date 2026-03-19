@@ -121,9 +121,9 @@ class Runner:
         self.eda.run(df, df_eda, feature_cols, config.TARGET, config.TARGET_CATEGORY, config.CATEGORY_ORDER)
 
         # ── Train ─────────────────────────────────────────────────────────
-        for model in self.models:
-            model.train(X_train, y_train.values, X_val, y_val.values)
-            print(f"Trained: {model.get_name()}")
+        # for model in self.models:
+        #     model.train(X_train, y_train.values, X_val, y_val.values)
+        #     print(f"Trained: {model.get_name()}")
 
         # ── Evaluate ──────────────────────────────────────────────────────
         pred_cats = {m.get_name(): m.predict(X_test) for m in self.models}
@@ -134,6 +134,9 @@ class Runner:
             list(class_reports.keys()),
             [v["accuracy"] for v in class_reports.values()],
         )
+        
+        
+    
 
         # ── Save ──────────────────────────────────────────────────────────
         config.SAVED_MODELS_DIR.mkdir(parents=True, exist_ok=True)

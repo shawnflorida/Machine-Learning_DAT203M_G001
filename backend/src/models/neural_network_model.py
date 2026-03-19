@@ -27,3 +27,5 @@ class NeuralNetworkModel(BaseModel):
 
     def get_loss_curve(self):
         return self.model.loss_curve_
+
+   
