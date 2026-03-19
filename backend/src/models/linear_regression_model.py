@@ -21,3 +21,10 @@ class LinearRegressionModel(BaseModel):
         import pandas as pd
 
         return pd.Series(self.model.coef_, index=feature_names)
+
+class StochasticDescentModel(Model):
+    
+    def __init__(self):
+        super().__init__()
+
+    
