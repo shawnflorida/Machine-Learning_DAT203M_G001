@@ -23,11 +23,3 @@ class GradientBoostingModel(BaseModel):
 
     def get_name(self) -> str:
         return "Gradient Boosting"
-
-    def get_feature_importance(self, feature_names):
-        import pandas as pd
-
-        return pd.Series(self.model.feature_importances_, index=feature_names).sort_values(ascending=False)
-
-    def get_training_curve(self):
-        return None

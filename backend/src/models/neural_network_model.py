@@ -27,9 +27,3 @@ class NeuralNetworkModel(BaseModel):
 
     def get_loss_curve(self):
         return self.model.loss_curve_
-
-    def get_training_curve(self):
-        return self.get_loss_curve()
-
-    def get_feature_importance(self, feature_names):
-        return None
