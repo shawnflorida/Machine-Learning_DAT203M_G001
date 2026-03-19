@@ -21,3 +21,9 @@ class LinearRegressionModel(BaseModel):
         import pandas as pd
 
         return pd.Series(self.model.coef_, index=feature_names)
+
+    def get_feature_importance(self, feature_names):
+        return self.get_coefficients(feature_names).sort_values(key=lambda s: s.abs(), ascending=False)
+
+    def get_training_curve(self):
+        return None

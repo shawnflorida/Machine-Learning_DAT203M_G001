@@ -3,10 +3,11 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 import config
-from src.data_pipeline import DataCleaner, DataLoader, FeatureEngineer
-from src.ml_tasks import EDA, Evaluator, Predictor
-from src.ml_utils import Converters, Pipeliner, ProfileGenerator, Visualizer
+from src.architecture.data_pipeline import DataCleaner, DataLoader, FeatureEngineer
+from src.architecture.ml_tasks import EDA, Evaluator, Predictor
+from src.architecture.ml_utils import Converters, Pipeliner, ProfileGenerator
 from src.models import GradientBoostingModel, LinearRegressionModel, NeuralNetworkModel
+from src.architecture.visualizer import Visualizer
 
 
 class Runner:

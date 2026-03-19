@@ -6,8 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import config
 from api.routes import predict_router
 from api.state import ModelState
-from src.ml_tasks import Predictor
-from src.ml_utils import Converters, Pipeliner, ProfileGenerator
+from src.architecture.ml_tasks import Predictor
+from src.architecture.ml_utils import Converters, Pipeliner, ProfileGenerator
 from src.models import GradientBoostingModel, LinearRegressionModel, NeuralNetworkModel
 
 
