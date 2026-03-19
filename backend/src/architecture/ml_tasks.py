@@ -40,7 +40,7 @@ class Evaluator:
 
 
 class Predictor:
-    def predict(self, profile_df, models: list, pipeliner):
+    def predict(self, profile_df, models: list, pipeliner, label_encoder=None):
         def normalize_category(category: str) -> str:
             if "Low" in category:
                 return "Low"
@@ -53,7 +53,18 @@ class Predictor:
         X = pipeliner.transform(profile_df)
         results = []
         for model in models:
-            raw_category = str(model.predict(X)[0])
+            raw_pred = model.predict(X)[0]
+            
+            # If label_encoder is provided, decode numeric index to category name
+            if label_encoder is not None:
+                try:
+                    raw_category = label_encoder.inverse_transform([raw_pred])[0]
+                except (ValueError, TypeError):
+                    # If decoding fails, use the raw prediction as string
+                    raw_category = str(raw_pred)
+            else:
+                raw_category = str(raw_pred)
+            
             results.append({
                 "model_name": model.get_name(),
                 "category": normalize_category(raw_category),
