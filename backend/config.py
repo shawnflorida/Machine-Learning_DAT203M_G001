@@ -32,7 +32,7 @@ SEED = 42
 TEST_SIZE = 0.20
 
 MODEL_FILE_MAP = {
-    "Logistic Regression": "logistic_regression.pkl",
+    "Multinomial Logistic Regression": "logistic_regression.pkl",
     "Neural Network":      "neural_network.pkl",
     "Gradient Boosting":   "gradient_boosting.pkl",
 }
