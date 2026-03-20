@@ -5,6 +5,8 @@ DATA_DIR = PROJECT_ROOT / "data"
 DATA_FILE_NAME = "data1001_survey_data_2025_S2-1.csv"
 DATA_PATH = DATA_DIR / DATA_FILE_NAME
 SAVED_MODELS_DIR = PROJECT_ROOT / "saved_models"
+SAVED_MODELS_BASIC_DIR = DATA_DIR / "basic"
+SAVED_MODELS_BEST_DIR  = DATA_DIR / "best"
 PIPERLINER_FILE = SAVED_MODELS_DIR / "pipeliner.pkl"
 
 NUMERIC_COLS = [
@@ -32,9 +34,10 @@ SEED = 42
 TEST_SIZE = 0.20
 
 MODEL_FILE_MAP = {
-    "Logistic Regression": "logistic_regression.pkl",
+    "Multinomial Logistic Regression": "logistic_regression.pkl",
     "Neural Network":      "neural_network.pkl",
     "Gradient Boosting":   "gradient_boosting.pkl",
+    "Decision Tree":       "decision_tree.pkl",
 }
 
 FRONTEND_ORIGIN = "http://localhost:5173"

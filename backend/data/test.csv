@@ -1,286 +1,428 @@
 age,hours_work,social_media_use,rent,friends_count,highest_speed,dates,standard_drinks,countries,semesters,commute,data_interest,mark_goal,hours_studying,financial_pressure,work_study_ratio,social_engagement,gender,relationship_status,drug_use_ans,student_type,mainstream_advanced,lecture_mode,study_type,learner_style,stress_category
-22.0,30.0,1.0,500.0,1.0,120.0,0.0,2.0,4.0,0.0,35.0,4.0,90.0,7.0,16.666666666666668,4.285714285714286,1.0,Male,Single,No,International,DATA1001,Lecture Slides,I leave things to the last minute,Style 3,High
-19.0,15.0,2.0,859.0,5.0,150.0,0.0,0.0,8.0,0.0,20.0,9.0,90.0,20.0,57.266666666666666,0.75,2.5,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,Average
-18.0,12.0,0.75,0.0,15.0,110.0,0.0,0.0,3.0,0.0,50.0,6.0,50.0,3.0,0.0,4.0,20.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+23.0,0.0,2.0,550.0,1.0,160.0,100.0,8.0,3.0,1.0,30.0,7.0,100.0,2.0,550.0,0.0,0.5,Male,In a relationship,No,International,DATA1001,Other,It changes depending on the subject,Style 1,High
+17.0,0.0,5.0,0.0,5.0,100.0,0.0,0.0,4.0,0.0,130.0,4.0,65.0,3.0,0.0,0.0,1.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,High
+19.0,0.0,2.45,700.0,2.0,40.0,0.0,0.0,2.0,0.0,5.0,5.0,75.0,1.0,700.0,0.0,0.8163265306122448,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,High
+19.0,25.0,6.45,0.0,10.0,150.0,0.0,15.0,25.0,0.0,45.0,4.0,85.0,4.0,0.0,6.25,1.5503875968992247,Male,Single,Yes,Domestic,DATA1901,Recording,It changes depending on the subject,Style 3,Low
+22.0,30.0,4.0,0.0,1.0,140.0,4.0,0.0,8.0,5.0,30.0,0.0,70.0,3.0,0.0,10.0,0.25,Female,In a relationship,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
+20.0,48.0,6.0,460.0,100.0,90.0,1.0,0.0,4.0,0.0,20.0,9.0,9.0,10.0,9.583333333333334,4.8,16.666666666666668,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,High
 18.0,0.0,8.0,800.0,5.0,50.0,0.0,1.0,8.0,0.0,25.0,6.0,95.0,5.0,800.0,0.0,0.625,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Average
-20.0,2.0,5.25,0.0,4.0,100.0,0.0,0.0,2.0,2.0,40.0,4.0,90.0,4.0,0.0,0.5,0.7619047619047619,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
-29.0,0.0,2.0,0.0,1.0,110.0,0.0,1.0,3.0,0.0,90.0,4.0,80.0,6.0,0.0,0.0,0.5,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-20.0,15.0,3.75,0.0,0.0,110.0,30.0,10.0,6.0,3.0,60.0,4.0,85.0,3.0,0.0,5.0,0.0,Male,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
-18.0,71.18000000000029,4.0,0.0,10.0,120.0,10.0,0.0,3.0,0.0,60.0,5.0,70.0,3.0,0.0,20.0,2.5,Female,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,High
-19.0,8.0,7.5,750.0,20.0,130.0,5.0,5.0,8.0,0.0,20.0,7.0,90.0,8.0,93.75,1.0,2.6666666666666665,Male,In a relationship,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
-19.0,24.0,2.5,0.0,5.0,140.0,5.0,8.0,20.0,0.0,90.0,5.0,75.0,4.0,0.0,6.0,2.0,Female,In a relationship,Prefer not to say,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-18.0,0.0,2.0,600.0,20.0,220.0,4.0,8.0,7.0,0.0,2.0,8.0,85.0,6.0,600.0,0.0,10.0,Male,In a relationship,Yes,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
-19.0,11.0,4.5,900.0,20.0,130.0,0.0,0.0,3.0,3.0,5.0,4.0,70.0,5.0,81.81818181818181,2.2,4.444444444444445,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
-18.0,0.0,6.0,300.0,20.0,120.0,0.0,4.0,9.0,0.0,30.0,7.0,85.0,3.0,300.0,0.0,3.3333333333333335,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-18.0,0.0,6.0,400.0,3.0,120.0,0.0,3.0,3.0,0.0,20.0,6.0,75.0,7.0,400.0,0.0,0.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,High
-17.0,0.0,3.5,609.0,4.0,252.0,0.0,0.0,15.0,0.0,30.0,6.0,65.0,4.0,609.0,0.0,1.1428571428571428,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
-17.0,0.0,6.2,0.0,5.0,120.0,0.0,0.0,6.0,0.0,40.0,7.0,80.0,4.0,0.0,0.0,0.8064516129032258,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-21.0,10.0,5.16,350.0,15.0,0.0,7.0,1.0,10.0,1.0,20.0,7.0,50.0,7.0,35.0,1.4285714285714286,2.9069767441860463,Female,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 3,Average
-18.0,0.0,3.6,450.0,0.0,110.0,6.0,3.0,4.0,0.0,15.0,6.0,95.0,10.0,450.0,0.0,0.0,Female,In a relationship,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-17.0,10.0,6.0,0.0,5.0,130.0,11.0,0.0,3.0,0.0,45.0,7.0,80.0,3.0,0.0,3.3333333333333335,0.8333333333333334,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-19.0,71.18000000000029,3.5,350.0,5.0,200.0,4.0,10.0,40.80000000000018,0.0,60.0,3.0,90.0,15.0,4.917111548187673,4.7453333333333525,1.4285714285714286,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Average
-20.0,0.0,2.5,690.0,20.0,130.0,0.0,0.0,10.0,5.0,45.0,6.0,85.0,6.0,690.0,0.0,8.0,Male,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,0.0,5.5,190.0,10.0,100.0,0.0,0.0,5.0,0.0,10.0,5.0,90.0,10.0,190.0,0.0,1.8181818181818181,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-18.0,0.0,2.3,340.0,0.0,120.0,0.0,0.0,2.0,0.0,15.0,7.0,9.0,24.0,340.0,0.0,0.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,Average
-18.0,8.0,5.0,0.0,12.0,160.0,0.0,0.0,12.0,2.0,45.0,1.0,99.0,5.0,0.0,1.6,2.4,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
-23.0,20.0,8.0,0.0,0.0,160.0,0.0,7.0,7.0,7.0,70.0,3.0,80.0,20.0,0.0,1.0,0.0,Female,Single,Yes,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,High
-18.0,15.0,5.08,0.0,10.0,115.0,3.0,0.0,10.0,1.0,40.0,2.0,70.0,3.0,0.0,5.0,1.968503937007874,Female,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
-24.0,48.0,0.46,0.0,0.0,110.0,90.0,0.0,14.0,7.0,130.0,7.0,90.0,2.0,0.0,20.0,0.0,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
-24.0,10.5,0.56,0.0,2.0,130.0,20.0,0.0,10.0,10.0,35.0,0.0,50.0,2.0,0.0,5.25,3.571428571428571,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-19.0,21.0,3.0,675.0,2.0,140.0,0.0,5.0,2.0,0.0,30.0,8.0,90.0,2.0,32.142857142857146,10.5,0.6666666666666666,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,Low
-33.590000000000146,0.0,22.5,0.0,12.0,130.0,0.0,14.0,25.0,10.0,45.0,4.0,70.0,8.0,0.0,0.0,0.5333333333333333,Female,Married,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
-20.0,30.0,4.0,500.0,18.0,110.0,8.0,2.0,8.0,4.0,40.0,7.0,75.0,15.0,16.666666666666668,2.0,4.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
-22.0,14.0,2.0,0.0,1.0,100.0,0.0,0.0,3.0,6.0,40.0,9.0,85.0,8.0,0.0,1.75,0.5,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,High
-18.0,36.0,3.5,0.0,5.0,110.0,0.0,0.0,8.0,0.0,80.0,5.0,70.0,7.0,0.0,5.142857142857143,1.4285714285714286,Female,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-20.0,20.0,6.0,300.0,7.0,0.0,100.0,21.0,3.0,4.0,30.0,10.0,60.0,10.0,15.0,2.0,1.1666666666666667,Male,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 2,High
-18.0,0.0,4.15,0.0,2.0,120.0,0.0,0.0,6.0,0.0,40.0,3.0,70.0,5.0,0.0,0.0,0.48192771084337344,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low
-18.0,2.0,4.0,0.0,6.0,120.0,0.0,3.0,7.0,0.0,50.0,4.0,80.0,4.0,0.0,0.5,1.5,Female,In a relationship,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
-19.0,28.0,5.0,0.0,2.0,120.0,0.0,3.0,5.0,0.0,10.0,6.0,85.0,5.0,0.0,5.6,0.4,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,0.0,3.38,0.0,8.0,140.0,0.0,0.0,2.0,1.0,70.0,6.0,90.0,4.0,0.0,0.0,2.366863905325444,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-18.0,6.0,3.0,0.0,4.0,110.0,0.0,1.0,7.0,0.0,90.0,7.0,86.0,4.0,0.0,1.5,1.3333333333333333,Male,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-18.0,5.0,6.0,0.0,10.0,100.0,2.0,2.0,15.0,1.0,90.0,2.0,80.0,4.0,0.0,1.25,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-19.0,22.0,5.14,450.0,10.0,90.0,5.0,0.0,5.0,4.0,54.0,3.0,100.0,4.0,20.454545454545453,5.5,1.945525291828794,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,High
 18.0,15.0,3.15,0.0,5.0,150.0,60.0,2.0,2.0,0.0,45.0,6.0,85.0,6.0,0.0,2.5,1.5873015873015874,Female,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,Average
-18.0,0.0,12.0,399.0,3.0,268.3600000000006,2.0,5.0,12.0,0.0,15.0,6.0,70.0,1.0,399.0,0.0,0.25,Male,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Low
-18.0,10.0,2.5,0.0,3.0,120.0,20.0,8.0,5.0,0.0,1.2,5.0,80.0,3.0,0.0,3.3333333333333335,1.2,Female,In a relationship,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-20.0,0.0,0.0,0.0,0.0,130.0,0.0,0.0,15.0,2.0,90.0,3.0,100.0,2.0,0.0,0.0,0.0,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-18.0,5.0,5.0,475.0,30.0,180.0,20.0,0.0,12.0,0.0,2.0,7.0,100.0,6.0,95.0,0.8333333333333334,6.0,Male,In a relationship,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
-18.0,0.0,2.0,595.0,3.0,180.0,0.0,0.0,13.0,0.0,20.0,7.0,90.0,6.0,595.0,0.0,1.5,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,High
-19.0,0.0,9.38,300.0,30.0,160.0,8.0,10.0,19.0,1.0,60.0,8.0,85.0,4.0,300.0,0.0,3.1982942430703623,Male,In a relationship,Yes,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Low
-19.0,0.0,8.25,480.0,5.0,90.0,0.0,4.0,7.0,1.0,35.0,7.0,85.0,4.0,480.0,0.0,0.6060606060606061,Female,Its complicated,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,High
-19.0,14.0,8.0,600.0,6.0,150.0,3.0,7.0,15.0,0.0,50.0,4.0,75.0,2.0,42.857142857142854,7.0,0.75,Male,In a relationship,No,International,DATA1001,Recording,I leave things to the last minute,Style 3,Average
-19.0,0.0,8.1,725.0,2.0,100.0,0.0,0.0,6.0,1.0,40.0,7.0,75.0,5.0,725.0,0.0,0.2469135802469136,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-19.0,0.0,6.0,900.0,3.0,0.0,0.0,0.0,10.0,0.0,40.0,5.0,60.0,6.0,900.0,0.0,0.5,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,High
-18.0,10.0,4.0,0.0,5.0,130.0,0.0,2.0,3.0,0.0,65.0,0.0,80.0,2.0,0.0,5.0,1.25,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,Low
-19.0,50.0,5.0,600.0,20.0,130.0,3.0,10.0,5.0,0.0,40.0,5.0,85.0,10.0,12.0,5.0,4.0,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-18.0,0.0,6.25,549.0,3.0,100.0,0.0,3.0,4.0,1.0,20.0,2.0,80.0,3.0,549.0,0.0,0.48,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
-22.0,0.0,6.0,510.0,2.0,200.0,10.0,3.0,10.0,1.0,5.0,8.0,90.0,5.0,510.0,0.0,0.3333333333333333,Female,In a relationship,Yes,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
-17.0,0.0,6.0,350.0,25.0,220.0,8.0,0.0,2.0,0.0,80.0,7.0,100.0,4.0,350.0,0.0,4.166666666666667,Male,In a relationship,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 1,Low
-18.0,9.0,4.0,0.0,5.0,120.0,10.0,0.0,10.0,0.0,90.0,4.0,80.0,5.0,0.0,1.8,1.25,Female,In a relationship,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Low
-19.0,0.0,1.0,0.0,10.0,180.0,5.0,0.0,13.0,1.0,40.0,5.0,85.0,2.0,0.0,0.0,10.0,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-18.0,0.0,4.0,367.0,12.0,130.0,4.0,14.0,9.0,0.0,10.0,5.0,80.0,3.0,367.0,0.0,3.0,Male,Its complicated,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
-19.0,24.0,4.15,530.0,6.0,140.0,2.0,2.0,7.0,2.0,19.0,5.0,70.0,2.0,22.083333333333332,12.0,1.4457831325301203,Female,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,High
-18.0,20.0,3.13,0.0,18.0,100.0,4.0,0.0,7.0,0.0,15.0,3.0,99.0,10.0,0.0,2.0,5.7507987220447285,Female,Its complicated,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,Low
-17.0,9.0,6.58,0.0,11.0,0.0,1.0,0.0,4.0,0.0,90.0,6.0,100.0,4.0,0.0,2.25,1.6717325227963526,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Low
-18.0,15.0,4.0,0.0,5.0,100.0,0.0,0.0,15.0,0.0,20.0,6.0,90.0,2.0,0.0,7.5,1.25,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
-19.0,0.0,4.0,0.0,1.0,120.0,0.0,0.0,5.0,1.0,45.0,5.0,70.0,4.0,0.0,0.0,0.25,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
-18.0,1.0,3.75,0.0,2.0,100.0,0.0,0.0,3.0,1.0,45.0,5.0,85.0,3.0,0.0,0.3333333333333333,0.5333333333333333,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-20.0,12.0,5.0,520.0,1.0,120.0,3.0,3.0,4.0,0.0,30.0,6.0,85.0,5.0,43.333333333333336,2.4,0.2,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,High
-18.0,0.0,3.0,639.0,20.0,100.0,0.0,0.0,4.0,0.0,30.0,6.0,85.0,5.0,639.0,0.0,6.666666666666667,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
-18.0,4.0,2.5,0.0,5.0,110.0,0.0,0.0,5.0,0.0,90.0,4.0,90.0,4.0,0.0,1.0,2.0,Prefer not to say,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-17.0,0.0,5.0,400.0,20.0,120.0,0.0,0.0,10.0,0.0,75.0,7.0,85.0,2.0,400.0,0.0,4.0,Female,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-18.0,10.0,2.5,0.0,15.0,120.0,3.0,0.0,4.0,1.0,35.0,4.0,85.0,6.0,0.0,1.6666666666666667,6.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-21.0,0.0,6.0,0.0,100.0,100.0,100.0,48.590000000000146,40.80000000000018,4.0,60.0,3.0,100.0,5.0,0.0,0.0,16.666666666666668,Female,Its complicated,Yes,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,High
-19.0,0.0,2.55,0.0,10.0,101.0,0.0,1.0,0.0,0.0,50.0,6.0,75.0,8.0,0.0,0.0,3.9215686274509807,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Low
-19.0,0.0,7.34,780.0,15.0,190.0,1.0,1.0,8.0,0.0,40.0,4.0,80.0,6.0,780.0,0.0,2.043596730245232,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-19.0,20.0,1.0,500.0,7.0,120.0,0.0,0.0,6.0,1.0,15.0,6.0,90.0,3.0,25.0,6.666666666666667,7.0,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
-19.0,0.0,4.19,600.0,16.0,0.0,8.0,1.0,9.0,1.0,3.0,8.0,95.0,4.0,600.0,0.0,3.818615751789976,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-20.0,32.0,2.5,300.0,4.0,130.0,20.0,1.0,7.0,4.0,60.0,5.0,80.0,5.0,9.375,6.4,1.6,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-18.0,7.0,1.0,896.0,0.0,160.0,0.0,0.0,7.0,0.0,30.0,10.0,100.0,10.0,128.0,0.7,0.0,Male,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 1,High
-18.0,18.0,8.25,0.0,10.0,110.0,0.0,0.0,10.0,1.0,50.0,1.0,70.0,3.0,0.0,6.0,1.2121212121212122,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-18.0,9.0,6.0,0.0,5.0,130.0,0.0,0.0,4.0,0.0,60.0,3.0,60.0,2.0,0.0,4.5,0.8333333333333334,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,High
-20.0,0.0,5.0,0.0,4.0,200.0,1.0,15.0,37.0,2.0,20.0,10.0,100.0,1.0,0.0,0.0,0.8,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Average
-17.0,20.0,7.0,800.0,2.0,140.0,50.0,7.0,6.0,0.0,20.0,7.0,85.0,5.0,40.0,4.0,0.2857142857142857,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
-21.0,33.0,3.5,320.0,20.0,120.0,4.0,8.0,10.0,6.0,25.0,3.0,85.0,2.0,9.696969696969697,16.5,5.714285714285714,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
-20.0,0.0,0.75,0.0,0.0,130.0,0.0,0.0,1.0,3.0,120.0,7.0,85.0,6.0,0.0,0.0,0.0,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 1,Low
-20.0,0.0,4.0,0.0,0.0,150.0,0.0,0.0,2.0,0.0,20.0,5.0,85.0,8.0,0.0,0.0,0.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-17.0,0.0,6.25,0.0,4.0,120.0,0.0,1.0,3.0,0.0,62.0,7.0,90.0,4.0,0.0,0.0,0.64,Male,In a relationship,No,Domestic,DATA1901,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
-18.0,20.0,4.0,0.0,2.0,100.0,0.0,0.0,7.0,1.0,45.0,3.0,80.0,3.0,0.0,6.666666666666667,0.5,Female,Single,Prefer not to say,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Low
-18.0,1.5,5.0,520.0,10.0,100.0,0.0,0.0,3.0,0.0,50.0,2.0,85.0,1.0,346.6666666666667,1.5,2.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-20.0,28.0,7.0,650.0,9.0,120.0,1.0,0.0,4.0,4.0,30.0,3.0,75.0,12.0,23.214285714285715,2.3333333333333335,1.2857142857142858,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
-17.0,0.0,2.9,0.0,10.0,120.0,1.0,0.0,4.0,0.0,60.0,9.0,90.0,3.0,0.0,0.0,3.4482758620689657,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-18.0,0.0,1.0,550.0,5.0,100.0,1.0,0.0,15.0,0.0,10.0,5.0,80.0,3.0,550.0,0.0,5.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,0.0,4.0,0.0,8.0,70.0,10.0,0.0,3.0,1.0,100.0,4.0,75.0,3.0,0.0,0.0,2.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Low
-18.0,0.0,2.15,0.0,40.0,170.0,3.0,1.0,6.0,0.0,60.0,8.0,90.0,8.0,0.0,0.0,18.6046511627907,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-18.0,0.0,0.5,1.5,30.0,70.0,0.0,4.0,7.0,0.0,30.0,10.0,95.0,20.0,1.5,0.0,33.333333333333336,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,5.0,4.53,0.0,5.0,100.0,1.0,0.0,7.0,1.0,30.0,6.0,90.0,8.0,0.0,0.625,1.1037527593818983,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Average
-18.0,0.0,0.27,250.0,0.0,140.0,12.0,0.0,2.0,0.0,60.0,2.0,60.0,3.0,250.0,0.0,0.0,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
-20.0,0.0,10.0,460.0,5.0,125.0,0.0,5.0,15.0,8.0,45.0,7.0,80.0,2.0,460.0,0.0,0.5,Female,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 1,High
-19.0,0.0,17.0,880.0,10.0,190.0,100.0,6.0,16.0,1.0,10.0,6.0,100.0,3.0,880.0,0.0,0.5882352941176471,Female,In a relationship,Prefer not to say,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-18.0,13.0,8.0,0.0,15.0,130.0,1.0,15.0,17.0,0.0,60.0,0.0,50.0,2.0,0.0,6.5,1.875,Female,Its complicated,Yes,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
-19.0,6.0,2.0,0.0,10.0,110.0,10.0,10.0,7.0,2.0,80.0,4.0,85.0,5.0,0.0,1.2,5.0,Female,In a relationship,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,Average
-21.0,0.0,3.0,0.0,20.0,140.0,0.0,15.0,20.0,5.0,30.0,2.0,85.0,3.0,0.0,0.0,6.666666666666667,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-20.0,0.0,4.1,0.0,2.0,100.0,0.0,0.0,8.0,0.0,30.0,6.0,100.0,5.0,0.0,0.0,0.48780487804878053,Female,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 1,Average
+19.0,21.0,3.0,675.0,2.0,140.0,0.0,5.0,2.0,0.0,30.0,8.0,90.0,2.0,32.142857142857146,10.5,0.6666666666666666,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,Low
+19.0,0.0,6.0,470.0,5.0,80.0,0.0,5.0,5.0,1.0,30.0,7.0,90.0,6.0,470.0,0.0,0.8333333333333334,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,0.0,8.08,0.0,0.0,80.0,0.0,0.0,3.0,0.0,60.0,0.0,90.0,4.0,0.0,0.0,0.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,Low
+18.0,5.0,3.0,0.0,100.0,130.0,1.0,15.0,15.0,0.0,5.0,2.0,75.0,3.0,0.0,1.6666666666666667,33.333333333333336,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,16.5,3.0,0.0,2.0,120.0,10.0,0.0,2.0,0.0,60.0,0.0,50.0,0.0,0.0,16.5,0.6666666666666666,Female,Its complicated,Yes,Domestic,DATA1001,Other,It changes depending on the subject,Style 2,Low
+19.0,14.0,7.0,500.0,2.0,150.0,0.0,7.0,2.0,1.0,70.0,5.0,80.0,7.0,35.714285714285715,2.0,0.2857142857142857,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
 18.0,12.25,5.0,0.0,7.0,110.0,10.0,12.0,10.0,1.0,20.0,6.0,85.0,2.0,0.0,6.125,1.4,Male,In a relationship,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
-18.0,16.5,0.57,0.0,3.0,80.0,8.0,0.0,4.0,1.0,50.0,3.0,90.0,3.0,0.0,5.5,5.2631578947368425,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
-20.0,22.0,4.0,0.0,4.0,150.0,25.0,15.0,4.0,1.0,60.0,4.0,70.0,5.0,0.0,4.4,1.0,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
-18.0,0.0,4.42,280.0,10.0,90.0,0.0,2.0,9.0,0.0,20.0,7.0,90.0,2.0,280.0,0.0,2.262443438914027,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Average
-19.0,0.0,2.52,700.0,1.0,220.0,5.0,10.0,40.0,0.0,20.0,7.0,80.0,3.0,700.0,0.0,0.3968253968253968,Male,Single,Yes,International,DATA1001,Recording,I work steadily all semester,Style 1,Low
-18.0,0.0,7.3,0.0,15.0,90.0,0.0,0.0,3.0,0.0,65.0,5.0,90.0,12.0,0.0,0.0,2.0547945205479454,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Low
-18.0,0.0,5.0,0.0,1.0,100.0,0.0,2.0,4.0,0.0,45.0,3.0,70.0,1.0,0.0,0.0,0.2,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-18.0,20.0,6.0,320.0,10.0,120.0,5.0,0.0,2.0,0.0,20.0,9.0,100.0,3.0,16.0,6.666666666666667,1.6666666666666667,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-17.0,0.0,3.1,950.0,8.0,150.0,5.0,0.0,10.0,0.0,30.0,9.0,85.0,10.0,950.0,0.0,2.5806451612903225,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
-19.0,24.0,3.5,709.0,0.0,120.0,0.0,0.0,9.0,0.0,40.0,5.0,75.0,6.0,29.541666666666668,4.0,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-20.0,16.0,5.0,350.0,3.0,100.0,0.0,20.0,3.0,4.0,1.0,4.0,70.0,4.0,21.875,4.0,0.6,Male,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 2,Average
-19.0,5.0,7.0,0.0,5.0,110.0,0.0,0.0,5.0,0.0,20.0,3.0,80.0,2.0,0.0,2.5,0.7142857142857143,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
-18.0,1.0,8.5,600.0,5.0,1.0,100.0,7.0,2.0,1.0,40.0,1.0,80.0,5.0,600.0,0.2,0.5882352941176471,Male,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
-18.0,2.5,1.5,0.0,10.0,200.0,5.0,7.0,12.0,0.0,55.0,2.0,75.0,2.0,0.0,1.25,6.666666666666667,Female,In a relationship,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,High
-20.0,38.0,2.0,0.0,5.0,110.0,30.0,10.0,40.80000000000018,0.0,130.0,8.0,80.0,7.0,0.0,5.428571428571429,2.5,Male,In a relationship,Prefer not to say,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
-19.0,15.0,4.75,330.0,20.0,112.0,10.0,0.0,8.0,1.0,20.0,3.0,70.0,4.0,22.0,3.75,4.2105263157894735,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
-19.0,4.0,2.57,650.0,35.0,120.0,0.0,0.0,0.0,0.0,17.0,10.0,100.0,10.0,162.5,0.4,13.618677042801558,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-24.0,22.0,2.0,0.0,3.0,110.0,6.0,0.0,12.0,4.0,90.0,1.0,85.0,3.0,0.0,7.333333333333333,1.5,Female,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
-33.590000000000146,50.0,22.5,0.0,100.0,180.0,0.0,48.590000000000146,40.80000000000018,9.0,100.0,0.0,2.41,0.0,0.0,20.0,4.444444444444445,Male,Married,No,Domestic,DATA1901,Lecture Slides,I leave things to the last minute,Style 2,High
-19.0,35.0,2.25,0.0,30.0,120.0,2.0,2.0,11.0,1.0,52.0,6.0,80.0,6.0,0.0,5.833333333333333,13.333333333333334,Male,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
-18.0,0.0,6.0,440.0,12.0,0.0,0.0,1.0,6.0,1.0,10.0,3.0,87.0,4.0,440.0,0.0,2.0,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,6.0,3.0,0.0,5.0,120.0,2.0,12.0,21.0,0.0,40.0,5.0,60.0,3.0,0.0,2.0,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,High
+18.0,71.18000000000029,4.0,0.0,10.0,120.0,10.0,0.0,3.0,0.0,60.0,5.0,70.0,3.0,0.0,20.0,2.5,Female,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,High
+18.0,3.5,5.25,0.0,8.0,110.0,0.0,0.0,6.0,0.0,37.0,4.0,85.0,3.0,0.0,1.1666666666666667,1.5238095238095237,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
+18.0,40.0,3.0,950.0,10.0,120.0,12.0,0.0,12.0,1.0,20.0,7.0,70.0,5.0,23.75,8.0,3.3333333333333335,Male,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,High
 18.0,10.0,4.0,1000.0,0.0,120.0,0.0,0.0,12.0,0.0,15.0,2.0,75.0,5.0,100.0,2.0,0.0,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-18.0,50.0,1.25,0.0,6.0,190.0,5.0,0.0,3.0,1.0,75.0,4.0,95.0,6.0,0.0,8.333333333333334,4.8,Male,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,Average
-18.0,9.0,3.0,0.0,5.0,110.0,0.0,0.0,6.0,1.0,80.0,7.0,85.0,3.0,0.0,3.0,1.6666666666666667,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-19.0,35.0,11.14,540.0,11.0,112.0,5.0,14.0,10.0,0.0,12.0,10.0,100.0,10.0,15.428571428571429,3.5,0.9874326750448833,Male,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 3,Average
-18.0,0.0,2.5,630.0,5.0,100.0,5.0,7.0,14.0,0.0,10.0,6.0,85.0,3.0,630.0,0.0,2.0,Female,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,High
-17.0,0.0,1.2,400.0,0.0,200.0,0.0,3.0,7.0,0.0,15.0,7.0,80.0,2.0,400.0,0.0,0.0,Male,Single,No,International,DATA1901,Recording,It changes depending on the subject,Style 2,Low
-18.0,0.0,2.75,0.0,5.0,100.0,30.0,0.0,9.0,0.0,65.0,6.0,90.0,5.0,0.0,0.0,1.8181818181818181,Male,In a relationship,No,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Low
-17.0,0.0,6.5,0.0,15.0,110.0,0.0,5.0,10.0,1.0,25.0,8.0,85.0,10.0,0.0,0.0,2.3076923076923075,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
-19.0,15.0,7.0,600.0,10.0,250.0,0.0,0.0,8.0,0.0,20.0,6.0,100.0,5.0,40.0,3.0,1.4285714285714286,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
+19.0,0.0,2.0,599.0,6.0,100.0,0.0,0.0,4.0,0.0,20.0,7.0,85.0,10.0,599.0,0.0,3.0,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
+22.0,25.0,3.0,525.0,5.0,180.0,1.0,2.0,10.0,0.0,40.0,6.0,75.0,2.0,21.0,12.5,1.6666666666666667,Male,Its complicated,No,International,DATA1001,Recording,I leave things to the last minute,Style 2,High
+19.0,15.0,5.0,300.0,2.0,180.0,0.0,0.0,2.0,8.0,30.0,6.0,85.0,3.0,20.0,5.0,0.4,Female,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 2,Average
+17.0,20.0,7.0,800.0,2.0,140.0,50.0,7.0,6.0,0.0,20.0,7.0,85.0,5.0,40.0,4.0,0.2857142857142857,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,6.0,3.5,0.0,20.0,120.0,1.0,3.0,2.0,0.0,15.0,3.0,75.0,1.0,0.0,6.0,5.714285714285714,Female,Single,Prefer not to say,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+18.0,5.0,5.0,945.0,3.0,40.0,0.0,3.0,4.0,0.0,18.0,5.0,85.0,2.0,189.0,2.5,0.6,Female,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 1,Average
 18.0,0.0,1.0,599.0,20.0,150.0,0.0,5.0,6.0,0.0,20.0,3.0,100.0,3.0,599.0,0.0,20.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-18.0,18.0,6.25,0.0,0.0,100.0,20.0,0.0,0.0,1.0,60.0,5.0,80.0,15.0,0.0,1.2,0.0,Male,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Low
-24.0,56.0,12.0,909.0,5.0,100.0,0.0,0.0,3.0,2.0,30.0,6.0,85.0,3.0,16.232142857142858,18.666666666666668,0.4166666666666667,Female,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
-19.0,50.0,3.0,900.0,10.0,200.0,1.0,0.0,4.0,0.0,30.0,10.0,85.0,14.0,18.0,3.5714285714285716,3.3333333333333335,Male,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,12.0,1.0,0.0,5.0,110.0,1.0,0.0,10.0,1.0,70.0,4.0,95.0,3.0,0.0,4.0,5.0,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
-18.0,30.0,5.0,0.0,3.0,180.0,1.0,0.0,18.0,1.0,60.0,1.0,100.0,0.0,0.0,20.0,0.6,Male,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
-18.0,0.0,3.0,550.0,2.0,160.0,0.0,2.0,4.0,1.0,5.0,8.0,70.0,10.0,550.0,0.0,0.6666666666666666,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
-33.590000000000146,0.0,2.25,1135.4000000000087,2.0,200.0,0.0,0.0,20.0,1.0,60.0,7.0,80.0,4.0,1000.0,0.0,0.8888888888888888,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-18.0,7.0,6.0,799.0,1.0,50.0,0.0,1.0,3.0,1.0,1.0,3.0,70.0,2.0,114.14285714285714,3.5,0.16666666666666666,Female,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 2,Average
-22.0,34.0,1.18,350.0,0.0,110.0,20.0,4.0,2.0,9.0,30.0,1.0,85.0,3.0,10.294117647058824,11.333333333333334,0.0,Female,Its complicated,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-18.0,0.0,4.0,0.0,10.0,260.0,0.0,0.0,12.0,0.0,60.0,2.0,85.0,2.0,0.0,0.0,2.5,Female,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
-19.0,24.5,3.5,540.0,5.0,100.0,50.0,2.0,15.0,1.0,15.0,7.0,85.0,5.0,22.040816326530614,4.9,1.4285714285714286,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-19.0,0.0,6.0,460.0,5.0,120.0,3.0,2.0,25.0,0.0,40.0,7.0,80.0,8.0,460.0,0.0,0.8333333333333334,Female,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-19.0,0.0,5.65,280.0,90.0,120.0,0.0,0.0,5.0,0.0,50.0,8.0,90.0,5.0,280.0,0.0,15.929203539823007,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
-20.0,24.0,2.0,452.0,8.0,140.0,0.0,0.0,10.0,0.0,10.0,5.0,80.0,3.0,18.833333333333332,8.0,4.0,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
-19.0,12.0,6.0,0.0,30.0,268.3600000000006,20.0,10.0,15.0,2.0,70.0,5.0,88.0,0.0,0.0,12.0,5.0,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
-18.0,0.0,4.5,0.0,30.0,100.0,0.0,0.0,7.0,0.0,5.0,3.0,90.0,5.0,0.0,0.0,6.666666666666667,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
-19.0,8.0,6.0,900.0,4.0,90.0,6.0,2.0,4.0,0.0,10.0,6.0,90.0,10.0,112.5,0.8,0.6666666666666666,Female,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-23.0,0.0,9.0,475.0,10.0,60.0,0.0,0.0,6.0,1.0,15.0,5.0,85.0,3.0,475.0,0.0,1.1111111111111112,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Average
-18.0,0.0,5.0,0.0,0.0,70.0,0.0,0.0,1.0,1.0,60.0,2.0,85.0,2.0,0.0,0.0,0.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
-22.0,0.0,3.5,450.0,6.0,145.0,0.0,1.0,14.0,0.0,15.0,9.0,100.0,3.0,450.0,0.0,1.7142857142857142,Male,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
-19.0,10.0,10.0,500.0,5.0,50.0,0.0,5.0,5.0,1.0,20.0,7.0,85.0,20.0,50.0,0.5,0.5,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-18.0,30.0,4.59,0.0,1.0,0.0,0.0,0.0,5.0,2.0,50.0,6.0,90.0,10.0,0.0,3.0,0.2178649237472767,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,Low
-20.0,0.0,0.0,240.0,15.0,160.0,0.0,0.0,3.0,1.0,65.0,0.0,90.0,4.0,240.0,0.0,15.0,Female,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,High
+18.0,0.0,3.0,0.0,25.0,95.0,0.0,0.0,7.0,1.0,75.0,5.0,85.0,3.0,0.0,0.0,8.333333333333334,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+18.0,71.18000000000029,6.0,880.0,10.0,180.0,5.0,3.0,4.0,0.0,20.0,7.0,100.0,3.0,12.363023321157579,20.0,1.6666666666666667,Male,In a relationship,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 1,High
+18.0,16.0,3.87,480.0,4.0,130.0,0.0,0.0,4.0,1.0,40.0,6.0,100.0,3.0,30.0,5.333333333333333,1.0335917312661498,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
+21.0,0.0,6.5,0.0,0.0,135.0,6.0,2.0,2.0,6.0,70.0,6.0,6.0,5.0,0.0,0.0,0.0,Female,In a relationship,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+20.0,0.0,2.5,360.0,7.0,0.0,0.0,7.0,3.0,0.0,15.0,8.0,90.0,10.0,360.0,0.0,2.8,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
+18.0,0.0,13.35,0.0,2.0,190.0,0.0,0.0,13.0,0.0,60.0,7.0,100.0,3.0,0.0,0.0,0.149812734082397,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
+18.0,8.0,3.0,0.0,5.0,120.0,0.0,3.0,3.0,0.0,55.0,3.0,70.0,5.0,0.0,1.6,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
+18.0,0.0,3.6,450.0,0.0,110.0,6.0,3.0,4.0,0.0,15.0,6.0,95.0,10.0,450.0,0.0,0.0,Female,In a relationship,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,0.0,5.5,190.0,10.0,100.0,0.0,0.0,5.0,0.0,10.0,5.0,90.0,10.0,190.0,0.0,1.8181818181818181,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+19.0,0.0,4.18,362.0,8.0,100.0,0.0,0.0,15.0,1.0,10.0,5.0,55.0,1.0,362.0,0.0,1.9138755980861246,Male,Its complicated,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+19.0,7.0,3.0,0.0,5.0,140.0,4.0,0.0,8.0,1.0,50.0,4.0,85.0,5.0,0.0,1.4,1.6666666666666667,Male,In a relationship,Yes,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Low
+18.0,0.0,6.5,354.0,7.0,80.0,1.0,0.0,5.0,1.0,5.0,7.0,90.0,4.0,354.0,0.0,1.0769230769230769,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,Low
+19.0,7.0,1.5,0.0,50.0,120.0,7.0,3.0,6.0,1.0,50.0,1.0,100.0,0.0,0.0,7.0,33.333333333333336,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Low
+20.0,0.0,3.5,815.0,15.0,140.0,0.0,0.0,10.0,3.0,15.0,7.0,75.0,5.0,815.0,0.0,4.285714285714286,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+18.0,0.0,2.51,600.0,10.0,100.0,0.0,5.0,10.0,2.0,60.0,5.0,10.0,2.0,600.0,0.0,3.9840637450199208,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
+18.0,0.0,0.0,0.0,5.0,90.0,0.0,0.0,4.0,1.0,90.0,7.0,80.0,4.0,0.0,0.0,5.0,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
+20.0,20.0,6.0,300.0,7.0,0.0,100.0,21.0,3.0,4.0,30.0,10.0,60.0,10.0,15.0,2.0,1.1666666666666667,Male,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 2,High
+19.0,13.5,5.0,400.0,5.0,60.0,0.0,4.0,5.0,2.0,5.0,5.0,90.0,3.0,29.62962962962963,4.5,1.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+17.0,21.0,4.0,0.0,12.0,90.0,7.0,0.0,8.0,0.0,40.0,5.0,85.0,6.0,0.0,3.5,3.0,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+19.0,0.0,2.75,0.0,14.0,120.0,0.0,0.0,7.0,1.0,50.0,6.0,85.0,5.0,0.0,0.0,5.090909090909091,Female,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,High
 22.0,0.0,2.0,650.0,5.0,180.0,0.0,0.0,5.0,0.0,15.0,1.0,99.0,1.0,650.0,0.0,2.5,Male,Single,No,International,DATA1001,Other,It changes depending on the subject,Style 3,Average
-18.0,5.0,6.0,0.0,5.0,170.0,0.0,0.0,13.0,0.0,120.0,1.0,80.0,3.0,0.0,1.6666666666666667,0.8333333333333334,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
-18.0,0.0,3.0,610.0,4.0,120.0,0.0,0.0,10.0,0.0,15.0,9.0,90.0,2.0,610.0,0.0,1.3333333333333333,Non-binary / third gender,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
-20.0,0.0,8.18,940.0,0.0,110.0,0.0,6.0,4.0,2.0,10.0,6.0,85.0,25.0,940.0,0.0,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
-18.0,0.0,2.0,0.0,10.0,120.0,0.0,0.0,9.0,1.0,20.0,4.0,85.0,3.0,0.0,0.0,5.0,Male,Single,No,Domestic,DATA1901,Lecture Slides,It changes depending on the subject,Style 3,Low
-18.0,3.0,1.5,0.0,25.0,150.0,50.0,0.0,16.0,0.0,20.0,4.0,80.0,3.0,0.0,1.0,16.666666666666668,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-17.0,6.0,7.0,8.0,8.0,8.0,9.0,9.0,9.0,9.0,9.0,5.0,3.0,3.0,1.3333333333333333,2.0,1.1428571428571428,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,Average
-19.0,32.0,3.45,400.0,6.0,140.0,15.0,0.0,10.0,2.0,45.0,6.0,60.0,2.0,12.5,16.0,1.7391304347826086,Female,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Average
-19.0,0.0,1.38,0.0,1.0,160.0,0.0,0.0,6.0,0.0,70.0,7.0,70.0,0.0,0.0,0.0,0.7246376811594204,Male,Single,Yes,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
-18.0,40.0,22.5,759.0,6.0,120.0,20.0,4.0,3.0,0.0,20.0,4.0,75.0,6.0,18.975,6.666666666666667,0.26666666666666666,Male,In a relationship,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,High
+21.0,11.0,1.5,0.0,5.0,125.0,3.0,1.0,16.0,8.0,95.0,4.0,76.0,6.0,0.0,1.8333333333333333,3.3333333333333335,Female,In a relationship,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
+20.0,0.0,10.0,460.0,5.0,125.0,0.0,5.0,15.0,8.0,45.0,7.0,80.0,2.0,460.0,0.0,0.5,Female,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 1,High
+20.0,38.0,2.0,0.0,5.0,110.0,30.0,10.0,40.80000000000018,0.0,130.0,8.0,80.0,7.0,0.0,5.428571428571429,2.5,Male,In a relationship,Prefer not to say,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
+19.0,15.5,5.05,0.0,30.0,90.0,0.0,0.0,10.0,1.0,80.0,4.0,90.0,2.0,0.0,7.75,5.9405940594059405,Female,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
+17.0,9.0,6.58,0.0,11.0,0.0,1.0,0.0,4.0,0.0,90.0,6.0,100.0,4.0,0.0,2.25,1.6717325227963526,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Low
+22.0,0.0,6.87,250.0,5.0,120.0,0.0,0.0,15.0,1.0,50.0,7.0,80.0,6.0,250.0,0.0,0.727802037845706,Female,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,High
+19.0,0.0,6.0,900.0,3.0,0.0,0.0,0.0,10.0,0.0,40.0,5.0,60.0,6.0,900.0,0.0,0.5,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,High
+18.0,7.0,4.0,0.0,12.0,110.0,0.0,0.0,8.0,0.0,90.0,4.0,100.0,3.0,0.0,2.3333333333333335,3.0,Female,Single,No,Domestic,DATA1901,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,0.0,7.5,0.0,15.0,120.0,0.0,0.0,3.0,0.0,30.0,5.0,90.0,7.0,0.0,0.0,2.0,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
+18.0,2.0,0.75,0.0,4.0,140.0,1.0,45.0,10.0,1.0,50.0,6.0,75.0,2.0,0.0,1.0,5.333333333333333,Male,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+18.0,6.0,4.0,0.0,2.0,90.0,0.0,0.0,9.0,0.0,60.0,1.0,60.0,5.0,0.0,1.2,0.5,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+17.0,3.0,3.0,0.0,7.0,150.0,3.0,0.0,8.0,0.0,68.0,0.0,70.0,5.0,0.0,0.6,2.3333333333333335,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+18.0,0.0,4.0,0.0,10.0,260.0,0.0,0.0,12.0,0.0,60.0,2.0,85.0,2.0,0.0,0.0,2.5,Female,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
+21.0,0.0,3.5,151.0,10.0,90.0,0.0,2.0,2.0,0.0,30.0,5.0,75.0,5.0,151.0,0.0,2.857142857142857,Female,Single,Yes,International,DATA1001,Recording,It changes depending on the subject,Style 1,Average
+20.0,0.0,4.75,689.0,12.0,75.0,0.0,1.0,2.0,3.0,25.0,6.0,100.0,4.0,689.0,0.0,2.526315789473684,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
+18.0,16.0,8.35,0.0,10.0,100.0,50.0,0.0,6.0,0.0,40.0,2.0,85.0,4.0,0.0,4.0,1.1976047904191618,Female,In a relationship,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 1,Average
+20.0,30.0,10.25,150.0,2.0,180.0,100.0,7.0,2.0,4.0,70.0,0.0,100.0,3.0,5.0,10.0,0.1951219512195122,Female,In a relationship,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+17.0,36.0,2.15,0.0,10.0,120.0,3.0,0.0,3.0,0.0,70.0,4.0,85.0,2.0,0.0,18.0,4.651162790697675,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,Low
+18.0,10.0,2.5,0.0,15.0,120.0,3.0,0.0,4.0,1.0,35.0,4.0,85.0,6.0,0.0,1.6666666666666667,6.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+19.0,10.15,4.67,0.0,12.0,90.0,2.0,0.0,15.0,3.0,60.0,3.0,95.0,2.0,0.0,5.075,2.569593147751606,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+24.0,12.0,3.0,0.0,0.0,140.0,10.0,0.0,1.0,1.0,50.0,8.0,85.0,7.0,0.0,1.7142857142857142,0.0,Male,In a relationship,Yes,Domestic,DATA1901,Live Stream from Lecture Theatre,I leave things to the last minute,Style 3,Low
+20.0,0.0,1.3,0.0,15.0,120.0,10.0,0.0,4.0,4.0,30.0,5.0,80.0,1.0,0.0,0.0,11.538461538461538,Female,In a relationship,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,0.0,3.0,315.0,30.0,100.0,1.0,0.0,2.0,0.0,15.0,7.0,90.0,4.0,315.0,0.0,10.0,Female,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,0.0,2.0,595.0,3.0,180.0,0.0,0.0,13.0,0.0,20.0,7.0,90.0,6.0,595.0,0.0,1.5,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,High
+18.0,6.5,2.0,0.0,10.0,85.0,10.0,1.5,4.0,1.0,60.0,6.0,85.0,4.0,0.0,1.625,5.0,Male,In a relationship,No,Domestic,DATA1901,Recording,It changes depending on the subject,Style 1,Low
+18.0,13.0,8.0,0.0,15.0,130.0,1.0,15.0,17.0,0.0,60.0,0.0,50.0,2.0,0.0,6.5,1.875,Female,Its complicated,Yes,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
+18.0,0.0,6.0,440.0,12.0,0.0,0.0,1.0,6.0,1.0,10.0,3.0,87.0,4.0,440.0,0.0,2.0,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,5.0,4.5,0.0,0.0,100.0,0.0,0.0,1.0,0.0,20.0,6.0,90.0,18.0,0.0,0.2777777777777778,0.0,Male,Single,Yes,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+18.0,1.5,5.0,520.0,10.0,100.0,0.0,0.0,3.0,0.0,50.0,2.0,85.0,1.0,346.6666666666667,1.5,2.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+19.0,8.0,7.5,750.0,20.0,130.0,5.0,5.0,8.0,0.0,20.0,7.0,90.0,8.0,93.75,1.0,2.6666666666666665,Male,In a relationship,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
+29.0,0.0,2.0,0.0,1.0,110.0,0.0,1.0,3.0,0.0,90.0,4.0,80.0,6.0,0.0,0.0,0.5,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,0.0,4.5,0.0,30.0,100.0,0.0,0.0,7.0,0.0,5.0,3.0,90.0,5.0,0.0,0.0,6.666666666666667,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+24.0,10.5,0.56,0.0,2.0,130.0,20.0,0.0,10.0,10.0,35.0,0.0,50.0,2.0,0.0,5.25,3.571428571428571,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+18.0,0.0,3.3,1135.4000000000087,2.0,120.0,1.0,6.0,11.0,0.0,37.0,6.0,7.0,8.0,1000.0,0.0,0.6060606060606061,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 1,Low
+18.0,16.0,1.0,0.0,25.0,140.0,0.0,12.0,5.0,0.0,20.0,6.0,90.0,5.0,0.0,3.2,25.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,28.0,9.0,0.0,5.0,90.0,0.0,6.5,5.0,0.0,130.0,2.0,85.0,6.0,0.0,4.666666666666667,0.5555555555555556,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+22.0,10.0,10.0,400.0,5.0,200.0,2.0,5.0,5.0,0.0,10.0,6.0,90.0,2.0,40.0,5.0,0.5,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+18.0,0.0,3.45,225.0,0.0,150.0,0.0,1.0,15.0,0.0,35.0,8.0,100.0,10.0,225.0,0.0,0.0,Male,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+19.0,24.0,3.5,709.0,0.0,120.0,0.0,0.0,9.0,0.0,40.0,5.0,75.0,6.0,29.541666666666668,4.0,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+19.0,10.0,6.0,0.0,6.0,120.0,2.0,0.0,4.0,0.0,90.0,3.0,100.0,3.0,0.0,3.3333333333333335,1.0,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
+18.0,9.0,4.0,0.0,5.0,120.0,10.0,0.0,10.0,0.0,90.0,4.0,80.0,5.0,0.0,1.8,1.25,Female,In a relationship,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Low
+19.0,24.0,2.5,0.0,5.0,140.0,5.0,8.0,20.0,0.0,90.0,5.0,75.0,4.0,0.0,6.0,2.0,Female,In a relationship,Prefer not to say,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+18.0,6.0,3.0,0.0,4.0,110.0,0.0,1.0,7.0,0.0,90.0,7.0,86.0,4.0,0.0,1.5,1.3333333333333333,Male,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,0.0,2.15,0.0,40.0,170.0,3.0,1.0,6.0,0.0,60.0,8.0,90.0,8.0,0.0,0.0,18.6046511627907,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+18.0,0.0,3.5,549.0,10.0,120.0,0.0,0.0,2.0,0.0,20.0,5.0,90.0,5.0,549.0,0.0,2.857142857142857,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+18.0,9.0,6.0,0.0,5.0,130.0,0.0,0.0,4.0,0.0,60.0,3.0,60.0,2.0,0.0,4.5,0.8333333333333334,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,High
+18.0,11.5,0.883,0.0,17.0,110.0,1.0,2.5,3.0,1.0,50.0,6.0,90.0,5.0,0.0,2.3,19.25254813137033,Male,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+22.0,0.0,6.5,0.0,10.0,0.0,0.0,3.0,10.0,1.0,45.0,5.0,85.0,3.0,0.0,0.0,1.5384615384615385,Male,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 3,Average
+19.0,71.18000000000029,5.0,0.0,2.0,100.0,100.0,0.0,4.0,1.0,90.0,2.0,100.0,5.0,0.0,14.236000000000057,0.4,Female,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 2,High
+19.0,35.0,2.25,0.0,30.0,120.0,2.0,2.0,11.0,1.0,52.0,6.0,80.0,6.0,0.0,5.833333333333333,13.333333333333334,Male,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
 33.590000000000146,25.0,5.0,800.0,1.0,120.0,100.0,48.590000000000146,40.80000000000018,0.0,15.0,4.0,100.0,25.0,32.0,1.0,0.2,Female,Its complicated,Prefer not to say,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,High
-26.0,35.0,2.39,780.0,0.0,90.0,12.0,0.0,7.0,0.0,60.0,6.0,90.0,4.0,22.285714285714285,8.75,0.0,Female,Married,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
-19.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,6.0,2.41,1.0,1.0,1.0,1.0,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Average
-18.0,0.0,2.5,0.0,2.0,120.0,50.0,4.0,5.0,0.0,90.0,7.0,100.0,3.0,0.0,0.0,0.8,Female,In a relationship,Prefer not to say,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
-20.0,0.0,5.0,420.0,1.0,120.0,5.0,20.0,2.0,0.0,40.0,10.0,85.0,2.0,420.0,0.0,0.2,Male,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,High
-19.0,0.0,6.0,0.0,5.0,210.0,0.0,2.0,5.0,0.0,50.0,3.0,100.0,5.0,0.0,0.0,0.8333333333333334,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-19.0,27.0,2.0,0.0,15.0,120.0,10.0,20.0,10.0,0.0,35.0,5.0,60.0,2.0,0.0,13.5,7.5,Male,Single,Prefer not to say,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-19.0,16.0,1.43,0.0,12.0,130.0,0.0,13.0,10.0,0.0,100.0,6.0,80.0,3.0,0.0,5.333333333333333,8.391608391608392,Male,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
-18.0,5.0,3.0,0.0,5.0,100.0,0.0,1.0,7.0,0.0,30.0,4.0,90.0,5.0,0.0,1.0,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Average
-18.0,0.0,4.5,550.0,10.0,240.0,0.0,20.0,14.0,2.0,25.0,2.0,85.0,3.0,550.0,0.0,2.2222222222222223,Female,Single,Yes,International,DATA1001,Recording,I leave things to the last minute,Style 3,High
+18.0,20.0,9.0,592.0,6.0,130.0,0.0,0.0,6.0,0.0,30.0,5.0,90.0,6.0,29.6,3.3333333333333335,0.6666666666666666,Male,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,High
+21.0,20.0,2.0,0.0,30.0,200.0,2.0,20.0,20.0,2.0,120.0,8.0,70.0,20.0,0.0,1.0,15.0,Male,Its complicated,Prefer not to say,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,High
+18.0,0.0,4.3333,0.0,15.0,150.0,0.0,0.0,5.0,1.0,75.0,7.0,90.0,5.0,0.0,0.0,3.4615650889622227,Male,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,High
+18.0,14.5,4.933,0.0,10.0,110.0,1.0,3.0,10.0,0.0,80.0,3.0,80.0,3.0,0.0,4.833333333333333,2.027163997567403,Female,Single,Prefer not to say,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
+20.0,2.0,4.0,0.0,20.0,150.0,50.0,0.0,5.0,4.0,75.0,5.0,75.0,8.0,0.0,0.25,5.0,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,1.0,8.5,600.0,5.0,1.0,100.0,7.0,2.0,1.0,40.0,1.0,80.0,5.0,600.0,0.2,0.5882352941176471,Male,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
+22.0,0.0,6.0,510.0,2.0,200.0,10.0,3.0,10.0,1.0,5.0,8.0,90.0,5.0,510.0,0.0,0.3333333333333333,Female,In a relationship,Yes,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
+20.0,0.0,4.5,550.0,7.0,177.0,2.0,30.0,4.0,4.0,28.0,7.0,95.0,3.0,550.0,0.0,1.5555555555555556,Male,In a relationship,No,International,DATA1001,Recording,I leave things to the last minute,Style 3,Low
+21.0,0.0,5.4,0.0,2.0,130.0,10.0,0.0,6.0,0.0,50.0,8.0,100.0,3.0,0.0,0.0,0.37037037037037035,Female,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 3,High
+20.0,0.0,1.21,629.0,0.0,160.0,0.0,0.0,5.0,0.0,15.0,8.0,85.0,3.0,629.0,0.0,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+18.0,9.0,3.0,599.0,8.0,120.0,0.0,2.0,4.0,0.0,15.0,6.0,80.0,3.0,66.55555555555556,3.0,2.6666666666666665,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+19.0,0.0,5.65,280.0,90.0,120.0,0.0,0.0,5.0,0.0,50.0,8.0,90.0,5.0,280.0,0.0,15.929203539823007,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+19.0,0.0,7.0,360.0,5.0,180.0,0.0,0.0,15.0,2.0,40.0,5.0,85.0,9.0,360.0,0.0,0.7142857142857143,Male,Single,Prefer not to say,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,0.0,2.0,600.0,20.0,220.0,4.0,8.0,7.0,0.0,2.0,8.0,85.0,6.0,600.0,0.0,10.0,Male,In a relationship,Yes,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
+20.0,24.0,2.0,452.0,8.0,140.0,0.0,0.0,10.0,0.0,10.0,5.0,80.0,3.0,18.833333333333332,8.0,4.0,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+21.0,0.0,5.0,0.0,6.0,140.0,0.0,0.0,20.0,0.0,70.0,8.0,90.0,6.0,0.0,0.0,1.2,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
+18.0,18.0,6.25,0.0,0.0,100.0,20.0,0.0,0.0,1.0,60.0,5.0,80.0,15.0,0.0,1.2,0.0,Male,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Low
+21.0,18.0,5.36,0.0,0.0,120.0,0.0,0.0,3.0,6.0,30.0,5.0,85.0,4.0,0.0,4.5,0.0,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+19.0,20.0,7.5,0.0,15.0,150.0,50.0,8.0,23.0,3.0,90.0,2.0,85.0,3.0,0.0,6.666666666666667,2.0,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+19.0,8.0,6.0,900.0,4.0,90.0,6.0,2.0,4.0,0.0,10.0,6.0,90.0,10.0,112.5,0.8,0.6666666666666666,Female,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+20.0,28.0,7.0,650.0,9.0,120.0,1.0,0.0,4.0,4.0,30.0,3.0,75.0,12.0,23.214285714285715,2.3333333333333335,1.2857142857142858,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,0.0,1.33,0.0,4.0,112.0,0.0,1.0,0.0,1.0,110.0,1.0,50.0,2.0,0.0,0.0,3.007518796992481,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
+18.0,0.0,4.5,637.0,3.0,50.0,0.0,0.0,10.0,0.0,30.0,8.0,90.0,5.0,637.0,0.0,0.6666666666666666,Female,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 2,Average
+18.0,0.0,4.0,0.0,40.0,100.0,1.0,15.0,15.0,0.0,60.0,0.0,80.0,3.0,0.0,0.0,10.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,High
+22.0,71.18000000000029,6.0,730.0,10.0,200.0,4.0,0.0,3.0,0.0,40.0,6.0,85.0,14.0,10.255689800505719,5.084285714285735,1.6666666666666667,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,0.0,4.05,0.0,27.0,120.0,7.0,0.0,17.0,0.0,80.0,3.0,90.0,2.0,0.0,0.0,6.666666666666667,Non-binary / third gender,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+20.0,0.0,4.1,0.0,2.0,100.0,0.0,0.0,8.0,0.0,30.0,6.0,100.0,5.0,0.0,0.0,0.48780487804878053,Female,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 1,Average
+18.0,0.0,5.45,0.0,3.0,120.0,0.0,3.0,2.0,0.0,45.0,3.0,70.0,4.0,0.0,0.0,0.5504587155963303,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+20.0,22.0,4.0,0.0,4.0,150.0,25.0,15.0,4.0,1.0,60.0,4.0,70.0,5.0,0.0,4.4,1.0,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
+18.0,23.5,5.0,0.0,8.0,120.0,6.0,8.0,40.80000000000018,0.0,45.0,1.0,90.0,6.0,0.0,3.9166666666666665,1.6,Male,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,High
+19.0,15.0,2.0,859.0,5.0,150.0,0.0,0.0,8.0,0.0,20.0,9.0,90.0,20.0,57.266666666666666,0.75,2.5,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,1.0,8.0,0.0,2.0,50.0,0.0,0.0,2.0,1.0,30.0,7.0,75.0,3.0,0.0,0.3333333333333333,0.25,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
+18.0,30.0,3.0,0.0,3.0,130.0,0.0,1.0,20.0,0.0,40.0,6.0,80.0,4.0,0.0,7.5,1.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,High
+19.0,0.0,3.0,450.0,5.0,120.0,0.0,0.0,3.0,4.0,120.0,5.0,100.0,20.0,450.0,0.0,1.6666666666666667,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
+21.0,0.0,3.0,400.0,4.0,130.0,12.0,0.0,2.0,1.0,40.0,5.0,80.0,6.0,400.0,0.0,1.3333333333333333,Male,In a relationship,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Average
+18.0,50.0,1.25,0.0,6.0,190.0,5.0,0.0,3.0,1.0,75.0,4.0,95.0,6.0,0.0,8.333333333333334,4.8,Male,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,Average
+20.0,0.0,0.75,0.0,0.0,130.0,0.0,0.0,1.0,3.0,120.0,7.0,85.0,6.0,0.0,0.0,0.0,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 1,Low
+20.0,8.0,1.15,0.0,1.0,90.0,0.0,0.0,3.0,2.0,80.0,2.0,85.0,7.0,0.0,1.1428571428571428,0.8695652173913044,Female,Single,No,Domestic,DATA1001,Lecture Slides,I leave things to the last minute,Style 1,High
+18.0,7.0,1.0,896.0,0.0,160.0,0.0,0.0,7.0,0.0,30.0,10.0,100.0,10.0,128.0,0.7,0.0,Male,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 1,High
+19.0,0.0,7.45,0.0,4.0,120.0,0.0,0.0,2.0,2.0,20.0,6.0,3.0,5.0,0.0,0.0,0.5369127516778524,Female,Single,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 1,Average
+19.0,0.0,8.1,725.0,2.0,100.0,0.0,0.0,6.0,1.0,40.0,7.0,75.0,5.0,725.0,0.0,0.2469135802469136,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+18.0,5.5,0.5,0.0,3.0,120.0,100.0,8.0,9.0,0.0,90.0,2.0,55.0,4.0,0.0,1.375,6.0,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+19.0,6.0,2.0,0.0,10.0,110.0,10.0,10.0,7.0,2.0,80.0,4.0,85.0,5.0,0.0,1.2,5.0,Female,In a relationship,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,Average
+18.0,0.0,5.17,0.0,5.0,115.0,0.0,0.0,4.0,1.0,30.0,3.0,85.0,3.0,0.0,0.0,0.9671179883945842,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+19.0,0.0,4.12,800.0,8.0,100.0,100.0,5.0,15.0,0.0,50.0,5.0,75.0,2.0,800.0,0.0,1.941747572815534,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 1,High
+18.0,12.0,2.0,0.0,5.0,100.0,20.0,5.0,16.0,0.0,75.0,5.0,75.0,2.0,0.0,6.0,2.5,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,7.0,7.0,700.0,5.0,120.0,1.0,3.0,6.0,0.0,15.0,6.0,80.0,2.0,100.0,3.5,0.7142857142857143,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+17.0,32.0,4.0,900.0,50.0,60.0,0.0,0.0,8.0,0.0,30.0,2.0,90.0,4.0,28.125,8.0,12.5,Female,Single,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 1,Low
+22.0,14.0,2.0,0.0,1.0,100.0,0.0,0.0,3.0,6.0,40.0,9.0,85.0,8.0,0.0,1.75,0.5,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,High
+18.0,0.0,4.5,0.0,8.0,150.0,5.0,5.0,6.0,1.0,30.0,6.0,85.0,3.0,0.0,0.0,1.7777777777777777,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+18.0,24.0,3.0,0.0,2.0,140.0,18.0,0.0,10.0,1.0,50.0,4.0,90.0,10.0,0.0,2.4,0.6666666666666666,Female,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,12.0,0.75,0.0,15.0,110.0,0.0,0.0,3.0,0.0,50.0,6.0,50.0,3.0,0.0,4.0,20.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
 17.0,0.0,2.0,0.0,7.0,94.0,0.0,0.0,4.0,1.0,53.0,8.0,90.0,6.0,0.0,0.0,3.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,0.0,3.0,0.0,40.0,268.3600000000006,3.0,6.0,20.0,0.0,100.0,6.0,88.0,2.0,0.0,0.0,13.333333333333334,Female,Its complicated,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+19.0,0.0,4.0,0.0,1.0,120.0,0.0,0.0,5.0,1.0,45.0,5.0,70.0,4.0,0.0,0.0,0.25,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
+21.0,30.0,3.8,550.0,1.0,120.0,0.0,10.0,13.0,3.0,30.0,4.0,85.0,10.0,18.333333333333332,3.0,0.2631578947368421,Female,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 3,Average
+18.0,7.0,2.35,0.0,30.0,140.0,0.0,12.0,7.0,1.0,30.0,0.0,50.0,1.0,0.0,7.0,12.76595744680851,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
+18.0,0.0,3.0,639.0,20.0,100.0,0.0,0.0,4.0,0.0,30.0,6.0,85.0,5.0,639.0,0.0,6.666666666666667,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,5.0,0.5,0.0,1.0,135.0,0.0,0.0,5.0,1.0,75.0,4.0,80.0,1.0,0.0,5.0,2.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+20.0,15.0,3.75,0.0,0.0,110.0,30.0,10.0,6.0,3.0,60.0,4.0,85.0,3.0,0.0,5.0,0.0,Male,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
+19.0,2.0,4.0,0.0,2.0,110.0,0.0,0.0,20.0,1.0,30.0,3.0,90.0,3.0,0.0,0.6666666666666666,0.5,Female,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Low
+18.0,0.0,4.0,367.0,12.0,130.0,4.0,14.0,9.0,0.0,10.0,5.0,80.0,3.0,367.0,0.0,3.0,Male,Its complicated,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
+24.0,20.0,3.0,630.0,6.0,120.0,30.0,2.0,1.0,10.0,30.0,7.0,90.0,5.0,31.5,4.0,2.0,Male,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+19.0,24.0,4.15,530.0,6.0,140.0,2.0,2.0,7.0,2.0,19.0,5.0,70.0,2.0,22.083333333333332,12.0,1.4457831325301203,Female,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,High
+18.0,10.0,4.5,550.0,100.0,90.0,3.0,14.0,5.0,0.0,2.0,6.0,86.0,5.0,55.0,2.0,22.22222222222222,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,8.0,5.0,0.0,12.0,160.0,0.0,0.0,12.0,2.0,45.0,1.0,99.0,5.0,0.0,1.6,2.4,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+19.0,0.0,3.0,639.0,3.0,140.0,0.0,0.0,5.0,0.0,20.0,8.0,80.0,4.0,639.0,0.0,1.0,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,Average
+17.0,0.0,5.0,400.0,20.0,120.0,0.0,0.0,10.0,0.0,75.0,7.0,85.0,2.0,400.0,0.0,4.0,Female,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+19.0,15.0,7.0,600.0,10.0,250.0,0.0,0.0,8.0,0.0,20.0,6.0,100.0,5.0,40.0,3.0,1.4285714285714286,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,0.0,3.5,0.0,11.0,35.0,0.0,0.0,4.0,0.0,80.0,6.0,85.0,5.0,0.0,0.0,3.142857142857143,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,Low
+18.0,0.0,3.0,250.0,20.0,140.0,0.0,0.0,4.0,0.0,15.0,9.0,95.0,10.0,250.0,0.0,6.666666666666667,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
+19.0,17.0,3.0,0.0,2.0,130.0,20.0,10.0,8.0,1.0,60.0,0.0,80.0,0.0,0.0,17.0,0.6666666666666666,Female,Its complicated,Yes,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,High
+20.0,0.0,3.0,700.0,10.0,100.0,0.0,0.0,4.0,0.0,30.0,6.0,80.0,2.0,700.0,0.0,3.3333333333333335,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Low
+21.0,0.0,2.5,800.0,7.0,160.0,0.0,0.0,35.0,0.0,15.0,3.0,90.0,5.0,800.0,0.0,2.8,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,High
+19.0,0.0,7.1,485.0,10.0,122.0,50.0,0.0,8.0,1.0,45.0,2.0,100.0,2.0,485.0,0.0,1.4084507042253522,Male,Its complicated,Yes,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+19.0,15.0,4.75,330.0,20.0,112.0,10.0,0.0,8.0,1.0,20.0,3.0,70.0,4.0,22.0,3.75,4.2105263157894735,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,16.0,2.0,0.0,4.0,130.0,20.0,0.0,2.0,1.0,70.0,1.0,70.0,4.0,0.0,4.0,2.0,Female,In a relationship,Prefer not to say,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
+18.0,0.0,1.0,0.0,4.0,110.0,0.0,0.0,3.0,1.0,60.0,3.0,80.0,3.0,0.0,0.0,4.0,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,5.0,5.0,550.0,1.0,70.0,0.0,4.0,2.0,0.0,10.0,6.0,100.0,3.0,110.0,1.6666666666666667,0.2,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+17.0,0.0,1.1,0.0,8.0,110.0,0.0,0.0,19.0,0.0,49.0,4.0,75.0,10.0,0.0,0.0,7.2727272727272725,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Low
+17.0,10.0,6.0,0.0,5.0,130.0,11.0,0.0,3.0,0.0,45.0,7.0,80.0,3.0,0.0,3.3333333333333335,0.8333333333333334,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,0.0,7.5,480.0,40.0,200.0,1.0,20.0,5.0,0.0,30.0,8.0,85.0,3.0,480.0,0.0,5.333333333333333,Male,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,0.0,2.45,0.0,50.0,140.0,5.0,20.0,0.0,0.0,10.0,2.0,65.0,2.0,0.0,0.0,20.408163265306122,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,15.0,5.08,0.0,10.0,115.0,3.0,0.0,10.0,1.0,40.0,2.0,70.0,3.0,0.0,5.0,1.968503937007874,Female,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
+18.0,5.0,3.0,0.0,5.0,120.0,0.0,0.0,1.0,0.0,50.0,5.0,80.0,2.0,0.0,2.5,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,1.0,5.5,0.0,3.0,120.0,0.0,0.0,5.0,1.0,40.0,8.0,85.0,3.0,0.0,0.3333333333333333,0.5454545454545454,Non-binary / third gender,Single,No,Domestic,DATA1901,Recording,I work steadily all semester,Style 1,High
+19.0,35.0,11.14,540.0,11.0,112.0,5.0,14.0,10.0,0.0,12.0,10.0,100.0,10.0,15.428571428571429,3.5,0.9874326750448833,Male,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 3,Average
+19.0,34.0,3.4,600.0,0.0,130.0,0.0,0.0,8.0,0.0,15.0,5.0,80.0,5.0,17.647058823529413,6.8,0.0,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+20.0,0.0,5.0,0.0,4.0,200.0,1.0,15.0,37.0,2.0,20.0,10.0,100.0,1.0,0.0,0.0,0.8,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Average
+19.0,0.0,3.46,585.0,0.0,70.0,0.0,0.0,5.0,2.0,38.0,7.0,100.0,2.0,585.0,0.0,0.0,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Low
+18.0,0.0,5.0,0.0,0.0,70.0,0.0,0.0,1.0,1.0,60.0,2.0,85.0,2.0,0.0,0.0,0.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,0.0,4.5,375.0,5.0,100.0,15.0,4.0,2.0,2.0,30.0,7.0,90.0,7.0,375.0,0.0,1.1111111111111112,Female,In a relationship,Yes,International,DATA1001,Recording,It changes depending on the subject,Style 3,High
+19.0,0.0,2.52,700.0,1.0,220.0,5.0,10.0,40.0,0.0,20.0,7.0,80.0,3.0,700.0,0.0,0.3968253968253968,Male,Single,Yes,International,DATA1001,Recording,I work steadily all semester,Style 1,Low
+18.0,5.0,6.0,0.0,5.0,170.0,0.0,0.0,13.0,0.0,120.0,1.0,80.0,3.0,0.0,1.6666666666666667,0.8333333333333334,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
+18.0,0.0,3.0,0.0,10.0,268.3600000000006,4.0,15.0,12.0,0.0,40.0,6.0,80.0,3.0,0.0,0.0,3.3333333333333335,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,Average
+18.0,0.0,2.3,340.0,0.0,120.0,0.0,0.0,2.0,0.0,15.0,7.0,9.0,24.0,340.0,0.0,0.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,Average
+18.0,0.0,2.0,770.0,20.0,120.0,100.0,1.0,15.0,0.0,10.0,9.0,90.0,5.0,770.0,0.0,10.0,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,40.0,22.5,759.0,6.0,120.0,20.0,4.0,3.0,0.0,20.0,4.0,75.0,6.0,18.975,6.666666666666667,0.26666666666666666,Male,In a relationship,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,High
+19.0,71.18000000000029,3.5,350.0,5.0,200.0,4.0,10.0,40.80000000000018,0.0,60.0,3.0,90.0,15.0,4.917111548187673,4.7453333333333525,1.4285714285714286,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Average
+19.0,10.0,10.0,500.0,5.0,50.0,0.0,5.0,5.0,1.0,20.0,7.0,85.0,20.0,50.0,0.5,0.5,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,9.0,6.0,875.0,4.0,80.0,52.0,5.0,2.0,3.0,32.0,5.0,80.0,2.0,97.22222222222223,4.5,0.6666666666666666,Female,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 2,Average
+19.0,0.0,0.59,729.0,15.0,120.0,1.0,0.0,25.0,0.0,5.0,8.0,100.0,8.0,729.0,0.0,25.423728813559322,Prefer not to say,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+19.0,0.0,9.38,300.0,30.0,160.0,8.0,10.0,19.0,1.0,60.0,8.0,85.0,4.0,300.0,0.0,3.1982942430703623,Male,In a relationship,Yes,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Low
+22.0,0.0,4.0,0.0,5.0,100.0,15.0,0.0,7.0,4.0,90.0,2.0,75.0,4.0,0.0,0.0,1.25,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+18.0,0.0,5.0,200.0,12.0,60.0,0.0,0.0,2.0,1.0,45.0,7.0,90.0,3.0,200.0,0.0,2.4,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+17.0,0.0,3.5,609.0,4.0,252.0,0.0,0.0,15.0,0.0,30.0,6.0,65.0,4.0,609.0,0.0,1.1428571428571428,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+19.0,12.0,6.0,0.0,30.0,268.3600000000006,20.0,10.0,15.0,2.0,70.0,5.0,88.0,0.0,0.0,12.0,5.0,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+18.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,7.0,2.41,0.0,0.0,0.0,0.0,Female,Single,Prefer not to say,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
+17.0,0.0,6.25,0.0,4.0,120.0,0.0,1.0,3.0,0.0,62.0,7.0,90.0,4.0,0.0,0.0,0.64,Male,In a relationship,No,Domestic,DATA1901,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
+18.0,0.0,5.18,0.0,6.0,110.0,0.0,2.0,3.0,0.0,90.0,3.0,85.0,5.0,0.0,0.0,1.1583011583011584,Female,In a relationship,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,High
+18.0,0.0,4.0,0.0,8.0,70.0,10.0,0.0,3.0,1.0,100.0,4.0,75.0,3.0,0.0,0.0,2.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Low
+19.0,20.0,7.0,0.0,3.0,80.0,1.0,0.0,3.0,0.0,60.0,4.0,80.0,5.0,0.0,4.0,0.42857142857142855,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Average
+22.0,34.0,1.18,350.0,0.0,110.0,20.0,4.0,2.0,9.0,30.0,1.0,85.0,3.0,10.294117647058824,11.333333333333334,0.0,Female,Its complicated,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,0.0,4.15,0.0,2.0,120.0,0.0,0.0,6.0,0.0,40.0,3.0,70.0,5.0,0.0,0.0,0.48192771084337344,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+19.0,14.0,8.0,600.0,6.0,150.0,3.0,7.0,15.0,0.0,50.0,4.0,75.0,2.0,42.857142857142854,7.0,0.75,Male,In a relationship,No,International,DATA1001,Recording,I leave things to the last minute,Style 3,Average
+19.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,6.0,11.0,1.0,1.0,1.0,1.0,Female,Single,No,Domestic,DATA1001,Lecture Slides,I leave things to the last minute,Style 3,Average
+18.0,31.5,1.75,0.0,2.0,100.0,0.0,0.0,7.0,0.0,85.0,2.0,80.0,3.0,0.0,10.5,1.1428571428571428,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,Average
+19.0,0.0,9.25,0.0,9.0,150.0,4.0,2.0,14.0,0.0,30.0,2.0,85.0,3.0,0.0,0.0,0.972972972972973,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,High
+17.0,0.0,6.0,350.0,25.0,220.0,8.0,0.0,2.0,0.0,80.0,7.0,100.0,4.0,350.0,0.0,4.166666666666667,Male,In a relationship,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 1,Low
+18.0,0.0,1.0,550.0,5.0,100.0,1.0,0.0,15.0,0.0,10.0,5.0,80.0,3.0,550.0,0.0,5.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+20.0,32.0,2.5,300.0,4.0,130.0,20.0,1.0,7.0,4.0,60.0,5.0,80.0,5.0,9.375,6.4,1.6,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+19.0,28.0,5.0,0.0,2.0,120.0,0.0,3.0,5.0,0.0,10.0,6.0,85.0,5.0,0.0,5.6,0.4,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+22.0,11.0,0.5,0.0,5.0,180.0,10.0,0.0,1.0,8.0,40.0,4.0,75.0,4.0,0.0,2.75,10.0,Male,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,High
+20.0,12.0,5.0,520.0,1.0,120.0,3.0,3.0,4.0,0.0,30.0,6.0,85.0,5.0,43.333333333333336,2.4,0.2,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,High
+17.0,0.0,2.0,0.0,5.0,120.0,0.0,0.0,0.0,0.0,90.0,7.0,100.0,6.0,0.0,0.0,2.5,Female,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
+19.0,27.0,4.47,0.0,12.0,120.0,7.0,11.0,9.0,0.0,95.0,2.0,70.0,2.0,0.0,13.5,2.684563758389262,Female,Single,Prefer not to say,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 2,Low
+18.0,16.5,0.57,0.0,3.0,80.0,8.0,0.0,4.0,1.0,50.0,3.0,90.0,3.0,0.0,5.5,5.2631578947368425,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
+19.0,0.0,2.25,350.0,5.0,80.0,0.0,0.0,15.0,0.0,30.0,6.0,100.0,3.0,350.0,0.0,2.2222222222222223,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,10.0,2.5,0.0,3.0,120.0,20.0,8.0,5.0,0.0,1.2,5.0,80.0,3.0,0.0,3.3333333333333335,1.2,Female,In a relationship,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,0.0,4.5,550.0,10.0,240.0,0.0,20.0,14.0,2.0,25.0,2.0,85.0,3.0,550.0,0.0,2.2222222222222223,Female,Single,Yes,International,DATA1001,Recording,I leave things to the last minute,Style 3,High
+17.0,9.0,0.75,0.0,4.0,110.0,12.0,0.0,9.0,0.0,75.0,7.0,100.0,3.0,0.0,3.0,5.333333333333333,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
+22.0,1.0,6.25,290.0,10.0,60.0,0.0,10.0,5.0,2.0,60.0,5.0,75.0,6.0,290.0,0.16666666666666666,1.6,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+21.0,10.0,5.16,350.0,15.0,0.0,7.0,1.0,10.0,1.0,20.0,7.0,50.0,7.0,35.0,1.4285714285714286,2.9069767441860463,Female,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 3,Average
+17.0,0.0,7.0,769.0,20.0,50.0,0.0,0.0,4.0,0.0,30.0,8.0,80.0,5.0,769.0,0.0,2.857142857142857,Female,Single,No,International,DATA1001,Other,It changes depending on the subject,Style 1,Low
+18.0,15.0,3.75,0.0,15.0,120.0,18.0,10.0,13.0,1.0,25.0,1.0,75.0,4.0,0.0,3.75,4.0,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+18.0,0.0,1.5,400.0,3.0,110.0,0.0,3.0,9.0,1.0,15.0,8.0,90.0,3.0,400.0,0.0,2.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
+18.0,5.0,6.0,0.0,10.0,100.0,2.0,2.0,15.0,1.0,90.0,2.0,80.0,4.0,0.0,1.25,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+21.0,42.5,5.5,210.0,0.0,120.0,5.0,20.0,10.0,3.0,45.0,6.0,51.0,5.0,4.9411764705882355,8.5,0.0,Male,In a relationship,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,High
+20.0,38.0,6.0,400.0,3.0,130.0,10.0,4.0,13.0,5.0,30.0,8.0,80.0,8.0,10.526315789473685,4.75,0.5,Female,In a relationship,Prefer not to say,International,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,0.0,3.0,550.0,2.0,160.0,0.0,2.0,4.0,1.0,5.0,8.0,70.0,10.0,550.0,0.0,0.6666666666666666,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,35.0,4.3,679.0,10.0,0.0,0.0,0.0,13.0,0.0,20.0,4.0,75.0,8.0,19.4,4.375,2.3255813953488373,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,High
+22.0,20.0,2.0,480.0,2.0,90.0,2.0,8.0,1.0,2.0,15.0,4.0,75.0,20.0,24.0,1.0,1.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+20.0,0.0,4.0,0.0,0.0,150.0,0.0,0.0,2.0,0.0,20.0,5.0,85.0,8.0,0.0,0.0,0.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+19.0,0.0,3.5,378.0,10.0,120.0,0.0,1.0,7.0,1.0,5.0,5.0,95.0,2.0,378.0,0.0,2.857142857142857,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+21.0,22.0,10.5,0.0,40.0,180.0,8.0,14.0,25.0,7.0,100.0,1.0,89.0,3.0,0.0,7.333333333333333,3.8095238095238093,Female,Its complicated,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+17.0,0.0,1.2,400.0,0.0,200.0,0.0,3.0,7.0,0.0,15.0,7.0,80.0,2.0,400.0,0.0,0.0,Male,Single,No,International,DATA1901,Recording,It changes depending on the subject,Style 2,Low
+25.0,0.0,2.0,0.0,0.0,120.0,10.0,10.0,40.80000000000018,8.0,90.0,4.0,100.0,4.0,0.0,0.0,0.0,Male,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Low
+21.0,0.0,1.5,200.0,10.0,150.0,0.0,4.0,4.0,0.0,13.0,7.0,85.0,3.0,200.0,0.0,6.666666666666667,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Average
+18.0,0.0,0.05,0.0,5.0,100.0,0.0,0.0,8.0,0.0,60.0,5.0,85.0,4.0,0.0,0.0,33.333333333333336,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+19.0,50.0,3.0,900.0,10.0,200.0,1.0,0.0,4.0,0.0,30.0,10.0,85.0,14.0,18.0,3.5714285714285716,3.3333333333333335,Male,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,2.0,0.5,0.0,15.0,140.0,20.0,0.0,3.0,0.0,75.0,5.0,85.0,3.0,0.0,0.6666666666666666,30.0,Male,In a relationship,No,Domestic,DATA1901,Recording,I work steadily all semester,Style 1,Average
+19.0,56.0,4.7,950.0,3.0,130.0,0.0,1.5,4.0,0.0,20.0,9.0,85.0,10.0,16.964285714285715,5.6,0.6382978723404255,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+23.0,23.0,1.5,250.0,3.0,130.0,3.0,5.0,2.0,10.0,30.0,9.0,95.0,10.0,10.869565217391305,2.3,2.0,Non-binary / third gender,In a relationship,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,High
+19.0,20.0,1.5,0.0,10.0,120.0,0.0,0.0,3.0,3.0,70.0,7.0,85.0,1.0,0.0,20.0,6.666666666666667,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,Low
+19.0,0.0,4.19,600.0,16.0,0.0,8.0,1.0,9.0,1.0,3.0,8.0,95.0,4.0,600.0,0.0,3.818615751789976,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+19.0,12.0,3.0,2.0,8.0,140.0,1.0,5.0,2.0,0.0,30.0,9.0,75.0,4.0,0.16666666666666666,3.0,2.6666666666666665,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
+18.0,20.0,6.0,320.0,10.0,120.0,5.0,0.0,2.0,0.0,20.0,9.0,100.0,3.0,16.0,6.666666666666667,1.6666666666666667,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+20.0,3.0,8.0,690.0,10.0,120.0,0.0,7.0,8.0,2.0,20.0,5.0,90.0,2.0,230.0,1.5,1.25,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+19.0,15.0,9.5,0.0,5.0,80.0,3.0,0.0,7.0,6.0,70.0,1.0,85.0,3.0,0.0,5.0,0.5263157894736842,Female,In a relationship,Yes,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,High
+18.0,15.0,1.0,750.0,6.0,70.0,100.0,3.0,7.0,0.0,40.0,9.0,85.0,20.0,50.0,0.75,6.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+19.0,0.0,6.0,498.0,10.0,130.0,0.0,0.0,4.0,1.0,30.0,7.0,80.0,3.0,498.0,0.0,1.6666666666666667,Male,Single,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 2,Low
+18.0,36.0,3.5,0.0,5.0,110.0,0.0,0.0,8.0,0.0,80.0,5.0,70.0,7.0,0.0,5.142857142857143,1.4285714285714286,Female,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+19.0,20.0,2.25,0.0,4.0,70.0,0.0,8.0,3.0,1.0,60.0,7.0,80.0,10.0,0.0,2.0,1.7777777777777777,Prefer not to say,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,0.0,2.5,0.0,3.0,110.0,0.0,0.0,6.0,0.0,30.0,4.0,85.0,2.0,0.0,0.0,1.2,Male,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+18.0,8.0,3.2,0.0,10.0,130.0,0.0,0.0,1.0,0.0,30.0,3.0,50.0,4.0,0.0,2.0,3.125,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
+18.0,0.0,6.0,400.0,3.0,120.0,0.0,3.0,3.0,0.0,20.0,6.0,75.0,7.0,400.0,0.0,0.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,High
+18.0,5.0,5.0,475.0,30.0,180.0,20.0,0.0,12.0,0.0,2.0,7.0,100.0,6.0,95.0,0.8333333333333334,6.0,Male,In a relationship,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
+18.0,23.0,3.5,0.0,5.0,125.0,0.0,0.0,5.0,0.0,90.0,5.0,90.0,4.0,0.0,5.75,1.4285714285714286,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
+23.0,20.0,8.0,0.0,0.0,160.0,0.0,7.0,7.0,7.0,70.0,3.0,80.0,20.0,0.0,1.0,0.0,Female,Single,Yes,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,High
+24.0,56.0,12.0,909.0,5.0,100.0,0.0,0.0,3.0,2.0,30.0,6.0,85.0,3.0,16.232142857142858,18.666666666666668,0.4166666666666667,Female,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,0.0,4.5,0.0,2.0,220.0,0.0,0.0,13.0,0.0,60.0,6.0,85.0,3.0,0.0,0.0,0.4444444444444444,Female,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 2,Average
+19.0,16.0,1.43,0.0,12.0,130.0,0.0,13.0,10.0,0.0,100.0,6.0,80.0,3.0,0.0,5.333333333333333,8.391608391608392,Male,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+20.0,0.0,2.0,690.0,3.0,60.0,2.0,3.0,2.0,0.0,60.0,3.0,100.0,3.0,690.0,0.0,1.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
+18.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,90.0,8.0,2.41,2.0,0.0,0.0,0.0,Prefer not to say,Its complicated,Prefer not to say,Domestic,DATA1901,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,Average
+19.0,0.0,17.0,880.0,10.0,190.0,100.0,6.0,16.0,1.0,10.0,6.0,100.0,3.0,880.0,0.0,0.5882352941176471,Female,In a relationship,Prefer not to say,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+17.0,6.0,1.5,0.0,7.0,90.0,0.0,0.0,8.0,0.0,80.0,4.0,90.0,4.0,0.0,1.5,4.666666666666667,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
+18.0,12.0,2.5,0.0,100.0,120.0,11.0,25.0,30.0,1.0,15.0,8.0,90.0,4.0,0.0,3.0,33.333333333333336,Female,Its complicated,Yes,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
+18.0,1.0,4.5,354.0,20.0,160.0,4.0,1.5,6.0,1.0,15.0,3.0,85.0,2.0,354.0,0.5,4.444444444444445,Male,Single,No,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Low
+18.0,0.0,2.5,0.0,2.0,120.0,50.0,4.0,5.0,0.0,90.0,7.0,100.0,3.0,0.0,0.0,0.8,Female,In a relationship,Prefer not to say,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
+19.0,0.0,1.0,0.0,10.0,180.0,5.0,0.0,13.0,1.0,40.0,5.0,85.0,2.0,0.0,0.0,10.0,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Low
 18.0,0.0,2.0,452.0,10.0,0.0,5.0,0.0,10.0,0.0,10.0,7.0,100.0,10.0,452.0,0.0,5.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+21.0,33.0,3.5,320.0,20.0,120.0,4.0,8.0,10.0,6.0,25.0,3.0,85.0,2.0,9.696969696969697,16.5,5.714285714285714,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
+17.0,0.0,6.5,0.0,15.0,110.0,0.0,5.0,10.0,1.0,25.0,8.0,85.0,10.0,0.0,0.0,2.3076923076923075,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
+18.0,0.0,3.0,0.0,5.0,220.0,0.0,0.0,5.0,0.0,70.0,0.0,100.0,5.0,0.0,0.0,1.6666666666666667,Male,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
+19.0,11.0,4.5,900.0,20.0,130.0,0.0,0.0,3.0,3.0,5.0,4.0,70.0,5.0,81.81818181818181,2.2,4.444444444444445,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 1,Average
+22.0,30.0,8.0,150.0,12.0,120.0,10.0,10.0,4.0,6.0,60.0,0.0,89.0,20.0,5.0,1.5,1.5,Female,In a relationship,No,International,DATA1001,Lecture Slides,I leave things to the last minute,Style 3,Average
+18.0,0.0,4.0,0.0,1.0,100.0,0.0,0.0,2.0,0.0,80.0,5.0,100.0,3.0,0.0,0.0,0.25,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,Low
+20.0,2.0,5.25,0.0,4.0,100.0,0.0,0.0,2.0,2.0,40.0,4.0,90.0,4.0,0.0,0.5,0.7619047619047619,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,14.0,3.22,0.0,8.0,190.0,8.0,15.0,25.0,0.0,41.0,4.0,88.0,3.0,0.0,4.666666666666667,2.484472049689441,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+21.0,9.0,7.52,759.0,3.0,120.0,0.0,0.0,6.0,1.0,30.0,1.0,75.0,2.0,84.33333333333333,4.5,0.398936170212766,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+18.0,22.0,8.72,0.0,2.0,115.0,2.0,17.0,4.0,0.0,110.0,5.0,80.0,3.0,0.0,7.333333333333333,0.2293577981651376,Female,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
+18.0,0.0,12.0,399.0,3.0,268.3600000000006,2.0,5.0,12.0,0.0,15.0,6.0,70.0,1.0,399.0,0.0,0.25,Male,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Low
+19.0,20.0,4.5,300.0,4.0,120.0,0.0,0.0,6.0,1.0,30.0,5.0,80.0,6.0,15.0,3.3333333333333335,0.8888888888888888,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+18.0,1.0,3.75,0.0,2.0,100.0,0.0,0.0,3.0,1.0,45.0,5.0,85.0,3.0,0.0,0.3333333333333333,0.5333333333333333,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+19.0,50.0,2.0,800.0,7.0,80.0,0.0,7.0,2.0,0.0,30.0,5.0,75.0,10.0,16.0,5.0,3.5,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,0.0,4.3,0.0,30.0,188.0,50.0,25.0,7.0,0.0,100.0,4.0,100.0,4.0,0.0,0.0,6.976744186046512,Male,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 2,High
+18.0,15.0,4.0,0.0,5.0,100.0,0.0,0.0,15.0,0.0,20.0,6.0,90.0,2.0,0.0,7.5,1.25,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+33.590000000000146,0.0,22.5,0.0,12.0,130.0,0.0,14.0,25.0,10.0,45.0,4.0,70.0,8.0,0.0,0.0,0.5333333333333333,Female,Married,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
+23.0,71.18000000000029,3.3,500.0,3.0,120.0,5.0,0.0,5.0,0.0,60.0,3.0,10.0,8.0,7.024445068839533,8.897500000000036,0.9090909090909092,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+20.0,0.0,3.0,300.0,20.0,60.0,0.0,2.0,2.0,0.0,10.0,7.0,90.0,3.0,300.0,0.0,6.666666666666667,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+17.0,35.0,7.0,0.0,5.0,110.0,5.0,0.0,5.0,0.0,60.0,0.0,50.0,2.0,0.0,17.5,0.7142857142857143,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,High
+20.0,0.0,2.5,690.0,20.0,130.0,0.0,0.0,10.0,5.0,45.0,6.0,85.0,6.0,690.0,0.0,8.0,Male,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+21.0,0.0,3.0,0.0,20.0,140.0,0.0,15.0,20.0,5.0,30.0,2.0,85.0,3.0,0.0,0.0,6.666666666666667,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,0.0,3.5,580.0,15.0,120.0,20.0,20.0,35.0,0.0,5.0,4.0,100.0,2.0,580.0,0.0,4.285714285714286,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Low
+20.0,0.0,4.0,400.0,4.0,130.0,0.0,0.0,10.0,9.0,15.0,7.0,90.0,2.0,400.0,0.0,1.0,Male,Its complicated,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
+33.590000000000146,0.0,2.25,1135.4000000000087,2.0,200.0,0.0,0.0,20.0,1.0,60.0,7.0,80.0,4.0,1000.0,0.0,0.8888888888888888,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+20.0,0.0,5.25,550.0,20.0,140.0,30.0,0.0,25.0,1.0,30.0,3.0,80.0,4.0,550.0,0.0,3.8095238095238093,Female,In a relationship,Prefer not to say,International,DATA1001,Recording,It changes depending on the subject,Style 2,High
+19.0,20.0,4.0,0.0,0.0,110.0,50.0,40.0,17.0,0.0,100.0,9.0,80.0,7.0,0.0,2.857142857142857,0.0,Male,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,0.0,2.0,0.0,10.0,120.0,0.0,0.0,9.0,1.0,20.0,4.0,85.0,3.0,0.0,0.0,5.0,Male,Single,No,Domestic,DATA1901,Lecture Slides,It changes depending on the subject,Style 3,Low
+20.0,10.0,7.0,700.0,2.0,134.0,2.0,5.0,3.0,0.0,25.0,1.0,80.0,2.0,70.0,5.0,0.2857142857142857,Female,Single,No,International,DATA1001,Lecture Slides,I leave things to the last minute,Style 3,Average
+18.0,11.5,4.5,0.0,2.0,120.0,0.0,0.0,10.0,0.0,85.0,2.0,85.0,3.0,0.0,3.8333333333333335,0.4444444444444444,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,Average
+19.0,7.0,22.5,240.0,0.0,160.0,10.0,4.0,5.0,1.0,20.0,2.0,100.0,10.0,34.285714285714285,0.7,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,High
+17.0,20.0,3.0,250.0,7.0,90.0,2.0,1.0,4.0,0.0,15.0,9.0,75.0,1.0,12.5,20.0,2.3333333333333335,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
+19.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,6.0,2.41,1.0,1.0,1.0,1.0,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Average
+21.0,5.0,8.15,450.0,10.0,60.0,6.0,4.0,12.0,4.0,15.0,8.0,75.0,25.0,90.0,0.2,1.2269938650306749,Female,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 3,Average
+21.0,0.0,6.0,0.0,100.0,100.0,100.0,48.590000000000146,40.80000000000018,4.0,60.0,3.0,100.0,5.0,0.0,0.0,16.666666666666668,Female,Its complicated,Yes,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,High
+24.0,22.0,2.0,0.0,3.0,110.0,6.0,0.0,12.0,4.0,90.0,1.0,85.0,3.0,0.0,7.333333333333333,1.5,Female,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Average
+18.0,0.0,0.5,1.5,30.0,70.0,0.0,4.0,7.0,0.0,30.0,10.0,95.0,20.0,1.5,0.0,33.333333333333336,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+19.0,0.0,0.0,0.0,0.0,110.0,0.0,0.0,3.0,2.0,60.0,7.0,60.0,2.0,0.0,0.0,0.0,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+22.0,0.0,3.5,450.0,6.0,145.0,0.0,1.0,14.0,0.0,15.0,9.0,100.0,3.0,450.0,0.0,1.7142857142857142,Male,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
+18.0,30.0,4.59,0.0,1.0,0.0,0.0,0.0,5.0,2.0,50.0,6.0,90.0,10.0,0.0,3.0,0.2178649237472767,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,Low
+18.0,0.0,1.5,500.0,2.0,0.0,0.0,0.0,10.0,0.0,10.0,3.0,85.0,5.0,500.0,0.0,1.3333333333333333,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,High
+18.0,12.0,1.0,0.0,5.0,110.0,1.0,0.0,10.0,1.0,70.0,4.0,95.0,3.0,0.0,4.0,5.0,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
+20.0,0.0,3.5,559.0,2.0,110.0,0.0,0.0,8.0,1.0,5.0,5.0,85.0,0.0,559.0,0.0,0.5714285714285714,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
+17.0,0.0,1.3,0.0,15.0,150.0,0.0,0.0,6.0,0.0,60.0,6.0,100.0,2.0,0.0,0.0,11.538461538461538,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,0.0,2.2,739.0,5.0,65.0,0.0,0.0,9.0,0.0,15.0,7.0,90.0,12.0,739.0,0.0,2.2727272727272725,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+19.0,0.0,6.0,0.0,5.0,210.0,0.0,2.0,5.0,0.0,50.0,3.0,100.0,5.0,0.0,0.0,0.8333333333333334,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+20.0,8.0,2.5,290.0,5.0,170.0,2.0,15.0,11.0,1.0,15.0,2.0,100.0,3.0,36.25,2.6666666666666665,2.0,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
+19.0,20.0,3.33,0.0,4.0,110.0,0.0,0.0,10.0,3.0,60.0,7.0,85.0,3.0,0.0,6.666666666666667,1.2012012012012012,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
+18.0,10.0,4.0,0.0,5.0,130.0,0.0,2.0,3.0,0.0,65.0,0.0,80.0,2.0,0.0,5.0,1.25,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,Low
+17.0,0.0,3.1,950.0,8.0,150.0,5.0,0.0,10.0,0.0,30.0,9.0,85.0,10.0,950.0,0.0,2.5806451612903225,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
+18.0,4.0,2.5,0.0,5.0,110.0,0.0,0.0,5.0,0.0,90.0,4.0,90.0,4.0,0.0,1.0,2.0,Prefer not to say,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+18.0,18.0,8.25,0.0,10.0,110.0,0.0,0.0,10.0,1.0,50.0,1.0,70.0,3.0,0.0,6.0,1.2121212121212122,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+19.0,0.0,3.0,0.0,3.0,0.0,0.0,0.0,3.0,0.0,90.0,4.0,95.0,10.0,0.0,0.0,1.0,Non-binary / third gender,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+19.0,27.0,2.0,0.0,15.0,120.0,10.0,20.0,10.0,0.0,35.0,5.0,60.0,2.0,0.0,13.5,7.5,Male,Single,Prefer not to say,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,9.0,3.0,0.0,5.0,110.0,0.0,0.0,6.0,1.0,80.0,7.0,85.0,3.0,0.0,3.0,1.6666666666666667,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+17.0,71.18000000000029,1.0,700.0,3.0,0.0,2.0,14.0,5.0,0.0,30.0,6.0,5.0,8.0,9.834223096375347,8.897500000000036,3.0,Male,Single,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 2,High
+18.0,2.5,1.5,0.0,10.0,200.0,5.0,7.0,12.0,0.0,55.0,2.0,75.0,2.0,0.0,1.25,6.666666666666667,Female,In a relationship,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,High
+18.0,0.0,4.0,0.0,5.0,120.0,5.0,0.0,5.0,0.0,23.0,4.0,85.0,2.0,0.0,0.0,1.25,Female,In a relationship,No,International,DATA1001,Lecture Slides,I leave things to the last minute,Style 2,High
+19.0,0.0,3.5,160.0,4.0,120.0,1.0,1.0,5.0,0.0,24.0,10.0,85.0,2.0,160.0,0.0,1.1428571428571428,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,High
+19.0,24.5,3.5,540.0,5.0,100.0,50.0,2.0,15.0,1.0,15.0,7.0,85.0,5.0,22.040816326530614,4.9,1.4285714285714286,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+21.0,36.0,1.25,330.0,25.0,110.0,0.0,8.0,20.0,7.0,25.0,7.0,80.0,3.0,9.166666666666666,12.0,20.0,Male,In a relationship,Prefer not to say,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
+18.0,5.0,3.0,0.0,5.0,100.0,0.0,1.0,7.0,0.0,30.0,4.0,90.0,5.0,0.0,1.0,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Average
+18.0,0.0,4.42,280.0,10.0,90.0,0.0,2.0,9.0,0.0,20.0,7.0,90.0,2.0,280.0,0.0,2.262443438914027,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Average
+19.0,2.0,12.0,1.0,1.0,90.0,1.0,1.0,1.0,1.0,1.0,8.0,2.41,1.0,0.5,2.0,0.08333333333333333,Female,Single,No,Domestic,DATA1901,Lecture Slides,It changes depending on the subject,Style 1,Average
+17.0,20.0,4.25,0.0,5.0,110.0,5.0,0.0,8.0,0.0,20.0,5.0,80.0,3.0,0.0,6.666666666666667,1.1764705882352942,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+21.0,0.0,7.5,0.0,7.0,100.0,0.0,3.0,3.0,2.0,60.0,7.0,60.0,3.0,0.0,0.0,0.9333333333333333,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+19.0,0.0,3.0,0.0,25.0,160.0,3.0,30.0,23.0,1.0,5.0,0.0,5.0,3.0,0.0,0.0,8.333333333333334,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,Average
+18.0,0.0,2.75,0.0,5.0,100.0,30.0,0.0,9.0,0.0,65.0,6.0,90.0,5.0,0.0,0.0,1.8181818181818181,Male,In a relationship,No,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Low
+18.0,11.5,8.36,0.0,15.0,120.0,30.0,0.0,7.0,0.0,120.0,5.0,70.0,4.0,0.0,2.875,1.7942583732057418,Female,In a relationship,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,High
+18.0,5.0,4.53,0.0,5.0,100.0,1.0,0.0,7.0,1.0,30.0,6.0,90.0,8.0,0.0,0.625,1.1037527593818983,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Average
+27.0,0.0,5.0,0.0,0.0,130.0,0.0,0.0,3.0,2.0,95.0,7.0,85.0,8.0,0.0,0.0,0.0,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+18.0,0.0,6.0,395.0,4.0,155.0,70.0,7.0,14.0,0.0,15.0,8.0,80.0,4.0,395.0,0.0,0.6666666666666666,Male,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
+18.0,0.0,3.5,450.0,10.0,210.0,0.0,15.0,8.0,0.0,35.0,10.0,90.0,3.0,450.0,0.0,2.857142857142857,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
+17.0,0.0,4.0,750.0,0.0,120.0,7.0,0.0,2.0,0.0,20.0,5.0,70.0,7.0,750.0,0.0,0.0,Male,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 2,High
+20.0,0.0,0.0,240.0,15.0,160.0,0.0,0.0,3.0,1.0,65.0,0.0,90.0,4.0,240.0,0.0,15.0,Female,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,High
+33.590000000000146,50.0,22.5,0.0,100.0,180.0,0.0,48.590000000000146,40.80000000000018,9.0,100.0,0.0,2.41,0.0,0.0,20.0,4.444444444444445,Male,Married,No,Domestic,DATA1901,Lecture Slides,I leave things to the last minute,Style 2,High
+18.0,30.0,5.0,0.0,3.0,180.0,1.0,0.0,18.0,1.0,60.0,1.0,100.0,0.0,0.0,20.0,0.6,Male,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Average
+20.0,0.0,5.0,420.0,1.0,120.0,5.0,20.0,2.0,0.0,40.0,10.0,85.0,2.0,420.0,0.0,0.2,Male,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,High
+20.0,16.0,5.0,350.0,3.0,100.0,0.0,20.0,3.0,4.0,1.0,4.0,70.0,4.0,21.875,4.0,0.6,Male,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 2,Average
+20.0,10.0,6.6,779.0,0.0,180.0,0.0,3.0,1.0,2.0,10.0,10.0,100.0,0.0,77.9,10.0,0.0,Male,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 1,Low
+19.0,0.0,2.0,909.0,6.0,140.0,0.0,20.0,17.0,0.0,20.0,5.0,85.0,10.0,909.0,0.0,3.0,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Low
+19.0,8.0,3.0,0.0,5.0,120.0,1.0,1.0,6.0,3.0,40.0,6.0,70.0,3.0,0.0,2.6666666666666665,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+20.0,0.0,0.0,0.0,0.0,130.0,0.0,0.0,15.0,2.0,90.0,3.0,100.0,2.0,0.0,0.0,0.0,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+20.0,0.0,3.0,0.0,0.0,160.0,0.0,0.0,15.0,0.0,75.0,3.0,80.0,4.0,0.0,0.0,0.0,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,0.0,2.5,469.0,6.0,120.0,0.0,0.0,5.0,0.0,15.0,8.0,90.0,5.0,469.0,0.0,2.4,Female,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
+19.0,5.0,7.0,0.0,5.0,110.0,0.0,0.0,5.0,0.0,20.0,3.0,80.0,2.0,0.0,2.5,0.7142857142857143,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
+19.0,0.0,1.0,589.0,6.0,90.0,0.0,0.0,4.0,0.0,10.0,2.0,80.0,3.0,589.0,0.0,6.0,Female,Single,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,High
+20.0,0.0,8.18,940.0,0.0,110.0,0.0,6.0,4.0,2.0,10.0,6.0,85.0,25.0,940.0,0.0,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+18.0,20.0,3.13,0.0,18.0,100.0,4.0,0.0,7.0,0.0,15.0,3.0,99.0,10.0,0.0,2.0,5.7507987220447285,Female,Its complicated,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,Low
+18.0,7.0,6.0,799.0,1.0,50.0,0.0,1.0,3.0,1.0,1.0,3.0,70.0,2.0,114.14285714285714,3.5,0.16666666666666666,Female,Single,No,International,DATA1001,Recording,I leave things to the last minute,Style 2,Average
+21.0,0.0,3.25,854.0,2.0,110.0,0.0,48.590000000000146,7.0,2.0,30.0,6.0,80.0,5.0,854.0,0.0,0.6153846153846154,Male,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,Average
+18.0,0.0,7.3,0.0,15.0,90.0,0.0,0.0,3.0,0.0,65.0,5.0,90.0,12.0,0.0,0.0,2.0547945205479454,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 1,Low
+18.0,10.0,8.25,0.0,20.0,120.0,4.0,33.0,9.0,4.0,58.0,8.0,78.0,6.0,0.0,1.6666666666666667,2.4242424242424243,Male,Single,Yes,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,High
+19.0,0.0,7.34,780.0,15.0,190.0,1.0,1.0,8.0,0.0,40.0,4.0,80.0,6.0,780.0,0.0,2.043596730245232,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
 18.0,0.0,8.0,600.0,0.0,0.0,0.0,2.0,2.0,0.0,15.0,7.0,80.0,5.0,600.0,0.0,0.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,Average
 17.0,11.0,2.0,0.0,3.0,100.0,0.0,0.0,5.0,0.0,80.0,3.0,85.0,3.0,0.0,3.6666666666666665,1.5,Female,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Average
-18.0,0.0,5.0,200.0,12.0,60.0,0.0,0.0,2.0,1.0,45.0,7.0,90.0,3.0,200.0,0.0,2.4,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
-20.0,38.0,6.0,400.0,3.0,130.0,10.0,4.0,13.0,5.0,30.0,8.0,80.0,8.0,10.526315789473685,4.75,0.5,Female,In a relationship,Prefer not to say,International,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-18.0,8.0,3.0,0.0,20.0,100.0,5.0,0.0,8.0,2.0,50.0,7.0,90.0,5.0,0.0,1.6,6.666666666666667,Male,Single,No,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Average
-21.0,5.0,8.15,450.0,10.0,60.0,6.0,4.0,12.0,4.0,15.0,8.0,75.0,25.0,90.0,0.2,1.2269938650306749,Female,In a relationship,No,International,DATA1001,Recording,I work steadily all semester,Style 3,Average
-19.0,50.0,2.0,800.0,7.0,80.0,0.0,7.0,2.0,0.0,30.0,5.0,75.0,10.0,16.0,5.0,3.5,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,0.0,3.0,900.0,5.0,50.0,2.0,2.0,5.0,3.0,10.0,6.0,100.0,3.0,900.0,0.0,1.6666666666666667,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
-18.0,5.0,3.0,0.0,100.0,130.0,1.0,15.0,15.0,0.0,5.0,2.0,75.0,3.0,0.0,1.6666666666666667,33.333333333333336,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,High
-18.0,0.0,6.0,0.0,3.0,0.0,0.0,2.0,8.0,1.0,12.0,5.0,85.0,3.0,0.0,0.0,0.5,Female,Single,No,International,DATA1001,Other,I work steadily all semester,Style 2,Average
-18.0,0.0,3.0,0.0,40.0,268.3600000000006,3.0,6.0,20.0,0.0,100.0,6.0,88.0,2.0,0.0,0.0,13.333333333333334,Female,Its complicated,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-18.0,0.0,4.5,375.0,5.0,100.0,15.0,4.0,2.0,2.0,30.0,7.0,90.0,7.0,375.0,0.0,1.1111111111111112,Female,In a relationship,Yes,International,DATA1001,Recording,It changes depending on the subject,Style 3,High
-19.0,7.0,3.0,0.0,5.0,140.0,4.0,0.0,8.0,1.0,50.0,4.0,85.0,5.0,0.0,1.4,1.6666666666666667,Male,In a relationship,Yes,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Low
-19.0,20.0,2.25,0.0,4.0,70.0,0.0,8.0,3.0,1.0,60.0,7.0,80.0,10.0,0.0,2.0,1.7777777777777777,Prefer not to say,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,High
-18.0,0.0,7.5,480.0,40.0,200.0,1.0,20.0,5.0,0.0,30.0,8.0,85.0,3.0,480.0,0.0,5.333333333333333,Male,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,0.0,2.51,600.0,10.0,100.0,0.0,5.0,10.0,2.0,60.0,5.0,10.0,2.0,600.0,0.0,3.9840637450199208,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
-18.0,15.0,3.75,0.0,15.0,120.0,18.0,10.0,13.0,1.0,25.0,1.0,75.0,4.0,0.0,3.75,4.0,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-17.0,0.0,7.0,769.0,20.0,50.0,0.0,0.0,4.0,0.0,30.0,8.0,80.0,5.0,769.0,0.0,2.857142857142857,Female,Single,No,International,DATA1001,Other,It changes depending on the subject,Style 1,Low
-19.0,0.0,7.45,0.0,4.0,120.0,0.0,0.0,2.0,2.0,20.0,6.0,3.0,5.0,0.0,0.0,0.5369127516778524,Female,Single,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 1,Average
-18.0,3.5,5.25,0.0,8.0,110.0,0.0,0.0,6.0,0.0,37.0,4.0,85.0,3.0,0.0,1.1666666666666667,1.5238095238095237,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
-22.0,0.0,6.87,250.0,5.0,120.0,0.0,0.0,15.0,1.0,50.0,7.0,80.0,6.0,250.0,0.0,0.727802037845706,Female,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,High
-18.0,0.0,4.05,0.0,27.0,120.0,7.0,0.0,17.0,0.0,80.0,3.0,90.0,2.0,0.0,0.0,6.666666666666667,Non-binary / third gender,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
-18.0,0.0,0.0,0.0,5.0,90.0,0.0,0.0,4.0,1.0,90.0,7.0,80.0,4.0,0.0,0.0,5.0,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
-20.0,0.0,4.75,689.0,12.0,75.0,0.0,1.0,2.0,3.0,25.0,6.0,100.0,4.0,689.0,0.0,2.526315789473684,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
-18.0,8.0,3.0,0.0,5.0,120.0,0.0,3.0,3.0,0.0,55.0,3.0,70.0,5.0,0.0,1.6,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
-21.0,0.0,2.5,800.0,7.0,160.0,0.0,0.0,35.0,0.0,15.0,3.0,90.0,5.0,800.0,0.0,2.8,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,High
-20.0,0.0,1.21,629.0,0.0,160.0,0.0,0.0,5.0,0.0,15.0,8.0,85.0,3.0,629.0,0.0,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
-18.0,1.0,4.5,354.0,20.0,160.0,4.0,1.5,6.0,1.0,15.0,3.0,85.0,2.0,354.0,0.5,4.444444444444445,Male,Single,No,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Low
-27.0,0.0,5.0,0.0,0.0,130.0,0.0,0.0,3.0,2.0,95.0,7.0,85.0,8.0,0.0,0.0,0.0,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
-19.0,0.0,2.75,0.0,14.0,120.0,0.0,0.0,7.0,1.0,50.0,6.0,85.0,5.0,0.0,0.0,5.090909090909091,Female,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,High
-17.0,0.0,1.1,0.0,8.0,110.0,0.0,0.0,19.0,0.0,49.0,4.0,75.0,10.0,0.0,0.0,7.2727272727272725,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Low
-19.0,2.0,12.0,1.0,1.0,90.0,1.0,1.0,1.0,1.0,1.0,8.0,2.41,1.0,0.5,2.0,0.08333333333333333,Female,Single,No,Domestic,DATA1901,Lecture Slides,It changes depending on the subject,Style 1,Average
-19.0,20.0,4.0,0.0,0.0,110.0,50.0,40.0,17.0,0.0,100.0,9.0,80.0,7.0,0.0,2.857142857142857,0.0,Male,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-20.0,48.0,6.0,460.0,100.0,90.0,1.0,0.0,4.0,0.0,20.0,9.0,9.0,10.0,9.583333333333334,4.8,16.666666666666668,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,High
-19.0,0.0,3.5,378.0,10.0,120.0,0.0,1.0,7.0,1.0,5.0,5.0,95.0,2.0,378.0,0.0,2.857142857142857,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
-18.0,7.0,4.0,0.0,12.0,110.0,0.0,0.0,8.0,0.0,90.0,4.0,100.0,3.0,0.0,2.3333333333333335,3.0,Female,Single,No,Domestic,DATA1901,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+26.0,32.0,2.8,287.5,0.0,120.0,3.0,0.0,6.0,4.0,25.0,3.0,70.0,6.0,8.984375,5.333333333333333,0.0,Female,Single,Prefer not to say,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+19.0,0.0,2.55,0.0,10.0,101.0,0.0,1.0,0.0,0.0,50.0,6.0,75.0,8.0,0.0,0.0,3.9215686274509807,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Low
+18.0,20.0,4.0,0.0,2.0,100.0,0.0,0.0,7.0,1.0,45.0,3.0,80.0,3.0,0.0,6.666666666666667,0.5,Female,Single,Prefer not to say,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Low
+19.0,32.0,3.45,400.0,6.0,140.0,15.0,0.0,10.0,2.0,45.0,6.0,60.0,2.0,12.5,16.0,1.7391304347826086,Female,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Average
+17.0,6.0,7.0,8.0,8.0,8.0,9.0,9.0,9.0,9.0,9.0,5.0,3.0,3.0,1.3333333333333333,2.0,1.1428571428571428,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,Average
+20.0,6.0,7.0,660.0,10.0,130.0,1.0,1.0,5.0,0.0,60.0,2.0,80.0,2.0,110.0,3.0,1.4285714285714286,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,High
+19.0,0.0,8.0,939.0,2.0,110.0,0.0,2.0,5.0,0.0,15.0,4.0,90.0,7.0,939.0,0.0,0.25,Female,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
+19.0,4.0,2.57,650.0,35.0,120.0,0.0,0.0,0.0,0.0,17.0,10.0,100.0,10.0,162.5,0.4,13.618677042801558,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
 19.0,0.0,6.0,250.0,10.0,0.0,0.0,3.0,5.0,0.0,50.0,10.0,100.0,10.0,250.0,0.0,1.6666666666666667,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Low
-19.0,8.25,7.0,0.0,6.0,120.0,0.0,5.0,17.0,0.0,45.0,4.0,75.0,3.0,0.0,2.75,0.8571428571428571,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,5.0,4.5,0.0,0.0,100.0,0.0,0.0,1.0,0.0,20.0,6.0,90.0,18.0,0.0,0.2777777777777778,0.0,Male,Single,Yes,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
-18.0,6.0,3.5,0.0,20.0,120.0,1.0,3.0,2.0,0.0,15.0,3.0,75.0,1.0,0.0,6.0,5.714285714285714,Female,Single,Prefer not to say,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
-18.0,0.0,13.35,0.0,2.0,190.0,0.0,0.0,13.0,0.0,60.0,7.0,100.0,3.0,0.0,0.0,0.149812734082397,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,High
-18.0,14.0,3.22,0.0,8.0,190.0,8.0,15.0,25.0,0.0,41.0,4.0,88.0,3.0,0.0,4.666666666666667,2.484472049689441,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-18.0,5.0,3.0,0.0,5.0,120.0,0.0,0.0,1.0,0.0,50.0,5.0,80.0,2.0,0.0,2.5,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-19.0,0.0,3.0,385.0,4.0,140.0,0.0,0.0,6.0,1.0,30.0,9.0,85.0,3.0,385.0,0.0,1.3333333333333333,Male,Single,No,International,DATA1901,Recording,It changes depending on the subject,Style 1,Low
-18.0,0.0,4.0,200.0,5.0,130.0,4.0,5.0,27.0,0.0,50.0,2.0,75.0,4.0,200.0,0.0,1.25,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-18.0,11.5,8.36,0.0,15.0,120.0,30.0,0.0,7.0,0.0,120.0,5.0,70.0,4.0,0.0,2.875,1.7942583732057418,Female,In a relationship,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,High
-17.0,20.0,3.0,250.0,7.0,90.0,2.0,1.0,4.0,0.0,15.0,9.0,75.0,1.0,12.5,20.0,2.3333333333333335,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
-18.0,1.0,8.0,0.0,2.0,50.0,0.0,0.0,2.0,1.0,30.0,7.0,75.0,3.0,0.0,0.3333333333333333,0.25,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Average
+19.0,0.0,8.25,480.0,5.0,90.0,0.0,4.0,7.0,1.0,35.0,7.0,85.0,4.0,480.0,0.0,0.6060606060606061,Female,Its complicated,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,High
+18.0,0.0,0.27,250.0,0.0,140.0,12.0,0.0,2.0,0.0,60.0,2.0,60.0,3.0,250.0,0.0,0.0,Female,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+18.0,0.0,3.0,610.0,4.0,120.0,0.0,0.0,10.0,0.0,15.0,9.0,90.0,2.0,610.0,0.0,1.3333333333333333,Non-binary / third gender,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+18.0,0.0,6.0,0.0,3.0,0.0,0.0,2.0,8.0,1.0,12.0,5.0,85.0,3.0,0.0,0.0,0.5,Female,Single,No,International,DATA1001,Other,I work steadily all semester,Style 2,Average
+17.0,0.0,6.2,0.0,5.0,120.0,0.0,0.0,6.0,0.0,40.0,7.0,80.0,4.0,0.0,0.0,0.8064516129032258,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+20.0,30.0,4.0,500.0,18.0,110.0,8.0,2.0,8.0,4.0,40.0,7.0,75.0,15.0,16.666666666666668,2.0,4.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+19.0,21.0,6.0,500.0,3.0,105.0,1.0,4.0,5.0,1.0,30.0,6.0,80.0,10.0,23.80952380952381,2.1,0.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
 18.0,0.0,6.31,380.0,4.0,80.0,0.0,0.0,6.0,1.0,20.0,0.0,60.0,1.0,380.0,0.0,0.6339144215530904,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,Low
-19.0,7.0,22.5,240.0,0.0,160.0,10.0,4.0,5.0,1.0,20.0,2.0,100.0,10.0,34.285714285714285,0.7,0.0,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,High
-19.0,0.0,9.25,0.0,9.0,150.0,4.0,2.0,14.0,0.0,30.0,2.0,85.0,3.0,0.0,0.0,0.972972972972973,Female,In a relationship,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,High
-20.0,0.0,4.5,550.0,7.0,177.0,2.0,30.0,4.0,4.0,28.0,7.0,95.0,3.0,550.0,0.0,1.5555555555555556,Male,In a relationship,No,International,DATA1001,Recording,I leave things to the last minute,Style 3,Low
-18.0,0.0,3.3,1135.4000000000087,2.0,120.0,1.0,6.0,11.0,0.0,37.0,6.0,7.0,8.0,1000.0,0.0,0.6060606060606061,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 1,Low
-19.0,27.0,4.47,0.0,12.0,120.0,7.0,11.0,9.0,0.0,95.0,2.0,70.0,2.0,0.0,13.5,2.684563758389262,Female,Single,Prefer not to say,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 2,Low
-18.0,22.0,8.72,0.0,2.0,115.0,2.0,17.0,4.0,0.0,110.0,5.0,80.0,3.0,0.0,7.333333333333333,0.2293577981651376,Female,Single,Yes,Domestic,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
-19.0,2.0,4.0,0.0,2.0,110.0,0.0,0.0,20.0,1.0,30.0,3.0,90.0,3.0,0.0,0.6666666666666666,0.5,Female,Single,Yes,Domestic,DATA1001,Recording,I work steadily all semester,Style 1,Low
-18.0,6.5,2.0,0.0,10.0,85.0,10.0,1.5,4.0,1.0,60.0,6.0,85.0,4.0,0.0,1.625,5.0,Male,In a relationship,No,Domestic,DATA1901,Recording,It changes depending on the subject,Style 1,Low
-19.0,0.0,2.25,350.0,5.0,80.0,0.0,0.0,15.0,0.0,30.0,6.0,100.0,3.0,350.0,0.0,2.2222222222222223,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-20.0,8.0,2.5,290.0,5.0,170.0,2.0,15.0,11.0,1.0,15.0,2.0,100.0,3.0,36.25,2.6666666666666665,2.0,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
-18.0,5.5,0.5,0.0,3.0,120.0,100.0,8.0,9.0,0.0,90.0,2.0,55.0,4.0,0.0,1.375,6.0,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
-19.0,0.0,3.5,160.0,4.0,120.0,1.0,1.0,5.0,0.0,24.0,10.0,85.0,2.0,160.0,0.0,1.1428571428571428,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,0.0,3.0,900.0,5.0,50.0,2.0,2.0,5.0,3.0,10.0,6.0,100.0,3.0,900.0,0.0,1.6666666666666667,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+19.0,0.0,6.0,460.0,5.0,120.0,3.0,2.0,25.0,0.0,40.0,7.0,80.0,8.0,460.0,0.0,0.8333333333333334,Female,Its complicated,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,Average
+17.0,0.0,2.9,0.0,10.0,120.0,1.0,0.0,4.0,0.0,60.0,9.0,90.0,3.0,0.0,0.0,3.4482758620689657,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+20.0,0.0,4.0,380.0,10.0,120.0,0.0,0.0,3.0,4.0,60.0,5.0,100.0,6.0,380.0,0.0,2.5,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Average
+18.0,2.0,4.0,0.0,6.0,120.0,0.0,3.0,7.0,0.0,50.0,4.0,80.0,4.0,0.0,0.5,1.5,Female,In a relationship,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,Average
+19.0,0.0,1.38,0.0,1.0,160.0,0.0,0.0,6.0,0.0,70.0,7.0,70.0,0.0,0.0,0.0,0.7246376811594204,Male,Single,Yes,International,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
+19.0,50.0,5.0,600.0,20.0,130.0,3.0,10.0,5.0,0.0,40.0,5.0,85.0,10.0,12.0,5.0,4.0,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Low
 18.0,0.0,6.4,0.0,4.0,110.0,1.0,0.0,20.0,0.0,50.0,5.0,100.0,0.0,0.0,0.0,0.625,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
-20.0,0.0,2.5,360.0,7.0,0.0,0.0,7.0,3.0,0.0,15.0,8.0,90.0,10.0,360.0,0.0,2.8,Male,Single,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
-18.0,0.0,3.45,225.0,0.0,150.0,0.0,1.0,15.0,0.0,35.0,8.0,100.0,10.0,225.0,0.0,0.0,Male,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-18.0,31.5,1.75,0.0,2.0,100.0,0.0,0.0,7.0,0.0,85.0,2.0,80.0,3.0,0.0,10.5,1.1428571428571428,Female,Single,No,Domestic,DATA1001,Recording,I leave things to the last minute,Style 3,Average
-18.0,0.0,3.0,0.0,5.0,220.0,0.0,0.0,5.0,0.0,70.0,0.0,100.0,5.0,0.0,0.0,1.6666666666666667,Male,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,High
-17.0,36.0,2.15,0.0,10.0,120.0,3.0,0.0,3.0,0.0,70.0,4.0,85.0,2.0,0.0,18.0,4.651162790697675,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,Low
+18.0,0.0,6.0,300.0,20.0,120.0,0.0,4.0,9.0,0.0,30.0,7.0,85.0,3.0,300.0,0.0,3.3333333333333335,Female,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+18.0,0.0,3.0,0.0,30.0,130.0,1.0,30.0,5.0,0.0,1.0,0.0,60.0,4.0,0.0,0.0,10.0,Female,Its complicated,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 2,Average
+18.0,0.0,2.5,630.0,5.0,100.0,5.0,7.0,14.0,0.0,10.0,6.0,85.0,3.0,630.0,0.0,2.0,Female,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,High
+18.0,0.0,4.0,200.0,5.0,130.0,4.0,5.0,27.0,0.0,50.0,2.0,75.0,4.0,200.0,0.0,1.25,Female,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
+18.0,8.0,3.0,0.0,20.0,100.0,5.0,0.0,8.0,2.0,50.0,7.0,90.0,5.0,0.0,1.6,6.666666666666667,Male,Single,No,Domestic,DATA1001,Lecture Slides,I work steadily all semester,Style 3,Average
+23.0,0.0,9.0,475.0,10.0,60.0,0.0,0.0,6.0,1.0,15.0,5.0,85.0,3.0,475.0,0.0,1.1111111111111112,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 1,Average
+19.0,8.25,7.0,0.0,6.0,120.0,0.0,5.0,17.0,0.0,45.0,4.0,75.0,3.0,0.0,2.75,0.8571428571428571,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 3,Average
+19.0,0.0,3.0,385.0,4.0,140.0,0.0,0.0,6.0,1.0,30.0,9.0,85.0,3.0,385.0,0.0,1.3333333333333333,Male,Single,No,International,DATA1901,Recording,It changes depending on the subject,Style 1,Low
+18.0,0.0,0.15,705.0,30.0,114.0,10.0,0.0,11.0,1.0,7.0,10.0,95.0,3.0,705.0,0.0,33.333333333333336,Female,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
+18.0,0.0,4.5,0.0,3.0,100.0,0.0,0.0,1.0,0.0,70.0,3.0,80.0,5.0,0.0,0.0,0.6666666666666666,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 2,Average
 17.0,10.0,3.5,0.0,15.0,110.0,0.0,0.0,7.0,0.0,65.0,5.0,85.0,3.0,0.0,3.3333333333333335,4.285714285714286,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-18.0,2.0,0.5,0.0,15.0,140.0,20.0,0.0,3.0,0.0,75.0,5.0,85.0,3.0,0.0,0.6666666666666666,30.0,Male,In a relationship,No,Domestic,DATA1901,Recording,I work steadily all semester,Style 1,Average
-20.0,0.0,3.5,559.0,2.0,110.0,0.0,0.0,8.0,1.0,5.0,5.0,85.0,0.0,559.0,0.0,0.5714285714285714,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
-18.0,0.0,2.2,739.0,5.0,65.0,0.0,0.0,9.0,0.0,15.0,7.0,90.0,12.0,739.0,0.0,2.2727272727272725,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-18.0,0.0,5.17,0.0,5.0,115.0,0.0,0.0,4.0,1.0,30.0,3.0,85.0,3.0,0.0,0.0,0.9671179883945842,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
-17.0,32.0,4.0,900.0,50.0,60.0,0.0,0.0,8.0,0.0,30.0,2.0,90.0,4.0,28.125,8.0,12.5,Female,Single,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 1,Low
-20.0,2.0,4.0,0.0,20.0,150.0,50.0,0.0,5.0,4.0,75.0,5.0,75.0,8.0,0.0,0.25,5.0,Female,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-22.0,30.0,4.0,0.0,1.0,140.0,4.0,0.0,8.0,5.0,30.0,0.0,70.0,3.0,0.0,10.0,0.25,Female,In a relationship,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
-18.0,0.0,2.5,0.0,3.0,110.0,0.0,0.0,6.0,0.0,30.0,4.0,85.0,2.0,0.0,0.0,1.2,Male,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
-19.0,13.5,5.0,400.0,5.0,60.0,0.0,4.0,5.0,2.0,5.0,5.0,90.0,3.0,29.62962962962963,4.5,1.0,Female,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-18.0,0.0,6.0,395.0,4.0,155.0,70.0,7.0,14.0,0.0,15.0,8.0,80.0,4.0,395.0,0.0,0.6666666666666666,Male,In a relationship,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
-19.0,0.0,0.0,0.0,0.0,110.0,0.0,0.0,3.0,2.0,60.0,7.0,60.0,2.0,0.0,0.0,0.0,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,Low
-18.0,20.0,9.0,592.0,6.0,130.0,0.0,0.0,6.0,0.0,30.0,5.0,90.0,6.0,29.6,3.3333333333333335,0.6666666666666666,Male,Single,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,High
-19.0,10.0,6.0,0.0,6.0,120.0,2.0,0.0,4.0,0.0,90.0,3.0,100.0,3.0,0.0,3.3333333333333335,1.0,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
-22.0,11.0,0.5,0.0,5.0,180.0,10.0,0.0,1.0,8.0,40.0,4.0,75.0,4.0,0.0,2.75,10.0,Male,Single,Yes,Domestic,DATA1001,Recording,It changes depending on the subject,Style 1,High
-17.0,71.18000000000029,1.0,700.0,3.0,0.0,2.0,14.0,5.0,0.0,30.0,6.0,5.0,8.0,9.834223096375347,8.897500000000036,3.0,Male,Single,No,International,DATA1001,Lecture Slides,I work steadily all semester,Style 2,High
-19.0,20.0,4.5,300.0,4.0,120.0,0.0,0.0,6.0,1.0,30.0,5.0,80.0,6.0,15.0,3.3333333333333335,0.8888888888888888,Male,Single,No,International,DATA1001,Recording,It changes depending on the subject,Style 2,Low
-18.0,16.0,2.0,0.0,4.0,130.0,20.0,0.0,2.0,1.0,70.0,1.0,70.0,4.0,0.0,4.0,2.0,Female,In a relationship,Prefer not to say,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
-19.0,7.0,1.5,0.0,50.0,120.0,7.0,3.0,6.0,1.0,50.0,1.0,100.0,0.0,0.0,7.0,33.333333333333336,Female,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,Low
-18.0,0.0,4.0,0.0,5.0,120.0,5.0,0.0,5.0,0.0,23.0,4.0,85.0,2.0,0.0,0.0,1.25,Female,In a relationship,No,International,DATA1001,Lecture Slides,I leave things to the last minute,Style 2,High
-20.0,10.0,6.6,779.0,0.0,180.0,0.0,3.0,1.0,2.0,10.0,10.0,100.0,0.0,77.9,10.0,0.0,Male,Single,No,International,DATA1001,Recording,I work steadily all semester,Style 1,Low
-18.0,10.0,8.25,0.0,20.0,120.0,4.0,33.0,9.0,4.0,58.0,8.0,78.0,6.0,0.0,1.6666666666666667,2.4242424242424243,Male,Single,Yes,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 2,High
-19.0,14.0,7.0,500.0,2.0,150.0,0.0,7.0,2.0,1.0,70.0,5.0,80.0,7.0,35.714285714285715,2.0,0.2857142857142857,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
-18.0,16.0,3.87,480.0,4.0,130.0,0.0,0.0,4.0,1.0,40.0,6.0,100.0,3.0,30.0,5.333333333333333,1.0335917312661498,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
-19.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,6.0,11.0,1.0,1.0,1.0,1.0,Female,Single,No,Domestic,DATA1001,Lecture Slides,I leave things to the last minute,Style 3,Average
-18.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,90.0,8.0,2.41,2.0,0.0,0.0,0.0,Prefer not to say,Its complicated,Prefer not to say,Domestic,DATA1901,Live Stream from Lecture Theatre,I leave things to the last minute,Style 2,Average
-18.0,0.0,2.45,0.0,50.0,140.0,5.0,20.0,0.0,0.0,10.0,2.0,65.0,2.0,0.0,0.0,20.408163265306122,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-19.0,12.0,3.0,2.0,8.0,140.0,1.0,5.0,2.0,0.0,30.0,9.0,75.0,4.0,0.16666666666666666,3.0,2.6666666666666665,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Low
-19.0,8.0,3.0,0.0,5.0,120.0,1.0,1.0,6.0,3.0,40.0,6.0,70.0,3.0,0.0,2.6666666666666665,1.6666666666666667,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Average
-20.0,0.0,4.0,400.0,4.0,130.0,0.0,0.0,10.0,9.0,15.0,7.0,90.0,2.0,400.0,0.0,1.0,Male,Its complicated,No,International,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,High
-17.0,6.0,1.5,0.0,7.0,90.0,0.0,0.0,8.0,0.0,80.0,4.0,90.0,4.0,0.0,1.5,4.666666666666667,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,Average
-19.0,17.0,3.0,0.0,2.0,130.0,20.0,10.0,8.0,1.0,60.0,0.0,80.0,0.0,0.0,17.0,0.6666666666666666,Female,Its complicated,Yes,Domestic,DATA1001,Recording,I leave things to the last minute,Style 2,High
-18.0,71.18000000000029,6.0,880.0,10.0,180.0,5.0,3.0,4.0,0.0,20.0,7.0,100.0,3.0,12.363023321157579,20.0,1.6666666666666667,Male,In a relationship,No,International,DATA1001,Lecture Slides,It changes depending on the subject,Style 1,High
-19.0,0.0,0.59,729.0,15.0,120.0,1.0,0.0,25.0,0.0,5.0,8.0,100.0,8.0,729.0,0.0,25.423728813559322,Prefer not to say,Single,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
-21.0,36.0,1.25,330.0,25.0,110.0,0.0,8.0,20.0,7.0,25.0,7.0,80.0,3.0,9.166666666666666,12.0,20.0,Male,In a relationship,Prefer not to say,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-18.0,0.0,3.0,315.0,30.0,100.0,1.0,0.0,2.0,0.0,15.0,7.0,90.0,4.0,315.0,0.0,10.0,Female,Single,No,International,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-18.0,30.0,3.0,0.0,3.0,130.0,0.0,1.0,20.0,0.0,40.0,6.0,80.0,4.0,0.0,7.5,1.0,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 2,High
-18.0,11.5,0.883,0.0,17.0,110.0,1.0,2.5,3.0,1.0,50.0,6.0,90.0,5.0,0.0,2.3,19.25254813137033,Male,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,Average
-18.0,12.0,2.5,0.0,100.0,120.0,11.0,25.0,30.0,1.0,15.0,8.0,90.0,4.0,0.0,3.0,33.333333333333336,Female,Its complicated,Yes,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Average
-17.0,0.0,2.0,0.0,5.0,120.0,0.0,0.0,0.0,0.0,90.0,7.0,100.0,6.0,0.0,0.0,2.5,Female,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,It changes depending on the subject,Style 2,Low
+18.0,5.5,8.5,0.0,15.0,120.0,25.0,0.0,6.0,0.0,80.0,9.0,90.0,10.0,0.0,0.55,1.7647058823529411,Male,Single,No,Domestic,DATA1901,Live in the Lecture Theatre,I work steadily all semester,Style 1,High
+24.0,48.0,0.46,0.0,0.0,110.0,90.0,0.0,14.0,7.0,130.0,7.0,90.0,2.0,0.0,20.0,0.0,Female,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 1,High
+22.0,30.0,1.0,500.0,1.0,120.0,0.0,2.0,4.0,0.0,35.0,4.0,90.0,7.0,16.666666666666668,4.285714285714286,1.0,Male,Single,No,International,DATA1001,Lecture Slides,I leave things to the last minute,Style 3,High
+18.0,0.0,3.5,0.0,20.0,112.0,0.0,5.0,34.0,0.0,16.0,3.0,80.0,3.0,0.0,0.0,5.714285714285714,Female,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
+18.0,0.0,6.25,549.0,3.0,100.0,0.0,3.0,4.0,1.0,20.0,2.0,80.0,3.0,549.0,0.0,0.48,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
+19.0,22.0,5.14,450.0,10.0,90.0,5.0,0.0,5.0,4.0,54.0,3.0,100.0,4.0,20.454545454545453,5.5,1.945525291828794,Female,Single,No,Domestic,DATA1001,Lecture Slides,It changes depending on the subject,Style 3,High
+26.0,35.0,2.39,780.0,0.0,90.0,12.0,0.0,7.0,0.0,60.0,6.0,90.0,4.0,22.285714285714285,8.75,0.0,Female,Married,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
+18.0,3.0,1.5,0.0,25.0,150.0,50.0,0.0,16.0,0.0,20.0,4.0,80.0,3.0,0.0,1.0,16.666666666666668,Male,In a relationship,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High
+18.0,11.0,4.0,0.0,10.0,120.0,0.0,8.0,10.0,0.0,60.0,7.0,90.0,20.0,0.0,0.55,2.5,Male,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I leave things to the last minute,Style 3,Low
+18.0,10.0,8.24,0.0,15.0,120.0,0.0,0.0,2.0,1.0,60.0,3.0,90.0,7.0,0.0,1.4285714285714286,1.820388349514563,Female,Single,No,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,Low
+18.0,0.0,3.38,0.0,8.0,140.0,0.0,0.0,2.0,1.0,70.0,6.0,90.0,4.0,0.0,0.0,2.366863905325444,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 3,Low
+20.0,30.0,3.5,640.0,5.0,60.0,0.0,0.0,3.0,0.0,15.0,5.0,80.0,18.0,21.333333333333332,1.6666666666666667,1.4285714285714286,Male,Single,No,International,DATA1001,Live in the Lecture Theatre,It changes depending on the subject,Style 3,Average
+19.0,20.0,1.0,500.0,7.0,120.0,0.0,0.0,6.0,1.0,15.0,6.0,90.0,3.0,25.0,6.666666666666667,7.0,Male,Single,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Low
+19.0,18.0,4.5,50.0,10.0,214.0,30.0,0.0,0.0,1.0,10.0,9.0,86.0,4.0,2.7777777777777777,4.5,2.2222222222222223,Male,In a relationship,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low
+18.0,0.0,5.0,0.0,1.0,100.0,0.0,2.0,4.0,0.0,45.0,3.0,70.0,1.0,0.0,0.0,0.2,Male,Single,Yes,Domestic,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 3,High

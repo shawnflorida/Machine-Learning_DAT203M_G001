@@ -1,77 +1,166 @@
-from turtle import pd
-from sklearn.linear_model import LogisticRegression
+import pandas as pd
+import pickle
+from sklearn.linear_model import LogisticRegression, SGDClassifier
 from backend.src.architecture.visualizer import Visualizer
 from .base_model import BaseModel
-
+from sklearn.model_selection import ParameterGrid
+from backend.src.architecture.ml_tasks import EDA, Evaluator, Predictor
+from backend import config
 
 class LogisticRegressionModel(BaseModel):
+    _N_EPOCHS = 1000  # epochs used for partial_fit loss tracking
+
     def __init__(self):
         super().__init__()
-        self.model = LogisticRegression(
-            max_iter=1000,
-            C=0.5,
-            random_state=42,
-            solver="lbfgs",
-        )
-    
-    def train(self, X_train, y_train, X_val=None, y_val=None):
-        self.model.fit(X_train, y_train)
+        self.model = SGDClassifier(random_state=42, loss="log_loss")
+        self.best_grid = None
+        self.best_model = None
+        self.best_metrics = None
+        self._train_score: float = 0.0
+        self._val_score:   float = 0.0
+        self.improved_model = None
+        self._loss_curve: list = []
+
+    def train_basic(self, X_train, y_train, X_val=None, y_val=None):
+        from sklearn.metrics import f1_score, log_loss
+        import numpy as np
+        import copy
+
+        classes = np.unique(y_train)
+        self._loss_curve = []
+        for _ in range(self._N_EPOCHS):
+            self.model.partial_fit(X_train, y_train, classes=classes)
+            self._loss_curve.append(
+                log_loss(y_train, self.model.predict_proba(X_train))
+            )
+
+        self._train_score = f1_score(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
+        print(f"Trained: {self.get_name()}")
+        print(f"Train F1: {self._train_score:.4f}", end="")
+        if X_val is not None and y_val is not None:
+            self._val_score = f1_score(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
+            print(f"  Val F1: {self._val_score:.4f}", end="")
+        print()
+        self._basic_model = copy.deepcopy(self.model)
+
+    def train_best(self, X_train, y_train, X_val, y_val):
+        from sklearn.metrics import log_loss
+        import numpy as np
+
+        self.grid_search(X_train, y_train, X_val, y_val)
+        self._train_score = self.best_metrics["training f1"]
+        self._val_score   = self.best_metrics["validation f1"]
+
+        # Re-train the best configuration epoch-by-epoch to record a loss curve
+        classes = np.unique(y_train)
+        tracker = SGDClassifier(**self.best_grid)
+        self._loss_curve = []
+        for _ in range(self._N_EPOCHS):
+            tracker.partial_fit(X_train, y_train, classes=classes)
+            self._loss_curve.append(
+                log_loss(y_train, tracker.predict_proba(X_train))
+            )
+
+        print(f"Trained: {self.get_name()}")
+        print(f"Best params: {self.best_grid}")
+        print(f"Model Fitting: {self.best_metrics}")
+        self._best_model = self.best_model
 
     def predict(self, X):
-        return self.model.predict(X)
+        active = self.best_model if self.best_model is not None else self.model
+        return active.predict(X)
+
+    def predict_basic(self, X):
+        if self._basic_model is None:
+            raise RuntimeError("No basic model trained yet. Call train_basic() first.")
+        return self._basic_model.predict(X)
+
+    def predict_best(self, X):
+        active = self._best_model if self._best_model is not None else self.best_model
+        if active is None:
+            raise RuntimeError("No best model trained yet. Call train_best() first.")
+        return active.predict(X)
+
+    def save_best(self, path):
+        import joblib
+        joblib.dump(self.best_model, path)
+
+    def load_best(self, path):
+        import joblib
+        self.best_model = joblib.load(path)
+        self.model = self.best_model
 
     def get_name(self) -> str:
-        return "Logistic Regression"
+        return "Multinomial Logistic Regression"
 
-    def print_model_info(self):
-        v = Visualizer()
-   
+    def get_loss_curve(self):
+        # Return the manually tracked per-epoch log-loss recorded during training
+        return self._loss_curve if self._loss_curve else None
 
-    grid_search_params = {
-        "C": [0.01, 0.1, 1, 10],
-        "options": ["lbfgs", "liblinear", "sag"],
-        "solver": ["lbfgs", "liblinear", "sag"],
-    }
-    
+    def plot_loss_curve(self):
+        """Plot the SGD training loss curve (available when loss='log_loss')."""
+        import matplotlib.pyplot as plt
+
+        curve = self.get_loss_curve()
+        if curve is None or len(curve) == 0:
+            print(f"[{self.get_name()}] No loss curve available — "
+                  "train with loss='log_loss' to record per-epoch loss.")
+            return
+
+        fig, ax = plt.subplots(figsize=(7, 4))
+        ax.plot(range(1, len(curve) + 1), curve,
+                color="#5C6BC0", linewidth=1.8, label="Train loss")
+        ax.set(title=f"{self.get_name()} — Training Loss",
+               xlabel="Epoch", ylabel="Log Loss")
+        ax.legend(fontsize=9)
+        ax.grid(True, linewidth=0.4)
+        plt.tight_layout()
+        plt.show()
+
+    grid_search_params = [{
+        "loss": ["log_loss"],
+        "penalty": ["l2", "l1", "elasticnet", None],
+        "learning_rate": ["constant", "optimal", "invscaling", "adaptive"],
+        "eta0": [0.1, 0.01, 0.05, 0.001],
+        "random_state": [42],
+        "max_iter": [200]
+    }]
+
     def grid_search(self, X_train, y_train, X_val, y_val):
+        from sklearn.metrics import f1_score as _f1
         best_score = 0
-        best_params = {}
-        validation_set = pd.DataFrame(X_val, columns=[f"feature_{i}" for i in range(X_val.shape[1])])
-        for C in self.grid_search_params["C"]:
-            for solver in self.grid_search_params["solver"]:
-                model = LogisticRegression(max_iter=1000, C=C, random_state=42, solver=solver)
-                model.fit(X_train, y_train)
-                val_score = model.score(X_val, y_val)
-                print(f"C={C}, Solver={solver}: Validation Accuracy={val_score:.4f}")
-                if val_score > best_score:
-                    best_score = val_score
-                    best_params = {"C": C, "solver": solver}
-                    v = Visualizer()
-                    v.plot_confusion_matrix(y_val, model.predict(X_val), title=f"Logistic
-    Regression Confusion Matrix (C={C}, Solver={solver})")
-                    folder_location = "logistic_regression_results"
-                    v.save_plot(folder_location, f"confusion_matrix_C{C}_solver{solver}.png")
-        print(f"Best Params: {best_params}, Best Validation Accuracy: {best_score:.4f}")
-    
-    
-    def return_best_model(self, X_train, y_train, X_val, y_val):
-        best_score = 0
-        best_model = None
-        for C in self.grid_search_params["C"]:
-            for solver in self.grid_search_params["solver"]:
-                model = LogisticRegression(max_iter=1000, C=C, random_state=42, solver=solver)
-                model.fit(X_train, y_train)
-                val_score = model.score(X_val, y_val)
-                if val_score > best_score:
-                    best_score = val_score
-                    best_model = model
-        save_path = "logistic_regression_results/best_model.pkl"
-        return best_model
-    
-    1. grid search 4x4x4 = 64x 4 x 5 = 1280 models trained and evaluated on validation set
-    2. model1 = metrics(gridsearch)
-    3. folder/images/confusaion_matrix_C{C}_solver{solver}.png
-    4. l.return_best_model() to return best model with best params for final evaluation on test set
-    5. csv model, params, val acc, test acc, precision, recall, f1, support, confusion matrix saved for all models in grid search
-    
-    
+        best_grid = {}
+        for g in ParameterGrid(self.grid_search_params):
+            print(g)
+
+            self.model.set_params(**g)
+
+            # Model Training
+            self.model.fit(X_train, y_train)
+            train_f1 = _f1(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
+
+            # Validations
+            val_f1 = _f1(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
+
+            print(
+                f"Train F1: {train_f1:.4f} \t Val F1: {val_f1:.4f}", end="\n\n")
+
+            if val_f1 > best_score:
+                best_score = val_f1
+                best_model = self.model
+                best_grid = g
+                evaluator = Evaluator()
+                best_metrics = {"training f1": train_f1,
+                                "validation f1": val_f1}
+
+        pred_cats = {self.get_name(): self.model.predict(X_val)}
+        class_reports = evaluator.classification_report_all(
+            y_val, pred_cats, config.CATEGORY_ORDER)
+        v = Visualizer()
+        v.plot_confusion_matrices(class_reports, config.CATEGORY_ORDER)
+
+        print("Best F1 (val): ", best_score)
+        print("Best grid: ", best_grid)
+        self.best_grid = best_grid
+        self.best_model = best_model
+        self.best_metrics = best_metrics

@@ -648,7 +648,7 @@ age,hours_work,social_media_use,rent,friends_count,highest_speed,dates,standard_
 18.0,15.0,2.47,0.0,5.0,180.0,10.0,20.0,18.0,0.0,90.0,6.0,65.0,5.0,0.0,3.0,2.0242914979757085,Male,Single,No,Domestic,DATA1001,Live Stream from Lecture Theatre,I work steadily all semester,Style 1,Low
 19.0,71.18000000000029,2.7,257.0,21.0,120.0,30.0,48.590000000000146,2.0,0.0,5.0,10.0,80.0,5.0,3.61056476538352,14.236000000000057,7.777777777777778,Male,In a relationship,No,International,DATA1001,Live in the Lecture Theatre,I work steadily all semester,Style 1,Low
 19.0,4.0,1.25,0.0,10.0,130.0,2.0,0.0,20.0,0.0,70.0,5.0,80.0,3.0,0.0,1.3333333333333333,8.0,Female,In a relationship,No,Domestic,DATA1001,Recording,I work steadily all semester,Style 3,Average
-19.0,5.0,7.0,0.0,5.0,160.0,7.0,9.0,2.0,5.0,10.0,6.0,80.0,10.0,0.0,0.5,0.7142857142857143,Female,Single,Unknown,International,DATA1901,Live Stream from Lecture Theatre,I leave things to the last minute,Style 3,High
+19.0,5.0,7.0,0.0,5.0,160.0,7.0,9.0,2.0,5.0,10.0,6.0,80.0,10.0,0.0,0.5,0.7142857142857143,Female,Single,No,International,DATA1901,Live Stream from Lecture Theatre,I leave things to the last minute,Style 3,High
 18.0,10.0,8.09,0.0,8.0,110.0,0.0,0.0,5.0,1.0,50.0,4.0,85.0,5.0,0.0,2.0,0.9888751545117429,Female,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,High
 18.0,22.0,5.5,675.0,0.0,140.0,0.0,0.0,4.0,1.0,15.0,7.0,80.0,6.0,30.681818181818183,3.6666666666666665,0.0,Male,Single,No,International,DATA1001,Live Stream from Lecture Theatre,It changes depending on the subject,Style 3,High
 18.0,0.0,8.37,0.0,3.0,100.0,0.0,0.0,2.0,1.0,60.0,0.0,100.0,0.0,0.0,0.0,0.3584229390681004,Male,Single,No,Domestic,DATA1001,Recording,It changes depending on the subject,Style 2,Low

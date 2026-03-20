@@ -5,7 +5,7 @@ import config
 from src.architecture.data_pipeline import DataCleaner, DataLoader, FeatureEngineer
 from src.architecture.ml_tasks import EDA, Evaluator, Predictor
 from src.architecture.ml_utils import Converters, Pipeliner, ProfileGenerator
-from src.models import GradientBoostingModel, LogisticRegressionModel, NeuralNetworkModel
+from src.models import GradientBoostingModel, LogisticRegressionModel, NeuralNetworkModel, DecisionTreeModel
 from src.architecture.visualizer import Visualizer
 
 
@@ -23,6 +23,7 @@ class Runner:
             LogisticRegressionModel(),
             NeuralNetworkModel(),
             GradientBoostingModel(),
+            DecisionTreeModel(),
         ]
         self.predictor = Predictor()
         self.profile_generator = ProfileGenerator(
@@ -120,31 +121,64 @@ class Runner:
         feature_cols = config.NUMERIC_COLS + config.DERIVED_COLS + config.CATEGORICAL_COLS
         self.eda.run(df, df_eda, feature_cols, config.TARGET, config.TARGET_CATEGORY, config.CATEGORY_ORDER)
 
-        # ── Train ─────────────────────────────────────────────────────────
-        # for model in self.models:
-        #     model.train(X_train, y_train.values, X_val, y_val.values)
-        #     print(f"Trained: {model.get_name()}")
+        # ── Train basic → metrics per model ──────────────────────────────
+        print("\n" + "═" * 60)
+        print("  BASIC MODELS")
+        print("═" * 60)
+        basic_reports = {}
+        for model in self.models:
+            model.train_basic(X_train, y_train.values, X_val, y_val.values)
+            preds = {model.get_name(): model.predict_basic(X_test)}
+            report = self.evaluator.classification_report_all(
+                y_test.values, preds, config.CATEGORY_ORDER)
+            self.evaluator.print_classification_reports(report)
+            self.visualizer.plot_confusion_matrices(report, config.CATEGORY_ORDER)
+            model.plot_loss_curve()
+            basic_reports.update(report)
 
-        # ── Evaluate ──────────────────────────────────────────────────────
-        pred_cats = {m.get_name(): m.predict(X_test) for m in self.models}
-        class_reports = self.evaluator.classification_report_all(y_test.values, pred_cats, config.CATEGORY_ORDER)
-        self.evaluator.print_classification_reports(class_reports)
-        self.visualizer.plot_confusion_matrices(class_reports, config.CATEGORY_ORDER)
+        print("\n── Basic model comparison ──")
         self.visualizer.plot_model_comparison(
-            list(class_reports.keys()),
-            [v["accuracy"] for v in class_reports.values()],
+            list(basic_reports.keys()),
+            [v["accuracy"] for v in basic_reports.values()],
         )
-        
-        
-    
+
+        # ── Train best → metrics per model ───────────────────────────────
+        print("\n" + "═" * 60)
+        print("  BEST MODELS")
+        print("═" * 60)
+        best_models = [
+            LogisticRegressionModel(),
+            NeuralNetworkModel(),
+            GradientBoostingModel(),
+            DecisionTreeModel(),
+        ]
+        best_reports = {}
+        for model in best_models:
+            model.train_best(X_train, y_train.values, X_val, y_val.values)
+            preds = {model.get_name(): model.predict_best(X_test)}
+            report = self.evaluator.classification_report_all(
+                y_test.values, preds, config.CATEGORY_ORDER)
+            self.evaluator.print_classification_reports(report)
+            self.visualizer.plot_confusion_matrices(report, config.CATEGORY_ORDER)
+            model.plot_loss_curve()
+            best_reports.update(report)
+
+        print("\n── Best model comparison ──")
+        self.visualizer.plot_model_comparison(
+            list(best_reports.keys()),
+            [v["accuracy"] for v in best_reports.values()],
+        )
 
         # ── Save ──────────────────────────────────────────────────────────
-        config.SAVED_MODELS_DIR.mkdir(parents=True, exist_ok=True)
+        config.SAVED_MODELS_BASIC_DIR.mkdir(parents=True, exist_ok=True)
         for model in self.models:
-            model.save(config.SAVED_MODELS_DIR / config.MODEL_FILE_MAP[model.get_name()])
+            model.save_basic(config.SAVED_MODELS_BASIC_DIR / config.MODEL_FILE_MAP[model.get_name()])
+        config.SAVED_MODELS_BEST_DIR.mkdir(parents=True, exist_ok=True)
+        for model in best_models:
+            model.save_best(config.SAVED_MODELS_BEST_DIR / config.MODEL_FILE_MAP[model.get_name()])
         self.pipeliner.save(config.PIPERLINER_FILE)
 
         # ── Sample prediction ─────────────────────────────────────────────
         sample = self.profile_generator.generate_profile(df, seed=config.SEED, mode="random")
-        prediction = self.predictor.predict(self.profile_generator.build(sample), self.models, self.pipeliner)
+        prediction = self.predictor.predict(self.profile_generator.build(sample), best_models, self.pipeliner)
         self.predictor.print_results(prediction)

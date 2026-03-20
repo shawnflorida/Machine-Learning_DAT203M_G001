@@ -10,20 +10,27 @@ from api.state import ModelState
 from src.architecture.data_pipeline import DataCleaner, DataLoader
 from src.architecture.ml_tasks import Predictor
 from src.architecture.ml_utils import Converters, Pipeliner, ProfileGenerator
-from src.models import GradientBoostingModel, LogisticRegressionModel, NeuralNetworkModel
+from src.models import GradientBoostingModel, LogisticRegressionModel, NeuralNetworkModel, DecisionTreeModel
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    models = [LogisticRegressionModel(), NeuralNetworkModel(), GradientBoostingModel()]
+    models = [LogisticRegressionModel(), NeuralNetworkModel(), GradientBoostingModel(), DecisionTreeModel()]
     for m in models:
-        m.load(config.SAVED_MODELS_DIR / config.MODEL_FILE_MAP[m.get_name()])
+        m.load_best(config.SAVED_MODELS_BEST_DIR / config.MODEL_FILE_MAP[m.get_name()])
 
     pipeliner = Pipeliner.load(config.PIPERLINER_FILE)
     profile_generator = ProfileGenerator(
         config.NUMERIC_COLS, config.CATEGORICAL_COLS,
         config.ALL_NUMERIC, config.ALL_CATS,
     )
+
+    # Determine best model by accuracy on the test split
+    test_df = pd.read_csv(config.DATA_DIR / "test.csv")
+    X_test = pipeliner.transform(test_df[config.ALL_NUMERIC + config.ALL_CATS])
+    y_test = test_df[config.TARGET_CATEGORY].values
+    best_model = max(models, key=lambda m: (m.predict(X_test) == y_test).mean())
+    print(f"Best model: {best_model.get_name()}")
 
     # Load source data for profile generation
     raw = DataLoader.load()
@@ -33,6 +40,7 @@ async def lifespan(app: FastAPI):
 
     app.state.model_state = ModelState(
         models=models,
+        best_model=best_model,
         pipeliner=pipeliner,
         predictor=Predictor(),
         profile_generator=profile_generator,
