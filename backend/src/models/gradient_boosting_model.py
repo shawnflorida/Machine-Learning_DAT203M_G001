@@ -1,7 +1,7 @@
 import copy
 from itertools import product
 from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import accuracy_score
 
 from .base_model import BaseModel
 
@@ -47,25 +47,25 @@ class GradientBoostingModel(BaseModel):
             params = dict(zip(param_names, combo))
             candidate = GradientBoostingClassifier(random_state=42, **params)
             candidate.fit(X_train, y_train)
-            val_acc = f1_score(y_val, candidate.predict(X_val), average='weighted', zero_division=0)
-            print(f"  {params}  val_f1={val_acc:.4f}")
+            val_acc = accuracy_score(y_val, candidate.predict(X_val))
+            print(f"  {params}  val_acc={val_acc:.4f}")
             if val_acc > best_val_score:
                 best_val_score = val_acc
                 best_params = params
                 best_model = candidate
 
         self.model = best_model
-        print(f"  Best params : {best_params}  (val_f1={best_val_score:.4f})")
+        print(f"  Best params : {best_params}  (val_acc={best_val_score:.4f})")
         
 
 
     def train_basic(self, X_train, y_train, X_val, y_val):
         import copy
         self.model.fit(X_train, y_train)
-        self._train_score = f1_score(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
-        self._val_score = f1_score(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
+        self._train_score = accuracy_score(y_train, self.model.predict(X_train))
+        self._val_score = accuracy_score(y_val, self.model.predict(X_val))
         print(f"Trained: {self.get_name()}")
-        print(f"Train F1: {self._train_score:.4f}  Val F1: {self._val_score:.4f}")
+        print(f"Train acc: {self._train_score:.4f}  Val acc: {self._val_score:.4f}")
         self._basic_model = copy.deepcopy(self.model)
 
     def train_best(self, X_train, y_train, X_val=None, y_val=None):
@@ -75,10 +75,10 @@ class GradientBoostingModel(BaseModel):
 
         self.grid_search(X_train, y_train, X_val, y_val)
 
-        self._train_score = f1_score(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
+        self._train_score = accuracy_score(y_train, self.model.predict(X_train))
         if X_val is not None and y_val is not None:
-            self._val_score = f1_score(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
-        print(f"  Train F1: {self._train_score:.4f}  Val F1: {self._val_score:.4f}")
+            self._val_score = accuracy_score(y_val, self.model.predict(X_val))
+        print(f"  Train acc: {self._train_score:.4f}  Val acc: {self._val_score:.4f}")
         self._best_model = copy.deepcopy(self.model)
 
         # if X_val is not None and y_val is not None:

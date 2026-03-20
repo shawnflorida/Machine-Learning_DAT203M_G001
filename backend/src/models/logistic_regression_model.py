@@ -22,7 +22,7 @@ class LogisticRegressionModel(BaseModel):
         self._loss_curve: list = []
 
     def train_basic(self, X_train, y_train, X_val=None, y_val=None):
-        from sklearn.metrics import f1_score, log_loss
+        from sklearn.metrics import accuracy_score, log_loss
         import numpy as np
         import copy
 
@@ -34,22 +34,22 @@ class LogisticRegressionModel(BaseModel):
                 log_loss(y_train, self.model.predict_proba(X_train))
             )
 
-        self._train_score = f1_score(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
+        self._train_score = accuracy_score(y_train, self.model.predict(X_train))
         print(f"Trained: {self.get_name()}")
-        print(f"Train F1: {self._train_score:.4f}", end="")
+        print(f"Train acc: {self._train_score:.4f}", end="")
         if X_val is not None and y_val is not None:
-            self._val_score = f1_score(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
-            print(f"  Val F1: {self._val_score:.4f}", end="")
+            self._val_score = accuracy_score(y_val, self.model.predict(X_val))
+            print(f"  Val acc: {self._val_score:.4f}", end="")
         print()
         self._basic_model = copy.deepcopy(self.model)
 
     def train_best(self, X_train, y_train, X_val, y_val):
-        from sklearn.metrics import log_loss
+        from sklearn.metrics import accuracy_score, log_loss
         import numpy as np
 
         self.grid_search(X_train, y_train, X_val, y_val)
-        self._train_score = self.best_metrics["training f1"]
-        self._val_score   = self.best_metrics["validation f1"]
+        self._train_score = self.best_metrics["training accuracy"]
+        self._val_score   = self.best_metrics["validation accuracy"]
 
         # Re-train the best configuration epoch-by-epoch to record a loss curve
         classes = np.unique(y_train)
@@ -127,7 +127,6 @@ class LogisticRegressionModel(BaseModel):
     }]
 
     def grid_search(self, X_train, y_train, X_val, y_val):
-        from sklearn.metrics import f1_score as _f1
         best_score = 0
         best_grid = {}
         for g in ParameterGrid(self.grid_search_params):
@@ -137,21 +136,21 @@ class LogisticRegressionModel(BaseModel):
 
             # Model Training
             self.model.fit(X_train, y_train)
-            train_f1 = _f1(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
+            train_acc = self.model.score(X_train, y_train)
 
             # Validations
-            val_f1 = _f1(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
+            val_acc = self.model.score(X_val, y_val)
 
             print(
-                f"Train F1: {train_f1:.4f} \t Val F1: {val_f1:.4f}", end="\n\n")
+                f"Train acc: {train_acc}% \t Val acc: {val_acc}%", end="\n\n")
 
-            if val_f1 > best_score:
-                best_score = val_f1
+            if val_acc > best_score:
+                best_score = val_acc
                 best_model = self.model
                 best_grid = g
                 evaluator = Evaluator()
-                best_metrics = {"training f1": train_f1,
-                                "validation f1": val_f1}
+                best_metrics = {"training accuracy": train_acc,
+                                "validation accuracy": val_acc}
 
         pred_cats = {self.get_name(): self.model.predict(X_val)}
         class_reports = evaluator.classification_report_all(
@@ -159,7 +158,7 @@ class LogisticRegressionModel(BaseModel):
         v = Visualizer()
         v.plot_confusion_matrices(class_reports, config.CATEGORY_ORDER)
 
-        print("Best F1 (val): ", best_score)
+        print("Best accuracy: ", best_score, "%")
         print("Best grid: ", best_grid)
         self.best_grid = best_grid
         self.best_model = best_model

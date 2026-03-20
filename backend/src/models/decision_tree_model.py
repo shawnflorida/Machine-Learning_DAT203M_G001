@@ -2,7 +2,7 @@ import copy
 from itertools import product
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import f1_score, classification_report, confusion_matrix
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 from .base_model import BaseModel
 
@@ -43,15 +43,15 @@ class DecisionTreeModel(BaseModel):
         return float(np.mean(np.array(predictions) == np.array(actual)) * 100)
 
     def train_basic(self, X_train, y_train, X_val=None, y_val=None):
-        from sklearn.metrics import f1_score as _f1
+        from sklearn.metrics import accuracy_score as _acc
         import copy
         self.model.fit(X_train, y_train)
-        self._train_score = _f1(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
+        self._train_score = _acc(y_train, self.model.predict(X_train))
         print(f"Trained (basic): {self.get_name()}")
-        print(f"Train F1: {self._train_score:.4f}", end="")
+        print(f"Train acc: {self._train_score:.4f}", end="")
         if X_val is not None and y_val is not None:
-            self._val_score = _f1(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
-            print(f"  Val F1: {self._val_score:.4f}", end="")
+            self._val_score = _acc(y_val, self.model.predict(X_val))
+            print(f"  Val acc: {self._val_score:.4f}", end="")
         print()
         self._basic_model = copy.deepcopy(self.model)
 
@@ -63,7 +63,7 @@ class DecisionTreeModel(BaseModel):
 
         # Phase 1: Baseline → observe overfitting, then regularize
         print("\n  [Phase 1] Baseline overfitting check + depth sweep")
-        print(f"  {'depth':>9} | {'train_f1':>9} | {'val_f1':>8} | {'gap':>8}")
+        print(f"  {'depth':>9} | {'train_acc':>9} | {'val_acc':>8} | {'gap':>8}")
         print(f"  {'-'*9}-+-{'-'*9}-+-{'-'*8}-+-{'-'*8}")
 
         # None first = unconstrained baseline
@@ -79,9 +79,9 @@ class DecisionTreeModel(BaseModel):
             )
             candidate.fit(X_train, y_train)
 
-            tr = f1_score(y_train, candidate.predict(X_train), average='weighted', zero_division=0)
-            va = f1_score(y_val,   candidate.predict(
-                X_val), average='weighted', zero_division=0) if X_val is not None else float("nan")
+            tr = accuracy_score(y_train, candidate.predict(X_train))
+            va = accuracy_score(y_val,   candidate.predict(
+                X_val)) if X_val is not None else float("nan")
             gap = abs(tr - va) if X_val is not None else float("nan")
 
             depth_label = str(
@@ -108,12 +108,12 @@ class DecisionTreeModel(BaseModel):
 
         # Phase 2: Validation gap check
         if X_val is not None and y_val is not None:
-            self._val_score = f1_score(y_val, self.model.predict(X_val), average='weighted', zero_division=0)
+            self._val_score = accuracy_score(y_val, self.model.predict(X_val))
             gap = abs(self._train_score - self._val_score)
 
             print(f"\n  [Phase 2] Validation check")
-            print(f"  train_f1 = {self._train_score:.4f} | "
-                  f"val_f1 = {self._val_score:.4f} | "
+            print(f"  train_acc = {self._train_score:.4f} | "
+                  f"val_acc = {self._val_score:.4f} | "
                   f"gap = {gap:.4f} (tolerance = {VAL_GAP_TOLERANCE})")
 
             if gap <= VAL_GAP_TOLERANCE:
@@ -143,20 +143,20 @@ class DecisionTreeModel(BaseModel):
             params = dict(zip(param_names, combo))
             candidate = DecisionTreeClassifier(random_state=42, **params)
             candidate.fit(X_train, y_train)
-            val_acc = f1_score(y_val, candidate.predict(X_val), average='weighted', zero_division=0)
+            val_acc = accuracy_score(y_val, candidate.predict(X_val))
             if val_acc > best_val_score:
                 best_val_score = val_acc
                 best_params = params
                 best_model = candidate
 
         self.model = best_model
-        self._train_score = f1_score(y_train, self.model.predict(X_train), average='weighted', zero_division=0)
+        self._train_score = accuracy_score(y_train, self.model.predict(X_train))
         self._val_score = best_val_score
         gap = abs(self._train_score - self._val_score)
 
         print(f"  Best hyperparameters : {best_params}")
-        print(f"  train_f1={self._train_score:.4f}  "
-              f"val_f1={self._val_score:.4f}  gap={gap:.4f}")
+        print(f"  train_acc={self._train_score:.4f}  "
+              f"val_acc={self._val_score:.4f}  gap={gap:.4f}")
         print(f"  Tree depth={self.model.get_depth()}  "
               f"n_leaves={self.model.get_n_leaves()}")
 

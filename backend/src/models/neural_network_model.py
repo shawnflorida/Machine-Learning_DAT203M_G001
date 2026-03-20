@@ -5,7 +5,7 @@ import torch.nn.init
 from typing import Tuple, Optional, Dict, List
 from itertools import product
 from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import accuracy_score, f1_score
+from sklearn.metrics import accuracy_score
 
 from .base_model import BaseModel
 
@@ -211,12 +211,12 @@ class NeuralNetworkModel(BaseModel):
 
         # Compute and store accuracy scores
         train_preds = self.predict(X_train)
-        self._train_score = f1_score(y_train, train_preds, average='weighted', zero_division=0)
-        print(f"  Train F1: {self._train_score:.4f}", end="")
+        self._train_score = accuracy_score(y_train, train_preds)
+        print(f"  Train acc: {self._train_score:.4f}", end="")
         if X_val is not None and y_val is not None:
             val_preds = self.predict(X_val)
-            self._val_score = f1_score(y_val, val_preds, average='weighted', zero_division=0)
-            print(f"  Val F1: {self._val_score:.4f}", end="")
+            self._val_score = accuracy_score(y_val, val_preds)
+            print(f"  Val acc: {self._val_score:.4f}", end="")
         print()
 
     def train_best(self, X_train, y_train, X_val=None, y_val=None):
@@ -267,11 +267,11 @@ class NeuralNetworkModel(BaseModel):
             self._best_model = copy.deepcopy(self.model)
             self._best_label_encoder = copy.deepcopy(self._label_encoder)
 
-            # Record train / val F1
-            self._train_score = f1_score(y_train, self.predict_best(X_train), average='weighted', zero_division=0)
+            # Record train / val accuracy
+            self._train_score = accuracy_score(y_train, self.predict_best(X_train))
             if X_val is not None and y_val is not None:
-                self._val_score = f1_score(y_val, self.predict_best(X_val), average='weighted', zero_division=0)
-            print(f"  Train F1: {self._train_score:.4f}  Val F1: {self._val_score:.4f}")
+                self._val_score = accuracy_score(y_val, self.predict_best(X_val))
+            print(f"  Train acc: {self._train_score:.4f}  Val acc: {self._val_score:.4f}")
         else:
             print("  Grid search yielded no valid model — falling back to train_basic.")
             self.train_basic(X_train, y_train)
@@ -498,16 +498,16 @@ class NeuralNetworkModel(BaseModel):
                 with torch.no_grad():
                     val_probs = model.forward(X_val)[1]
                     val_preds = torch.argmax(val_probs, dim=1)
-                    val_accuracy = f1_score(y_val.cpu().numpy(), val_preds.cpu().numpy(), average='weighted', zero_division=0)
+                    val_accuracy = (val_preds == y_val).float().mean().item()
 
                 results.append({
                     'params': params,
-                    'val_f1': val_accuracy,
+                    'val_accuracy': val_accuracy,
                     'model': model
                 })
 
                 if verbose:
-                    print(f"  \u2192 Validation F1: {val_accuracy:.4f}\n")
+                    print(f"  → Validation Accuracy: {val_accuracy:.4f}\n")
 
                 if val_accuracy > best_score:
                     best_score = val_accuracy
@@ -519,14 +519,14 @@ class NeuralNetworkModel(BaseModel):
                     print(f"  → Error: {str(e)}\n")
                 results.append({
                     'params': params,
-                    'val_f1': -1,
+                    'val_accuracy': -1,
                     'error': str(e)
                 })
 
         if verbose:
             print(f"\n{'='*60}")
             print(f"Best Parameters: {best_params}")
-            print(f"Best Validation F1: {best_score:.4f}")
+            print(f"Best Validation Accuracy: {best_score:.4f}")
             print(f"{'='*60}\n")
 
         return {
