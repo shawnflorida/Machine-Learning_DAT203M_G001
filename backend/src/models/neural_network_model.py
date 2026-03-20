@@ -18,10 +18,10 @@ class NeuralNetworkModel(BaseModel):
                  learning_rate: float = 0.001,
                  max_iterations: int = 500,
                  random_state: int = 42,
-                 dropout_rate: float = 0.5,          # new
-                 weight_decay: float = 1e-4,          # new
-                 early_stopping_patience: int = 10,   # new
-                 use_batch_norm: bool = False):       # new
+                 dropout_rate: float = 0.5,
+                 weight_decay: float = 1e-4,
+                 early_stopping_patience: int = 10,
+                 use_batch_norm: bool = False):
 
         super().__init__()
         self.hidden_layers = hidden_layers
@@ -37,7 +37,15 @@ class NeuralNetworkModel(BaseModel):
         self._input_size = None
         self._num_classes = None
         self.loss_curve_ = []
-        self.val_loss_curve_ = []   # store validation loss if early stopping used
+        self.val_loss_curve_ = []
+
+        # FIX 1: initialize snapshot and score attributes to avoid AttributeError
+        self._basic_model = None
+        self._best_model = None
+        self._basic_label_encoder = None
+        self._best_label_encoder = None
+        self._train_score = None
+        self._val_score = None
 
         # Set random seed
         torch.manual_seed(random_state)
@@ -64,9 +72,9 @@ class NeuralNetworkModel(BaseModel):
         # Intermediate hidden layers
         for i in range(len(self.hidden_layers) - 1):
             layers.append(
-                nn.Linear(self.hidden_layers[i], self.hidden_layers[i+1]))
+                nn.Linear(self.hidden_layers[i], self.hidden_layers[i + 1]))
             if self.use_batch_norm:
-                layers.append(nn.BatchNorm1d(self.hidden_layers[i+1]))
+                layers.append(nn.BatchNorm1d(self.hidden_layers[i + 1]))
             layers.append(self._get_activation(self.activation))
             if self.dropout_rate > 0:
                 layers.append(nn.Dropout(self.dropout_rate))
@@ -146,18 +154,17 @@ class NeuralNetworkModel(BaseModel):
                 if val_loss < best_val_loss:
                     best_val_loss = val_loss
                     patience_counter = 0
-                    # Save the best model state
                     best_model_state = {k: v.cpu().clone()
                                         for k, v in self.model.state_dict().items()}
                 else:
                     patience_counter += 1
                     if patience_counter >= self.early_stopping_patience:
-                        print(f"Early stopping at epoch {epoch+1}")
+                        print(f"Early stopping at epoch {epoch + 1}")
                         break
 
             # Optional progress printing
             if (epoch + 1) % max(1, epochs // 10) == 0:
-                msg = f"  Epoch {epoch+1}/{epochs}  loss={loss.item():.4f}"
+                msg = f"  Epoch {epoch + 1}/{epochs}  loss={loss.item():.4f}"
                 if val_loss is not None:
                     msg += f"  val_loss={val_loss:.4f}"
                 print(msg)
@@ -180,7 +187,7 @@ class NeuralNetworkModel(BaseModel):
 
         X_t = torch.from_numpy(np.asarray(X_train, dtype=np.float32))
         y_arr = np.asarray(y_train)
-        if y_arr.dtype.kind in ('U', 'O'):  # string labels
+        if y_arr.dtype.kind in ('U', 'O'):
             self._label_encoder = LabelEncoder()
             y_arr = self._label_encoder.fit_transform(y_arr)
         y_t = torch.from_numpy(y_arr.astype(np.int64))
@@ -230,18 +237,16 @@ class NeuralNetworkModel(BaseModel):
             "hidden_layers": [(128, 64, 32), (64, 32), (256, 128, 64)],
             "learning_rate": [0.001, 0.005, 0.01],
             "max_iterations": [100, 300],
-            "dropout_rate": [0.3, 0.5],           # added
-            "weight_decay": [1e-4, 1e-3],         # added
+            "dropout_rate": [0.3, 0.5],
+            "weight_decay": [1e-4, 1e-3],
         }
         print(f"\nTraining {self.get_name()} (best) — running grid search ...")
-        # grid_search sets self._label_encoder — preserve it before adoption overwrites it
         result = self.grid_search(
             X_train, y_train, X_val, y_val, param_grid=default_grid)
         label_encoder_from_grid = self._label_encoder
 
         best = result["best_model"]
         if best is not None:
-            # Adopt the best model's weights and config
             self.hidden_layers = best.hidden_layers
             self.learning_rate = best.learning_rate
             self.max_iterations = best.max_iterations
@@ -256,22 +261,21 @@ class NeuralNetworkModel(BaseModel):
             self._is_fitted = best._is_fitted
             self._input_size = best._input_size
             self._num_classes = best._num_classes
-            # Inner candidate models train on already-encoded int labels so their
-            # _label_encoder is None — use the one fit by grid_search instead.
             self._label_encoder = best._label_encoder or label_encoder_from_grid
             print(f"  Best params adopted: hidden={self.hidden_layers}  lr={self.learning_rate}  "
                   f"dropout={self.dropout_rate}  wd={self.weight_decay}")
 
-            # Snapshot the best model
             import copy
             self._best_model = copy.deepcopy(self.model)
             self._best_label_encoder = copy.deepcopy(self._label_encoder)
 
-            # Record train / val accuracy
-            self._train_score = accuracy_score(y_train, self.predict_best(X_train))
+            self._train_score = accuracy_score(
+                y_train, self.predict_best(X_train))
             if X_val is not None and y_val is not None:
-                self._val_score = accuracy_score(y_val, self.predict_best(X_val))
-            print(f"  Train acc: {self._train_score:.4f}  Val acc: {self._val_score:.4f}")
+                self._val_score = accuracy_score(
+                    y_val, self.predict_best(X_val))
+            print(
+                f"  Train acc: {self._train_score:.4f}  Val acc: {self._val_score:.4f}")
         else:
             print("  Grid search yielded no valid model — falling back to train_basic.")
             self.train_basic(X_train, y_train)
@@ -279,12 +283,18 @@ class NeuralNetworkModel(BaseModel):
     def train(self, X_train, y_train, X_val=None, y_val=None, epochs: Optional[int] = None):
         """Public training method: either use grid search or direct fit."""
         if epochs is not None:
-            # Direct training with provided epochs (used internally by grid_search)
             X_t = torch.from_numpy(np.asarray(X_train, dtype=np.float32))
             y_t = torch.from_numpy(np.asarray(y_train, dtype=np.int64))
             if self.model is None:
                 self._create_network(X_t.shape[1], len(np.unique(y_t.numpy())))
-            self._fit(X_t, y_t, epochs)
+
+            # FIX 2: pass validation data through so early stopping works in grid search
+            X_val_t = torch.from_numpy(np.asarray(
+                X_val, dtype=np.float32)) if X_val is not None else None
+            y_val_t = torch.from_numpy(np.asarray(
+                y_val, dtype=np.int64)) if y_val is not None else None
+
+            self._fit(X_t, y_t, epochs, X_val_t, y_val_t)
         else:
             self.train_best(X_train, y_train, X_val, y_val)
 
@@ -320,16 +330,18 @@ class NeuralNetworkModel(BaseModel):
         return preds
 
     def predict_basic(self, X) -> np.ndarray:
+        # FIX 1: _basic_model is now always defined, so this raises RuntimeError cleanly
         if self._basic_model is None:
-            raise RuntimeError("No basic model trained yet. Call train_basic() first.")
-        return self._predict_with_module(
-            self._basic_model, getattr(self, '_basic_label_encoder', self._label_encoder), X)
+            raise RuntimeError(
+                "No basic model trained yet. Call train_basic() first.")
+        return self._predict_with_module(self._basic_model, self._basic_label_encoder, X)
 
     def predict_best(self, X) -> np.ndarray:
+        # FIX 1: _best_model is now always defined, so this raises RuntimeError cleanly
         if self._best_model is None:
-            raise RuntimeError("No best model trained yet. Call train_best() first.")
-        return self._predict_with_module(
-            self._best_model, getattr(self, '_best_label_encoder', self._label_encoder), X)
+            raise RuntimeError(
+                "No best model trained yet. Call train_best() first.")
+        return self._predict_with_module(self._best_model, self._best_label_encoder, X)
 
     def save(self, path):
         import joblib
@@ -342,22 +354,24 @@ class NeuralNetworkModel(BaseModel):
 
     def save_basic(self, path):
         if self._basic_model is None:
-            raise RuntimeError("No basic model trained yet. Call train_basic() first.")
+            raise RuntimeError(
+                "No basic model trained yet. Call train_basic() first.")
         import joblib
         joblib.dump({
             "module":        self._basic_model,
-            "label_encoder": getattr(self, "_basic_label_encoder", self._label_encoder),
+            "label_encoder": self._basic_label_encoder,
             "input_size":    self._input_size,
             "num_classes":   self._num_classes,
         }, path)
 
     def save_best(self, path):
         if self._best_model is None:
-            raise RuntimeError("No best model trained yet. Call train_best() first.")
+            raise RuntimeError(
+                "No best model trained yet. Call train_best() first.")
         import joblib
         joblib.dump({
             "module":        self._best_model,
-            "label_encoder": getattr(self, "_best_label_encoder", self._label_encoder),
+            "label_encoder": self._best_label_encoder,
             "input_size":    self._input_size,
             "num_classes":   self._num_classes,
         }, path)
@@ -374,12 +388,14 @@ class NeuralNetworkModel(BaseModel):
         data = joblib.load(path)
         self._restore_snapshot(data)
         self._basic_model = self.model
+        self._basic_label_encoder = self._label_encoder
 
     def load_best(self, path):
         import joblib
         data = joblib.load(path)
         self._restore_snapshot(data)
         self._best_model = self.model
+        self._best_label_encoder = self._label_encoder
 
     def get_loss_curve(self) -> Optional[np.ndarray]:
         if not self.loss_curve_:
@@ -399,7 +415,8 @@ class NeuralNetworkModel(BaseModel):
         val_curve = self.get_val_loss_curve()
 
         if train_curve is None or len(train_curve) == 0:
-            print(f"[{self.get_name()}] No loss curve available — train the model first.")
+            print(
+                f"[{self.get_name()}] No loss curve available — train the model first.")
             return
 
         epochs = range(1, len(train_curve) + 1)
@@ -407,8 +424,9 @@ class NeuralNetworkModel(BaseModel):
         ax.plot(epochs, train_curve,
                 color="#5C6BC0", linewidth=1.8, label="Train loss")
         if val_curve is not None and len(val_curve) > 0:
+            # FIX 4: use a distinct color so val loss is actually visible
             ax.plot(range(1, len(val_curve) + 1), val_curve,
-                    color="#5C6BC0", linewidth=1.4, linestyle="--",
+                    color="#EF5350", linewidth=1.4, linestyle="--",
                     alpha=0.7, label="Val loss")
         ax.set(title=f"{self.get_name()} — Training Loss",
                xlabel="Epoch", ylabel="Loss")
@@ -438,7 +456,6 @@ class NeuralNetworkModel(BaseModel):
     def grid_search(self, X_train, y_train, X_val, y_val,
                     param_grid: Dict[str, List], verbose: bool = True) -> Dict:
         """Hyperparameter grid search with validation."""
-        # Convert to tensors — encode string labels if needed
         X_train = torch.from_numpy(np.asarray(X_train, dtype=np.float32))
         y_train_arr = np.asarray(y_train)
         if y_train_arr.dtype.kind in ('U', 'O'):
@@ -469,7 +486,7 @@ class NeuralNetworkModel(BaseModel):
         for idx, combo in enumerate(all_combinations):
             params = dict(zip(param_names, combo))
             if verbose:
-                print(f"[{idx+1}/{len(all_combinations)}] Testing: {params}")
+                print(f"[{idx + 1}/{len(all_combinations)}] Testing: {params}")
 
             try:
                 model = NeuralNetworkModel(
@@ -489,12 +506,11 @@ class NeuralNetworkModel(BaseModel):
                         'use_batch_norm', self.use_batch_norm)
                 )
 
-                # Train with early stopping using validation data
+                # FIX 2: pass val data so early stopping actually runs per candidate
                 model.train(X_train.numpy(), y_train.numpy(),
                             X_val=X_val.numpy(), y_val=y_val.numpy(),
                             epochs=params.get('max_iterations', self.max_iterations))
 
-                # Evaluate on validation set
                 with torch.no_grad():
                     val_probs = model.forward(X_val)[1]
                     val_preds = torch.argmax(val_probs, dim=1)
@@ -524,10 +540,10 @@ class NeuralNetworkModel(BaseModel):
                 })
 
         if verbose:
-            print(f"\n{'='*60}")
+            print(f"\n{'=' * 60}")
             print(f"Best Parameters: {best_params}")
             print(f"Best Validation Accuracy: {best_score:.4f}")
-            print(f"{'='*60}\n")
+            print(f"{'=' * 60}\n")
 
         return {
             'best_params': best_params,

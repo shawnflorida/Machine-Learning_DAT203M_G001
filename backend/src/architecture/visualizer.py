@@ -49,7 +49,7 @@ class Visualizer:
             sns.heatmap(pd.DataFrame(data["cm"], index=category_order, columns=category_order),
                         annot=True, fmt="d", cmap="Blues", linewidths=0.5,
                         linecolor="white", ax=ax, cbar=False)
-            ax.set(title=f"{name} | F1: {data['f1']:.1%}", xlabel="Predicted", ylabel="True")
+            ax.set(title=f"{name} | Acc: {data['accuracy']:.1%}", xlabel="Predicted", ylabel="True")
         plt.tight_layout()
         plt.show()
 
@@ -57,8 +57,8 @@ class Visualizer:
         x = np.arange(len(model_names))
         fig, ax = plt.subplots(figsize=(7, 3.5))
         bars = ax.bar(x, accs, 0.5, color=["#5C6BC0", "#EF5350", "#66BB6A"][:len(model_names)])
-        ax.set(xticks=x, xticklabels=model_names, ylabel="F1 Score (weighted)",
-               ylim=(0, 1.05), title="Model Comparison: F1 Score (weighted)")
+        ax.set(xticks=x, xticklabels=model_names, ylabel="Accuracy",
+               ylim=(0, 1.05), title="Model Comparison: Classification Accuracy")
         for bar in bars:
             ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.005,
                     f"{bar.get_height():.1%}", ha="center", va="bottom", fontsize=9)

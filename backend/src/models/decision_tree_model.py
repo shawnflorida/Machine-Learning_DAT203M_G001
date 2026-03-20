@@ -197,13 +197,9 @@ class DecisionTreeModel(BaseModel):
         return self.model.predict(X)
 
     def get_loss_curve(self):
-        # Decision Trees have no iterative loss — return None
         return None
 
     def plot_loss_curve(self):
-        """Decision Trees have no iterative training loss.
-        Prints a note instead of rendering an empty graph.
-        """
         print(f"[{self.get_name()}] No loss curve available — "
               "Decision Trees are trained in a single pass with no iterative loss.")
 

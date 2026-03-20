@@ -8,7 +8,7 @@ from backend.src.architecture.ml_tasks import EDA, Evaluator, Predictor
 from backend import config
 
 class LogisticRegressionModel(BaseModel):
-    _N_EPOCHS = 1000  # epochs used for partial_fit loss tracking
+    _N_EPOCHS = 200  # epochs used for partial_fit loss tracking
 
     def __init__(self):
         super().__init__()
@@ -98,7 +98,6 @@ class LogisticRegressionModel(BaseModel):
         return self._loss_curve if self._loss_curve else None
 
     def plot_loss_curve(self):
-        """Plot the SGD training loss curve (available when loss='log_loss')."""
         import matplotlib.pyplot as plt
 
         curve = self.get_loss_curve()
