@@ -1,0 +1,140 @@
+================================================================================
+PROJECT CHANGES SUMMARY - Machine Learning Student Stress Pipeline
+================================================================================
+Date: March 20, 2026
+Scope: Major refactoring for PyTorch migration and pipeline simplification
+
+================================================================================
+1. NEURAL NETWORK MODEL - PyTorch Migration
+================================================================================
+- Migrated from sklearn MLPClassifier to PyTorch nn.Module implementation
+- Added configurable architecture support (hidden_layers, activation functions)
+- Implemented dual forward propagation methods:
+  * forward_manual(): Manual matrix operations using torch.matmul (educational)
+  * forward(): PyTorch automatic forward pass (production)
+- Added grid_search() method for hyperparameter optimization
+  * Tests combinations of: hidden_layers, activation, learning_rate, max_iterations
+  * Uses validation set for evaluation
+- Improved weight initialization (normal distribution: mean=0, std=0.1)
+- File: backend/src/models/neural_network_model.py
+
+================================================================================
+2. DATA PIPELINE - Pre-Split File Support
+================================================================================
+- Implemented pre-split data loading (train.csv, validation.csv, test.csv)
+  * Replaces dynamic 80/20 train/test split
+  * Uses consistent statistics across splits (training set stats for all)
+- Added load_presplit_data() method to DataLoader
+  * Returns: (X_train, X_val, X_test, y_train, y_val, y_test)
+- Manual data cleaning for pre-split files:
+  * Outlier clipping: 1st-99th percentile using training statistics
+  * Missing value imputation: median for numeric, mode for categorical
+- Updated engineer() method to handle optional target parameter
+  * Allows feature engineering without target column
+- File: backend/src/architecture/data_pipeline.py
+
+================================================================================
+3. LABEL ENCODING PIPELINE
+================================================================================
+- Implemented LabelEncoder workflow for neural network compatibility
+  * Converts: 'Low'/'Average'/'High' ↔ numeric indices 0/1/2
+  * Required because neural networks expect numeric labels, not strings
+- Updated Predictor.predict() method:
+  * Added optional label_encoder parameter
+  * Decodes numeric predictions back to category names for display
+- Workflow integrated into:
+  * runner.py (automated pipeline)
+  * modular_stress_pipeline.ipynb (Cell 6: Train, Cell 7: Evaluate, Cell 9: Predict)
+- File: backend/src/architecture/ml_tasks.py
+
+================================================================================
+4. RUNNER.PY SYNCHRONIZATION
+================================================================================
+- Removed dynamic 80/20 split fallback - now uses ONLY pre-split files
+- Removed unused import: from sklearn.model_selection import train_test_split
+- Updated pre-split file loading with manual cleaning/engineering
+- Integrated label encoding workflow:
+  * Encodes training labels for model fit
+  * Decodes predictions for evaluation and reporting
+- Updated Predictor call with label_encoder parameter
+- Cleaned up config.py references (USE_PRESPLIT_FILES now always True)
+- File: backend/src/runner/runner.py
+
+================================================================================
+5. NOTEBOOK SIMPLIFICATION - modular_stress_pipeline.ipynb
+================================================================================
+- Cell 5 (Split): Removed if/else conditional for 80/20 fallback
+  * Now unconditionally loads pre-split CSV files
+  * Applies manual cleaning and feature engineering
+  * Results in cleaner, more focused code
+- Cell 6 (Train): Added LabelEncoder for encoding category → numeric
+- Cell 7 (Evaluate): Added label decoding for readable predictions
+- Cell 9 (Predict): Added importlib.reload() for kernel caching + label_encoder param
+
+================================================================================
+6. VISUALIZATIONS - Modern Styling
+================================================================================
+- Enhanced all visualization methods with professional styling:
+  * plot_stress_distribution(): 3-panel layout with gradient colors
+  * plot_correlation_heatmap(): Coolwarm colormap with bold annotations
+  * plot_boxplots(): 2×4 grid with improved styling
+  * plot_confusion_matrices(): Cleaner heatmaps with bold accuracy text
+  * plot_model_comparison(): Bar chart with average reference line
+- Color Palette:
+  * Stress levels: Green (#10B981) / Amber (#F59E0B) / Red (#EF4444)
+  * Models: Blue / Purple / Pink
+- File: backend/src/architecture/visualizer.py
+
+================================================================================
+7. CONFIGURATION UPDATES - config.py
+================================================================================
+- Added TRAIN_FILE, VALIDATION_FILE, TEST_FILE paths for pre-split data
+- Added USE_PRESPLIT_FILES toggle (set to True)
+- All dynamic split parameters now unused but retained for backward compatibility
+
+================================================================================
+8. REQUIREMENTS - dependencies
+================================================================================
+- All dependencies remain stable:
+  * pandas>=2.0.0, numpy>=1.24.0
+  * matplotlib>=3.7.0, seaborn>=0.12.0
+  * scikit-learn>=1.4.0, torch (for PyTorch neural network)
+  * fastapi>=0.115.0, uvicorn>=0.30.0
+
+================================================================================
+BACKWARD COMPATIBILITY / BREAKING CHANGES
+================================================================================
+BREAKING CHANGES:
+- Neural network now requires numeric labels (use LabelEncoder)
+- Pre-split CSV files now required (train.csv, validation.csv, test.csv)
+- Predictor.predict() signature changed (added optional label_encoder param)
+
+PRESERVED:
+- All other model APIs remain compatible
+- DataLoader, DataCleaner, FeatureEngineer interfaces unchanged
+- Visualization method signatures unchanged
+
+================================================================================
+TESTING RECOMMENDATIONS
+================================================================================
+1. Verify pre-split CSV files exist and load correctly
+2. Run notebook end-to-end without stopping
+3. Confirm runner.py executes independently
+4. Check visualizations render with modern styling
+5. Validate label encoding/decoding produces correct predictions
+
+================================================================================
+FILES MODIFIED
+================================================================================
+1. backend/src/models/neural_network_model.py (Major refactoring)
+2. backend/src/architecture/data_pipeline.py (Added pre-split support)
+3. backend/src/architecture/ml_tasks.py (Updated Predictor)
+4. backend/src/runner/runner.py (Removed fallback logic)
+5. backend/src/architecture/visualizer.py (Enhanced styling)
+6. backend/config.py (Added pre-split file paths)
+7. backend/requirements.txt (No changes - all deps stable)
+8. notebooks/modular_stress_pipeline.ipynb (Simplified Cell 5, updated Cells 6,7,9)
+
+================================================================================
+END OF SUMMARY
+================================================================================
