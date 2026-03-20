@@ -46,6 +46,7 @@ MODEL_FILE_MAP = {
     "Logistic Regression": "logistic_regression.pkl",
     "Neural Network":      "neural_network.pkl",
     "Gradient Boosting":   "gradient_boosting.pkl",
+    "Decision Tree":       "decision_tree.pkl",
 }
 
 FRONTEND_ORIGIN = "http://localhost:5173"
